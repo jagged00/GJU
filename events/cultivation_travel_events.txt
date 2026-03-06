@@ -348,32 +348,32 @@ cultivation_travel_events.101 = { # Poisonous mist ahead
 		
 		random_list = {
 			1 = {
-				#Go through without issue and get poison constitution
+				#Rare lottery: awaken poison constitution in deadly mist
 				add_trait = poison_constitution
 				modifier = {
 					has_trait = poison_constitution
 					add = -1
 				}
 			}
-			25 = {
+			40 = {
 				#Go through without issue
 			}
-			70 = {
+			220 = {
 				#Go through but get ill
 				modifier = {
 					has_trait = poison_constitution
-					add = -70
+					add = -220
 				}
 				#TODO: make all that are travelling together ill
 				current_travel_plan = { delay_travel_plan = { days = 7 } }
 
 				add_trait = wounded_1
 			}
-			3 = {
+			8 = {
 				#Die trying
 				modifier = {
 					has_trait = poison_constitution
-					add = -3
+					add = -8
 				}
 				death = {
 					death_reason = death_poison_area

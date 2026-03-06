@@ -159,10 +159,10 @@
   attempt_phoenix_nirvana_decision_selection_tooltip:0 "A high-risk ritual to gain Phoenix Blood Constitution. Failure can maim or kill."
   attempt_phoenix_nirvana_decision_confirm:0 "From ashes, I shall rise."
 
-  guide_unlanded_breakthrough_decision:0 "Guide an Unlanded Disciple's Breakthrough"
-  guide_unlanded_breakthrough_decision_desc:0 "Your wandering disciples and unlanded cultivators lack resources for safe breakthroughs. Spend your own wealth and guidance to help one cross the next realm gate."
-  guide_unlanded_breakthrough_decision_tooltip:0 "Selects one qualified unlanded courtier or guest and triggers their breakthrough event."
-  guide_unlanded_breakthrough_decision_confirm:0 "I will guide their dao-heart."
+  guide_unlanded_breakthrough_decision:0 "Guide a Family or Court Breakthrough"
+  guide_unlanded_breakthrough_decision_desc:0 "A realm gate cannot be crossed by talent alone. You can personally sponsor a family member, courtier, or guest whose current realm is already maxed, helping them attempt the next breakthrough."
+  guide_unlanded_breakthrough_decision_tooltip:0 "Selects one qualified family member, courtier, or guest in your court who has maxed their current realm XP and triggers their breakthrough event."
+  guide_unlanded_breakthrough_decision_confirm:0 "I will personally guide their breakthrough."
 
   forge_xianxia_relic_decision:0 "Forge a Legendary Xianxia Relic"
   forge_xianxia_relic_decision_desc:0 "Gather heavenly metals, ancient manuals, and spirit herbs to forge an inheritance artifact worthy of immortal legends."

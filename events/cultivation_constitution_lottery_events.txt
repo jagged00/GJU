@@ -1,0 +1,202 @@
+﻿namespace = cultivation_constitution_lottery_events
+
+# Rare yearly lottery gate for constitution awakenings.
+# Hidden gate event: if lucky, it opens an immersive follow-up event.
+cultivation_constitution_lottery_events.001 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_adult = yes
+		is_cultivator = yes
+		NOT = {
+			OR = {
+				has_trait = poison_constitution
+				has_trait = dragon_body_constitution
+				has_trait = lightning_constitution
+				has_trait = phoenix_blood_constitution
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			6 = {
+				trigger_event = {
+					id = cultivation_constitution_lottery_events.011
+					days = 1
+				}
+			}
+			994 = { }
+		}
+	}
+
+	option = { name = OK }
+}
+
+# Immersive yearly event: sudden inspiration / artifact encounter.
+cultivation_constitution_lottery_events.011 = {
+	type = character_event
+	title = cultivation_constitution_lottery_events.011.t
+	desc = cultivation_constitution_lottery_events.011.desc
+
+	theme = lifestyle_mystic
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	trigger = {
+		is_adult = yes
+		is_cultivator = yes
+		NOT = {
+			OR = {
+				has_trait = poison_constitution
+				has_trait = dragon_body_constitution
+				has_trait = lightning_constitution
+				has_trait = phoenix_blood_constitution
+			}
+		}
+	}
+
+	option = {
+		name = cultivation_constitution_lottery_events.011.a
+		ai_chance = {
+			base = 60
+			modifier = {
+				add = 30
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 20
+				has_trait = brave
+			}
+			modifier = {
+				add = -30
+				has_trait = craven
+			}
+		}
+
+		random_list = {
+			20 = {
+				add_trait = poison_constitution
+				add_prestige = 150
+			}
+			20 = {
+				add_trait = lightning_constitution
+				add_piety = 100
+			}
+			10 = {
+				if = {
+					limit = { has_trait = dragon_bloodline }
+					remove_trait = dragon_bloodline
+				}
+				add_trait = dragon_body_constitution
+				add_prestige = 350
+			}
+			6 = {
+				add_trait = phoenix_blood_constitution
+				add_piety = 250
+			}
+			31 = {
+				add_trait = wounded_1
+				add_stress = 35
+			}
+			13 = {
+				add_trait = wounded_2
+				add_stress = 65
+			}
+		}
+	}
+
+	option = {
+		name = cultivation_constitution_lottery_events.011.b
+		ai_chance = {
+			base = 40
+			modifier = {
+				add = 35
+				has_trait = craven
+			}
+		}
+		add_piety = 40
+		add_stress = -20
+	}
+
+	option = {
+		name = cultivation_constitution_lottery_events.011.c
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = 10
+				has_trait = wrathful
+			}
+			modifier = {
+				add = 15
+				has_trait = reckless
+			}
+		}
+		random_list = {
+			20 = {
+				if = {
+					limit = { has_trait = dragon_bloodline }
+					remove_trait = dragon_bloodline
+				}
+				add_trait = dragon_body_constitution
+				add_prestige = 450
+			}
+			15 = {
+				add_trait = phoenix_blood_constitution
+				add_piety = 350
+			}
+			40 = {
+				add_trait = wounded_3
+				add_stress = 130
+			}
+			25 = {
+				death = {
+					death_reason = death_evolution
+				}
+			}
+		}
+	}
+}
+
+# Rare constitution lottery at birth.
+cultivation_constitution_lottery_events.002 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		age = 0
+		NOT = { has_trait = cultivation_realm }
+		NOT = {
+			OR = {
+				has_trait = yin_constitution
+				has_trait = yang_constitution
+				has_trait = poison_constitution
+				has_trait = lightning_constitution
+				has_trait = dragon_body_constitution
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			4 = {
+				if = {
+					limit = { is_female = yes }
+					add_trait = yin_constitution
+				}
+				else = {
+					add_trait = yang_constitution
+				}
+			}
+			1 = { add_trait = poison_constitution }
+			1 = { add_trait = lightning_constitution }
+			1 = { add_trait = dragon_body_constitution }
+			993 = { }
+		}
+	}
+
+	option = { name = OK }
+}
