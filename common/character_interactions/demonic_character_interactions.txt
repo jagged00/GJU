@@ -1,0 +1,55 @@
+﻿demonic_cripple_meridians = {
+    category = interaction_category_prison
+    common_interaction = yes
+    interface_priority = 70
+	icon = icon_combat
+    
+    desc = demonic_cripple_meridians_desc
+    
+    is_shown = {
+        scope:actor = {
+            has_trait = cultivation_realm
+        }
+        scope:recipient = {
+            is_imprisoned_by = scope:actor
+            has_trait = cultivation_realm
+            has_trait = active_meridians  # Must have meridians to cripple
+            NOT = { has_trait = crippled_meridians }  # Can't cripple twice
+        }
+    }
+    
+    is_valid = {
+        scope:recipient = { NOT = { has_strong_hook = scope:actor } }  # No strong hook protection
+    }
+    
+    ai_will_do = {
+        factor = 30
+        modifier = { add = 120 has_trait = sadistic }
+        modifier = { add = 100 has_trait = ruthless }
+        modifier = { add = 80 has_relation_rival = scope:recipient }
+        modifier = { add = 50 scope:recipient = { trait_rank.cultivation_realm >= 3 } }  # More tempting on stronger targets
+    }
+    
+    on_accept = {
+        scope:recipient = {
+            remove_trait = active_meridians
+            remove_trait = cultivation_realm
+            add_trait = crippled_meridians
+            add_stress = 120
+            add_opinion = {
+                target = scope:actor
+                modifier = meridians_crippled_opinion
+                opinion = -80
+            }
+        }
+        scope:actor = {
+            add_dread = 60
+            add_prestige = 200
+            add_tyranny = 30
+            random_list = {
+                80 = { }  # Success
+                20 = { add_trait = wounded_3 }  # Risk demonic backlash
+            }
+        }
+    }
+}

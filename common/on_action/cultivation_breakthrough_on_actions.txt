@@ -1,0 +1,35 @@
+﻿on_yearly_playable_pulse = {
+	effect = {
+		if = {
+			limit = {
+				is_ai = yes
+				is_cultivator = yes
+				breakthrough_threshold = yes
+			}
+			if = {
+				limit = { has_trait = qi_gathering }
+				trigger_event = { id = cultivation_important_event.011 }
+			}
+			else_if = {
+				limit = { has_trait = foundation_establishment }
+				trigger_event = { id = cultivation_important_event.012 }
+			}
+			else_if = {
+				limit = { has_trait = core_formation }
+				trigger_event = { id = cultivation_important_event.013 }
+			}
+			else_if = {
+				limit = { has_trait = nascent_soul }
+				trigger_event = { id = cultivation_important_event.014 }
+			}
+			else_if = {
+				limit = { has_trait = spirit_severing }
+				trigger_event = { id = cultivation_important_event.015 }
+			}
+			else_if = {
+				limit = { has_trait = dao_seeking }
+				trigger_event = { id = cultivation_important_event.016 }
+			}
+		}
+	}
+}

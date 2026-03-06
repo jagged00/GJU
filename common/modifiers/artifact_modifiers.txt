@@ -1,0 +1,17 @@
+﻿breakthrough_herb_modifier = {
+	learning = 1
+}
+jade_beauty_manual_modifier = {
+	learning = 2
+	monthly_piety = 0.2
+}
+
+heavenly_sword_soul_modifier = {
+	martial = 2
+	prowess = 4
+}
+
+nine_revolutions_pill_scripture_modifier = {
+	learning = 3
+	monthly_lifestyle_experience = 0.05
+}

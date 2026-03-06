@@ -1,0 +1,60 @@
+﻿create_breakthrough_artifact = {
+	$OWNER$ = { save_scope_as = owner }
+
+	create_artifact = {	
+		name = breakthrough_herb
+		description = breakthrough_herb_desc
+		template = breakthrough_herb_template
+		type = miscellaneous
+		visuals = breakthrough_herb
+		modifier = breakthrough_herb_modifier
+		rarity = famed
+		decaying = no
+		history = {
+			#type = history_portal_components
+		}
+		save_scope_as = newly_created_artifact
+	}
+	scope:newly_created_artifact = {
+		set_variable = is_breakthrough_herb
+	}
+}
+
+create_jade_beauty_manual_artifact = {
+	create_artifact = {
+		name = jade_beauty_manual
+		description = jade_beauty_manual_desc
+		template = jade_beauty_manual_template
+		type = miscellaneous
+		visuals = jade_beauty_manual
+		modifier = jade_beauty_manual_modifier
+		rarity = illustrious
+		decaying = no
+	}
+}
+
+create_heavenly_sword_soul_artifact = {
+	create_artifact = {
+		name = heavenly_sword_soul
+		description = heavenly_sword_soul_desc
+		template = heavenly_sword_soul_template
+		type = weapon
+		visuals = heavenly_sword_soul
+		modifier = heavenly_sword_soul_modifier
+		rarity = illustrious
+		decaying = no
+	}
+}
+
+create_nine_revolutions_pill_scripture_artifact = {
+	create_artifact = {
+		name = nine_revolutions_pill_scripture
+		description = nine_revolutions_pill_scripture_desc
+		template = nine_revolutions_pill_scripture_template
+		type = miscellaneous
+		visuals = nine_revolutions_pill_scripture
+		modifier = nine_revolutions_pill_scripture_modifier
+		rarity = illustrious
+		decaying = no
+	}
+}

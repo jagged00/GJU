@@ -1,0 +1,18 @@
+breakthrough_herb = {
+	icon = "breakthrough_herb.dds"
+	asset = fp2_armillary_sphere_01_a_entity
+}
+jade_beauty_manual = {
+	icon = "breakthrough_herb.dds"
+	asset = fp2_armillary_sphere_01_a_entity
+}
+
+heavenly_sword_soul = {
+	icon = "breakthrough_herb.dds"
+	asset = fp2_armillary_sphere_01_a_entity
+}
+
+nine_revolutions_pill_scripture = {
+	icon = "breakthrough_herb.dds"
+	asset = fp2_armillary_sphere_01_a_entity
+}

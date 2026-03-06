@@ -1,0 +1,53 @@
+﻿#############################
+# ON_ACTION
+#############################
+
+on_death = {
+	effect = {
+		# Phoenix fallback handling
+		trigger_event = { id = cultivation_constitutions_events.001 }
+
+
+
+		# High-realm reincarnation chance on death (xianxia novel style)
+		if = {
+			limit = {
+				OR = {
+					has_trait = nascent_soul
+					has_trait = spirit_severing
+					has_trait = dao_seeking
+					has_trait = immortal_ascension
+				}
+			}
+			random_list = {
+				75 = { }
+				25 = { trigger_event = { id = xianxia_reincarnation.0002 } }
+			}
+		}
+
+		# Heart demons for surviving cultivators after loved ones die
+		every_close_family_member = {
+			limit = {
+				is_alive = yes
+				is_cultivator = yes
+			}
+			add_character_modifier = {
+				modifier = heart_demon_afflicted
+				years = 3
+			}
+			add_stress = 35
+		}
+
+		every_spouse = {
+			limit = {
+				is_alive = yes
+				is_cultivator = yes
+			}
+			add_character_modifier = {
+				modifier = heart_demon_afflicted
+				years = 4
+			}
+			add_stress = 60
+		}
+	}
+}

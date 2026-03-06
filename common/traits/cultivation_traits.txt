@@ -1,0 +1,310 @@
+﻿# common/traits/cultivation_traits.txt
+# Fully fixed & compatible + proper structure
+
+qi_gathering = {
+	index = 10001
+	group = cultivation_realm
+	level = 1
+	category = personality   # required for tracks + ai_ keys
+	opposites = { foundation_establishment core_formation nascent_soul spirit_severing dao_seeking immortal_ascension }
+	ruler_designer_cost = 50
+	random_creation_weight = 0
+	
+	health = 0.5
+	prowess = 8
+	attraction_opinion = 5
+	dread = 5
+	enemy_hostile_scheme_success_chance_add = -10
+	tracks = {
+		stage = {
+			10 = { prowess = 2 }
+			50 = { prowess = 4 }
+			100 = { prowess = 6 dread = 8 }
+		}
+	}
+}
+
+foundation_establishment = {
+	index = 10002
+	group = cultivation_realm
+	level = 2
+	category = personality
+	opposites = { qi_gathering core_formation nascent_soul spirit_severing dao_seeking immortal_ascension }
+	ruler_designer_cost = 150
+	random_creation_weight = 0
+	
+	health = 1.5
+	prowess = 16
+	life_expectancy = 210
+	years_of_fertility = 999999
+	knight_effectiveness = 0.35          # replaces invalid knight_effectiveness_mult
+	enemy_hostile_scheme_phase_duration_add = monumental_scheme_phase_duration_malus_value
+	enemy_hostile_scheme_success_chance_add = -999999
+	monthly_prestige = 1
+	monthly_lifestyle_experience = 0.05
+	dread = 15
+	attraction_opinion = 15
+	no_prowess_loss_from_age = yes           # correct key
+    good = yes
+		liege_opinion = -10
+	
+	#ai_greed = 1000
+	#ai_boldness = 1000
+	#ai_honor = -1000
+	ai_war_chance = 35
+	ai_war_cooldown = 5
+	ai_amenity_spending = -0.25
+	ai_amenity_target_baseline = -0.4
+	
+	flag = immortal_fertility	
+	flag = immortal_incapability
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
+	tracks = {
+		foundation = {
+			10 = { prowess = 5 }
+			50 = { prowess = 10 dread = 10 }
+			100 = { prowess = 15 dread = 20 attraction_opinion = 20 }
+		}
+	}
+}
+
+core_formation = {
+	index = 10003
+	group = cultivation_realm
+	level = 3
+	category = personality
+	opposites = { qi_gathering foundation_establishment nascent_soul spirit_severing dao_seeking immortal_ascension }
+	ruler_designer_cost = 400
+	random_creation_weight = 0
+	
+	health = 3
+	prowess = 24
+	life_expectancy = 500
+	years_of_fertility = 999999
+	no_prowess_loss_from_age = yes
+	dread = 30
+	attraction_opinion = 30
+	monthly_prestige = 2
+	monthly_piety = 1
+	monthly_lifestyle_experience = 0.07
+	enemy_hostile_scheme_phase_duration_add = monumental_scheme_phase_duration_malus_value
+	enemy_hostile_scheme_success_chance_add = -999999
+	long_reign_bonus_mult = -0.4
+		liege_opinion = -15
+	
+	#ai_greed = 1000
+	#ai_boldness = 1000
+	#ai_honor = -1000
+	ai_war_chance = 50
+	ai_war_cooldown = 0
+	ai_amenity_spending = -0.25
+	ai_amenity_target_baseline = -0.4
+	
+	flag = immortal_visuals	
+	flag = immortal_fertility	
+	flag = immortal_incapability	
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
+	tracks = {
+		core = {
+			10 = { prowess = 10 dread = 10 }
+			50 = { prowess = 20 dread = 20 }
+			100 = { prowess = 14 dread = 14 attraction_opinion = 12 knight_effectiveness = 0.7 }
+		}
+	}
+}
+
+nascent_soul = {
+	index = 10004
+	group = cultivation_realm
+	level = 4
+	category = personality
+	opposites = { qi_gathering foundation_establishment core_formation spirit_severing dao_seeking immortal_ascension }
+	ruler_designer_cost = 1000
+	random_creation_weight = 0
+	
+	health = 6
+	prowess = 36
+	life_expectancy = 1000
+	years_of_fertility = 999999
+	no_prowess_loss_from_age = yes
+	dread = 24
+	attraction_opinion = 20
+	learning = 5
+	monthly_prestige = 4
+	monthly_piety = 2
+	monthly_lifestyle_experience = 0.075
+	enemy_hostile_scheme_phase_duration_add = monumental_scheme_phase_duration_malus_value
+	enemy_hostile_scheme_success_chance_add = -999999
+	scheme_success_chance_add = 8
+	long_reign_bonus_mult = -0.4
+		liege_opinion = -20
+	
+	#ai_greed = 1000
+	#ai_boldness = 1000
+	#ai_honor = -1000
+	ai_war_chance = 65
+	ai_war_cooldown = -10
+	ai_amenity_spending = -0.25
+	ai_amenity_target_baseline = -0.4
+	
+	flag = immortal_visuals	
+	flag = immortal_fertility	
+	flag = immortal_incapability	
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
+	tracks = {
+		soul = {
+			10 = { prowess = 10 knight_effectiveness = 1.0 }
+			50 = { prowess = 16 knight_effectiveness = 1.8 }
+			100 = { prowess = 24 knight_effectiveness = 2.8 attraction_opinion = 18 }
+		}
+	}
+}
+
+spirit_severing = {
+	index = 10005
+	group = cultivation_realm
+	level = 5
+	category = personality
+	opposites = { qi_gathering foundation_establishment core_formation nascent_soul dao_seeking immortal_ascension }
+	ruler_designer_cost = 2500
+	random_creation_weight = 0
+	
+	health = 10
+	prowess = 52
+	life_expectancy = 2000
+	years_of_fertility = 999999
+	no_prowess_loss_from_age = yes
+	dread = 35
+	attraction_opinion = 28
+	learning = 10
+	monthly_prestige = 7
+		monthly_piety = 4
+	monthly_lifestyle_experience = 0.2
+	enemy_hostile_scheme_phase_duration_add = monumental_scheme_phase_duration_malus_value
+	enemy_hostile_scheme_success_chance_add = -999999
+	long_reign_bonus_mult = -0.4
+		liege_opinion = -30
+	
+	#ai_greed = 1000
+	#ai_boldness = 1000
+	#ai_honor = -1000
+	ai_war_chance = 80
+	ai_war_cooldown = -20
+	ai_amenity_spending = -0.25
+	ai_amenity_target_baseline = -0.4
+	
+	flag = immortal_visuals	
+	flag = immortal_fertility	
+	flag = immortal_incapability	
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
+	tracks = {
+		spirit = {
+			10 = { prowess = 14 knight_effectiveness = 3.0 }
+			50 = { prowess = 24 knight_effectiveness = 4.5 }
+			100 = { prowess = 34 knight_effectiveness = 6.5 }
+		}
+	}
+}
+
+dao_seeking = {
+	index = 10006
+	group = cultivation_realm
+	level = 6
+	category = personality
+	opposites = { qi_gathering foundation_establishment core_formation nascent_soul spirit_severing immortal_ascension }
+	ruler_designer_cost = 6000
+	random_creation_weight = 0
+	
+	health = 18
+	prowess = 70
+	life_expectancy = 5000
+	years_of_fertility = 999999
+	no_prowess_loss_from_age = yes
+	dread = 45
+	attraction_opinion = 35
+	monthly_prestige = 12
+	monthly_piety = 6
+	monthly_lifestyle_experience = 0.25
+	enemy_hostile_scheme_phase_duration_add = monumental_scheme_phase_duration_malus_value
+	enemy_hostile_scheme_success_chance_add = -999999
+	long_reign_bonus_mult = -0.4
+		liege_opinion = -35
+	learning = 10
+	
+	#ai_greed = 1000
+	#ai_boldness = 1000
+	#ai_honor = -1000
+	ai_war_chance = 90
+	ai_war_cooldown = -30
+	ai_amenity_spending = -0.25
+	ai_amenity_target_baseline = -0.4
+	
+	flag = immortal_visuals	
+	flag = immortal_fertility	
+	flag = immortal_incapability	
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
+	tracks = {
+		dao = {
+			10 = { prowess = 18 knight_effectiveness = 8.0 }
+			50 = { prowess = 30 knight_effectiveness = 12.0 }
+			100 = { prowess = 42 knight_effectiveness = 18.0 }
+		}
+	}
+}
+
+immortal_ascension = {
+	index = 10007
+	group = cultivation_realm
+	level = 7
+	category = personality
+	opposites = { qi_gathering foundation_establishment core_formation nascent_soul spirit_severing dao_seeking }
+	ruler_designer_cost = 15000
+	random_creation_weight = 0
+	
+	years_of_fertility = 999999
+	health = 25
+	prowess = 95
+	life_expectancy = 999999
+	years_of_fertility = 999999
+	immortal = yes
+	no_prowess_loss_from_age = yes
+	long_reign_bonus_mult = -0.5
+		liege_opinion = -40
+	dread = 65
+	attraction_opinion = 45
+	monthly_prestige = 18
+	monthly_piety = 10
+	monthly_lifestyle_experience = 0.3
+	enemy_hostile_scheme_phase_duration_add = monumental_scheme_phase_duration_malus_value
+	enemy_hostile_scheme_success_chance_add = -999999
+	diplomacy = 10
+	martial = 14
+	learning = 14
+	
+	#ai_greed = 1000
+	#ai_boldness = 1000
+	#ai_honor = -1000
+	ai_war_chance = 100
+	ai_war_cooldown = -40
+	ai_amenity_spending = -0.25
+	ai_amenity_target_baseline = -0.4
+	
+	flag = is_immortal	
+	flag = immortal_visuals	
+	flag = immortal_fertility	
+	flag = immortal_incapability	
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
+	tracks = {
+		ascension = {
+			10 = { prowess = 24 knight_effectiveness = 20.0 }
+			50 = { prowess = 38 knight_effectiveness = 35.0 }
+			100 = { prowess = 52 knight_effectiveness = 55.0 }
+		}
+	}
+}

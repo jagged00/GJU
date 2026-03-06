@@ -1,0 +1,97 @@
+﻿unlocking_cultivation_modifier = {
+	icon = yin_yang_modifier
+	diplomacy = -3
+	martial = -3
+	intrigue = -3
+	stewardship = -3
+	prowess = -5
+}
+
+focusing_cultivation_modifier = {
+	icon = yin_yang_modifier
+	diplomacy = -3
+
+	martial = -3
+	
+	intrigue = -3
+	stewardship = -3
+	prowess = -5
+}
+heart_demon_afflicted = {
+	icon = danger_at_sea_modifier
+	learning = -4
+	prowess = -4
+	health = -1
+	stress_gain_mult = 0.2
+}
+
+righteous_harmony_minor = {
+	icon = diplomacy_foreign_affairs_focus
+	diplomacy = 2
+	learning = 1
+	opinion = 5
+	monthly_piety = 0.2
+}
+
+righteous_harmony_major = {
+	icon = diplomacy_foreign_affairs_focus
+	diplomacy = 4
+	learning = 3
+	opinion = 10
+	monthly_piety = 0.4
+	monthly_prestige = 0.2
+}
+
+demonic_conquest_minor = {
+	icon = warfare_strategy_focus
+	martial = 2
+	prowess = 3
+	knight_effectiveness = 10
+	monthly_prestige = 0.3
+	opinion = -8
+}
+
+demonic_conquest_major = {
+	icon = warfare_strategy_focus
+	martial = 5
+	prowess = 6
+	knight_effectiveness = 25
+	monthly_prestige = 0.8
+	dread = 10
+	opinion = -15
+}
+
+cultivation_furnace_target = {
+	icon = stress_loss_sadistic
+	health = -1
+	fertility = -0.2
+	prowess = -3
+}
+
+furnace_refinement_boost = {
+	icon = learning_theology_focus
+	learning = 3
+	monthly_prestige = 0.4
+}
+
+yin_yang_dual_cultivation = {
+	icon = yin_yang_modifier
+	learning = 2
+	prowess = 2
+	monthly_piety = 0.2
+}
+
+soulmate_cultivation_resonance = {
+	icon = stewardship_family_focus
+	learning = 3
+	monthly_prestige = 0.3
+	stress_gain_mult = -0.1
+}
+
+
+samsara_memories = {
+	icon = medicine_2_minor_health_boost
+	learning = 2
+	monthly_piety = 0.2
+	stress_gain_mult = -0.1
+}

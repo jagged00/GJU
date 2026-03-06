@@ -1,0 +1,334 @@
+﻿improve_dragon_bloodline_part_1 = {
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/improve_dragon_bloodline_part_1.dds"
+	}
+
+    desc = improve_dragon_bloodline_part_1_desc
+    selection_tooltip = improve_dragon_bloodline_part_1_selection_tooltip
+	sort_order = 500
+
+	cost = {
+		gold = 500
+	}
+
+    is_shown = {
+		AND = {
+			has_trait = dragon_bloodline
+			is_cultivator = yes
+		}
+    }
+
+    ai_check_interval = 3
+
+	ai_will_do = {
+		base = 50
+		modifier = {
+			add = chance_to_cultivate
+			is_adult = yes
+		}
+	}
+
+	cooldown = {
+		months = 12
+	}
+
+    effect = {
+
+		trigger_event = {
+			id = cultivation_constitutions_events.003
+			months = 3
+		}
+		custom_tooltip = improve_dragon_bloodline_part_1_tooltip
+    }
+}
+# Temper Lightning Body — inspired by heavenly tribulation body-refinement arcs
+awaken_lightning_constitution_decision = {
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_breakthrough.dds"
+	}
+
+	desc = awaken_lightning_constitution_decision_desc
+	selection_tooltip = awaken_lightning_constitution_decision_selection_tooltip
+	sort_order = 510
+
+	is_shown = {
+		is_cultivator = yes
+		NOT = { has_trait = lightning_constitution }
+		OR = {
+			has_trait = foundation_establishment
+			has_trait = core_formation
+			has_trait = nascent_soul
+			has_trait = dao_seeking
+			has_trait = spirit_severing
+			has_trait = immortal_ascension
+		}
+	}
+
+	is_valid = {
+		gold >= 800
+		piety_level >= 2
+	}
+
+	cost = {
+		gold = 800
+	}
+
+	ai_check_interval = 12
+	ai_will_do = {
+		base = 15
+		modifier = {
+			add = chance_to_cultivate
+			is_adult = yes
+		}
+		modifier = {
+			add = 25
+			has_trait = brave
+		}
+		modifier = {
+			add = 20
+			has_trait = wrathful
+		}
+	}
+
+	cooldown = {
+		years = 8
+	}
+
+	effect = {
+		add_piety = -150
+		random_list = {
+			25 = {
+				add_trait = lightning_constitution
+				add_prestige = 500
+				add_stress = -40
+			}
+			55 = {
+				add_trait = wounded_1
+				add_prestige = 100
+				add_stress = 50
+			}
+			20 = {
+				add_trait = wounded_2
+				add_stress = 90
+			}
+		}
+	}
+}
+
+# Ten Thousand Poison Body refinement — demonic/manual cultivation trope
+awaken_poison_constitution_decision = {
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
+
+	desc = awaken_poison_constitution_decision_desc
+	selection_tooltip = awaken_poison_constitution_decision_selection_tooltip
+	sort_order = 511
+
+	is_shown = {
+		is_cultivator = yes
+		NOT = { has_trait = poison_constitution }
+		OR = {
+			has_trait = qi_gathering
+			has_trait = foundation_establishment
+			has_trait = core_formation
+			has_trait = nascent_soul
+			has_trait = dao_seeking
+			has_trait = spirit_severing
+			has_trait = immortal_ascension
+		}
+	}
+
+	is_valid = {
+		gold >= 500
+	}
+
+	cost = {
+		gold = 500
+	}
+
+	ai_check_interval = 12
+	ai_will_do = {
+		base = 8
+		modifier = {
+			add = 35
+			OR = {
+				has_trait = sadistic
+				has_trait = callous
+				has_trait = arbitrary
+			}
+		}
+		modifier = {
+			add = -20
+			has_trait = compassionate
+		}
+	}
+
+	cooldown = {
+		years = 6
+	}
+
+	effect = {
+		add_piety = -100
+		random_list = {
+			30 = {
+				add_trait = poison_constitution
+				add_dread = 15
+			}
+			45 = {
+				add_trait = ill
+				add_stress = 45
+			}
+			20 = {
+				add_trait = wounded_1
+				add_stress = 60
+			}
+			5 = {
+				death = {
+					death_reason = death_evolution
+				}
+			}
+		}
+	}
+}
+
+# Mortal to Dao body awakening gate so WIP constitutions become obtainable in gameplay
+awaken_yin_yang_constitution_decision = {
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_find_roots.dds"
+	}
+
+	desc = awaken_yin_yang_constitution_decision_desc
+	selection_tooltip = awaken_yin_yang_constitution_decision_selection_tooltip
+	sort_order = 512
+
+	is_shown = {
+		is_cultivator = yes
+		NOT = { has_trait = yin_constitution }
+		NOT = { has_trait = yang_constitution }
+		has_trait = active_meridians
+	}
+
+	is_valid = {
+		OR = {
+			learning >= 10
+			has_trait = genius
+			has_trait = intelligent
+		}
+		gold >= 300
+	}
+
+	cost = {
+		gold = 300
+	}
+
+	ai_check_interval = 12
+	ai_will_do = {
+		base = 20
+		modifier = {
+			add = chance_to_cultivate
+			is_adult = yes
+		}
+	}
+
+	cooldown = {
+		years = 5
+	}
+
+	effect = {
+		random_list = {
+			45 = {
+				if = {
+					limit = { is_female = yes }
+					add_trait = yin_constitution
+				}
+				else = {
+					add_trait = yang_constitution
+				}
+			}
+			35 = {
+				add_trait = wounded_1
+				add_stress = 30
+			}
+			20 = {
+				add_stress = 60
+			}
+		}
+	}
+}
+
+# Nirvana body forging from upper-realm xianxia arcs
+attempt_phoenix_nirvana_decision = {
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_start_cultivation.dds"
+	}
+
+	desc = attempt_phoenix_nirvana_decision_desc
+	selection_tooltip = attempt_phoenix_nirvana_decision_selection_tooltip
+	sort_order = 513
+
+	is_shown = {
+		is_cultivator = yes
+		NOT = { has_trait = phoenix_blood_constitution }
+		OR = {
+			has_trait = nascent_soul
+			has_trait = dao_seeking
+			has_trait = spirit_severing
+			has_trait = immortal_ascension
+		}
+	}
+
+	is_valid = {
+		gold >= 2000
+		piety_level >= 3
+	}
+
+	cost = {
+		gold = 2000
+	}
+
+	ai_check_interval = 24
+	ai_will_do = {
+		base = 2
+		modifier = {
+			add = 25
+			has_trait = ambitious
+		}
+		modifier = {
+			add = 10
+			has_trait = brave
+		}
+	}
+
+	cooldown = {
+		years = 15
+	}
+
+	effect = {
+		add_piety = -300
+		random_list = {
+			8 = {
+				add_trait = phoenix_blood_constitution
+				add_prestige = 1200
+			}
+			52 = {
+				add_trait = wounded_2
+				add_stress = 100
+			}
+			30 = {
+				add_trait = wounded_3
+				add_stress = 160
+			}
+			10 = {
+				death = {
+					death_reason = death_evolution
+				}
+			}
+		}
+	}
+}

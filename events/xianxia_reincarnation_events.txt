@@ -1,0 +1,52 @@
+﻿namespace = xianxia_reincarnation
+
+xianxia_reincarnation.0002 = {
+	type = character_event
+	title = xianxia_reincarnation.0002.t
+	desc = xianxia_reincarnation.0002.d
+
+	trigger = {
+		OR = {
+			has_trait = nascent_soul
+			has_trait = spirit_severing
+			has_trait = dao_seeking
+			has_trait = immortal_ascension
+		}
+	}
+
+	immediate = {
+		random_living_character = {
+			limit = {
+				is_child = yes
+				age <= 10
+				is_ruler = no
+				religion = root.religion
+				culture = root.culture
+				NOT = { has_trait = cultivation_realm }
+			}
+			save_scope_as = reincarnation_vessel
+		}
+
+		if = {
+			limit = { exists = scope:reincarnation_vessel }
+			scope:reincarnation_vessel = {
+				add_character_modifier = {
+					modifier = samsara_memories
+					years = 20
+				}
+				if = {
+					limit = { NOT = { has_trait = active_meridians } }
+					add_trait = active_meridians
+				}
+				if = {
+					limit = { NOT = { has_trait = qi_gathering } }
+					add_trait = qi_gathering
+				}
+			}
+		}
+	}
+
+	option = {
+		name = xianxia_reincarnation.0002.a
+	}
+}

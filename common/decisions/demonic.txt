@@ -1,0 +1,214 @@
+﻿demonic_restore_meridians = {
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_refine_meridians.dds"
+	}
+
+	desc = demonic_restore_meridians_desc
+	selection_tooltip = demonic_restore_meridians_selection_tooltip
+	sort_order = 415
+	decision_group_type = major
+
+	is_shown = {
+		has_trait = crippled_meridians
+		OR = {
+			gold >= 8000
+			any_prisoner = {
+				has_trait = heavenly_meridians
+				is_imprisoned_by = root
+			}
+		}
+	}
+
+	is_valid = {
+		OR = {
+			gold >= 8000
+			any_prisoner = {
+				has_trait = heavenly_meridians
+				is_imprisoned_by = root
+			}
+		}
+	}
+
+	ai_check_interval = 6
+	ai_will_do = {
+		base = 60
+		modifier = { add = 200 has_trait = crippled_meridians }
+		modifier = { add = 150 has_trait = ruthless }
+		modifier = {
+			add = 120
+			any_prisoner = {
+				has_trait = heavenly_meridians
+				is_imprisoned_by = root
+			}
+		}
+		modifier = { add = 80 gold >= 10000 }
+		modifier = { add = -100 has_trait = compassionate }
+	}
+
+	effect = {
+		if = {
+			limit = { gold >= 8000 }
+			remove_gold = 8000
+			random_list = {
+				70 = {
+					remove_trait = crippled_meridians
+					add_trait = active_meridians
+					improve_meridians = yes
+					add_prestige = 400
+					add_piety = 300
+				}
+				20 = {
+					remove_trait = crippled_meridians
+					add_trait = active_meridians
+					improve_meridians = yes
+					add_prestige = 600
+					add_piety = 500
+				}
+				10 = {
+					add_trait = wounded_1
+					add_stress = 80
+				}
+			}
+		}
+		else = {
+			random_prisoner = {
+				limit = {
+					has_trait = heavenly_meridians
+					is_imprisoned_by = root
+				}
+				save_scope_as = sacrifice
+			}
+
+			scope:sacrifice = {
+				death = {
+					death_reason = death_execution
+					killer = root
+				}
+			}
+
+			remove_trait = poor_meridians
+			remove_trait = normal_meridians
+			remove_trait = good_meridians
+			remove_trait = excellent_meridians
+			remove_trait = heavenly_meridians
+
+			random_list = {
+				5 = {
+					remove_trait = crippled_meridians
+					add_trait = heavenly_meridians
+					add_dread = 150
+					add_prestige = 800
+					add_tyranny = 80
+					add_piety = -200
+				}
+				95 = {
+					random_list = {
+						40 = { add_trait = wounded_1 }
+						35 = { add_trait = wounded_2 }
+						25 = { add_trait = wounded_3 }
+					}
+					add_dread = 60
+					add_tyranny = 40
+					add_stress = 100
+					add_piety = -100
+				}
+			}
+		}
+	}
+
+	cooldown = { years = 20 }
+}
+
+
+demonic_sacrifice_heavenly_meridians = {
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_find_roots.dds"
+	}
+
+	desc = demonic_sacrifice_heavenly_meridians_desc
+	selection_tooltip = demonic_sacrifice_heavenly_meridians_selection_tooltip
+	sort_order = 430
+	decision_group_type = major
+
+	is_shown = {
+		has_trait = cultivation_realm
+		any_prisoner = {
+			has_trait = heavenly_meridians
+			is_imprisoned_by = root
+		}
+	}
+
+	is_valid = {
+		any_prisoner = {
+			has_trait = heavenly_meridians
+			is_imprisoned_by = root
+		}
+	}
+
+	ai_check_interval = 6
+	ai_will_do = {
+		base = 80
+		modifier = { add = 200 has_trait = ruthless }
+		modifier = { add = 150 has_trait = sadistic }
+		modifier = { add = 100 has_trait = ambitious }
+		modifier = {
+			add = 120
+			any_prisoner = {
+				has_trait = heavenly_meridians
+				is_imprisoned_by = root
+			}
+		}
+		modifier = { add = -200 has_trait = compassionate }
+	}
+
+	effect = {
+		random_prisoner = {
+			limit = {
+				has_trait = heavenly_meridians
+				is_imprisoned_by = root
+			}
+			save_scope_as = sacrifice
+		}
+
+		scope:sacrifice = {
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+
+		remove_trait = crippled_meridians
+		remove_trait = active_meridians
+		remove_trait = poor_meridians
+		remove_trait = normal_meridians
+		remove_trait = good_meridians
+		remove_trait = excellent_meridians
+		remove_trait = heavenly_meridians
+
+		random_list = {
+			10 = {
+				add_trait = heavenly_meridians
+				add_dread = 150
+				add_prestige = 800
+				add_tyranny = 80
+				add_piety = -200
+			}
+			90 = {
+				random_list = {
+					40 = { add_trait = wounded_1 }
+					35 = { add_trait = wounded_2 }
+					24 = { add_trait = wounded_3 }
+					1 = { add_trait = crippled_meridians }
+				}
+				add_dread = 60
+				add_tyranny = 40
+				add_stress = 100
+				add_piety = -100
+			}
+		}
+	}
+
+	cooldown = { years = 25 }
+}

@@ -1,0 +1,294 @@
+﻿
+#Focus on cultivation
+
+focus_on_cultivation = {
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_start_cultivation.dds"
+	}
+
+    desc = focus_on_cultivation_desc
+    selection_tooltip = focus_on_cultivation_selection_tooltip
+	sort_order = 500
+
+    is_shown = {
+		AND = {
+			has_trait = cultivation_realm
+			breakthrough_threshold = no
+		}
+    }
+
+    ai_check_interval = 3
+
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = chance_to_cultivate
+			is_adult = yes
+		}
+	}
+
+	cooldown = {
+		months = 12
+	}
+
+    effect = {
+		add_character_modifier = {
+			modifier = focusing_cultivation_modifier
+			months = 3
+		}
+
+        trigger_event = {
+			id = cultivation_regular_event.001
+			months =  3
+		}
+		custom_tooltip = focus_on_cultivation_tooltip
+
+		
+    }
+}
+# Help an unlanded cultivator disciple/courtier break through
+guide_unlanded_breakthrough_decision = {
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_breakthrough.dds"
+	}
+
+	desc = guide_unlanded_breakthrough_decision_desc
+	selection_tooltip = guide_unlanded_breakthrough_decision_tooltip
+	sort_order = 505
+
+	is_shown = {
+		has_trait = cultivation_realm
+		is_landed = yes
+		OR = {
+			any_courtier = {
+				is_landed = no
+				has_trait = cultivation_realm
+				OR = {
+					has_trait_xp = { trait = qi_gathering value = 100 }
+					has_trait_xp = { trait = foundation_establishment value = 100 }
+					has_trait_xp = { trait = core_formation value = 100 }
+					has_trait_xp = { trait = nascent_soul value = 100 }
+					has_trait_xp = { trait = spirit_severing value = 100 }
+					has_trait_xp = { trait = dao_seeking value = 100 }
+				}
+			}
+			any_guest = {
+				is_landed = no
+				has_trait = cultivation_realm
+				OR = {
+					has_trait_xp = { trait = qi_gathering value = 100 }
+					has_trait_xp = { trait = foundation_establishment value = 100 }
+					has_trait_xp = { trait = core_formation value = 100 }
+					has_trait_xp = { trait = nascent_soul value = 100 }
+					has_trait_xp = { trait = spirit_severing value = 100 }
+					has_trait_xp = { trait = dao_seeking value = 100 }
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		gold >= 250
+	}
+
+	cost = {
+		gold = 250
+	}
+
+	ai_check_interval = 12
+	ai_will_do = {
+		base = 20
+		modifier = { add = 40 has_trait = compassionate }
+		modifier = { add = 30 has_trait = diligent }
+	}
+
+	cooldown = {
+		years = 2
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_courtier = {
+					is_landed = no
+					has_trait = cultivation_realm
+					OR = {
+						has_trait_xp = { trait = qi_gathering value = 100 }
+						has_trait_xp = { trait = foundation_establishment value = 100 }
+						has_trait_xp = { trait = core_formation value = 100 }
+						has_trait_xp = { trait = nascent_soul value = 100 }
+						has_trait_xp = { trait = spirit_severing value = 100 }
+						has_trait_xp = { trait = dao_seeking value = 100 }
+					}
+				}
+			}
+			random_courtier = {
+				limit = {
+					is_landed = no
+					has_trait = cultivation_realm
+					OR = {
+						has_trait_xp = { trait = qi_gathering value = 100 }
+						has_trait_xp = { trait = foundation_establishment value = 100 }
+						has_trait_xp = { trait = core_formation value = 100 }
+						has_trait_xp = { trait = nascent_soul value = 100 }
+						has_trait_xp = { trait = spirit_severing value = 100 }
+						has_trait_xp = { trait = dao_seeking value = 100 }
+					}
+				}
+				save_scope_as = breakthrough_student
+			}
+		}
+		else = {
+			random_guest = {
+				limit = {
+					is_landed = no
+					has_trait = cultivation_realm
+					OR = {
+						has_trait_xp = { trait = qi_gathering value = 100 }
+						has_trait_xp = { trait = foundation_establishment value = 100 }
+						has_trait_xp = { trait = core_formation value = 100 }
+						has_trait_xp = { trait = nascent_soul value = 100 }
+						has_trait_xp = { trait = spirit_severing value = 100 }
+						has_trait_xp = { trait = dao_seeking value = 100 }
+					}
+				}
+				save_scope_as = breakthrough_student
+			}
+		}
+
+		scope:breakthrough_student = {
+			if = { limit = { has_trait = qi_gathering } trigger_event = { id = cultivation_important_event.011 } }
+			else_if = { limit = { has_trait = foundation_establishment } trigger_event = { id = cultivation_important_event.012 } }
+			else_if = { limit = { has_trait = core_formation } trigger_event = { id = cultivation_important_event.013 } }
+			else_if = { limit = { has_trait = nascent_soul } trigger_event = { id = cultivation_important_event.014 } }
+			else_if = { limit = { has_trait = spirit_severing } trigger_event = { id = cultivation_important_event.015 } }
+			else_if = { limit = { has_trait = dao_seeking } trigger_event = { id = cultivation_important_event.016 } }
+		}
+
+		add_piety = 100
+		add_stress = -20
+	}
+}
+
+forge_xianxia_relic_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
+
+	desc = forge_xianxia_relic_decision_desc
+	selection_tooltip = forge_xianxia_relic_decision_tooltip
+	sort_order = 540
+
+	is_shown = {
+		has_trait = cultivation_realm
+		OR = {
+			has_trait = core_formation
+			has_trait = nascent_soul
+			has_trait = spirit_severing
+			has_trait = dao_seeking
+			has_trait = immortal_ascension
+		}
+	}
+
+	is_valid = {
+		gold >= 500
+		prestige >= 300
+		piety >= 300
+	}
+
+	cost = {
+		gold = 500
+		prestige = 300
+		piety = 300
+	}
+
+	ai_will_do = {
+		base = 30
+		modifier = { add = 40 has_trait = diligent }
+		modifier = { add = 30 has_trait = ambitious }
+	}
+
+	cooldown = { years = 8 }
+
+	effect = {
+		random_list = {
+			35 = { create_jade_beauty_manual_artifact = yes }
+			35 = { create_heavenly_sword_soul_artifact = yes }
+			30 = { create_nine_revolutions_pill_scripture_artifact = yes }
+		}
+		add_prestige = 200
+	}
+}
+
+promulgate_cultivation_scriptures_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_start_cultivation.dds"
+	}
+
+	desc = promulgate_cultivation_scriptures_decision_desc
+	selection_tooltip = promulgate_cultivation_scriptures_decision_tooltip
+	sort_order = 545
+
+	is_shown = {
+		has_trait = cultivation_realm
+		is_landed = yes
+		OR = {
+			any_courtier = {
+				has_trait = active_meridians
+				NOT = { has_trait = cultivation_realm }
+			}
+			any_vassal = {
+				has_trait = active_meridians
+				NOT = { has_trait = cultivation_realm }
+			}
+		}
+	}
+
+	is_valid = {
+		prestige >= 500
+		piety >= 500
+	}
+
+	cost = {
+		prestige = 500
+		piety = 500
+	}
+
+	ai_will_do = {
+		base = 25
+		modifier = { add = 60 has_trait = compassionate }
+		modifier = { add = 35 has_trait = zealous }
+	}
+
+	cooldown = { years = 5 }
+
+	effect = {
+		every_courtier = {
+			limit = {
+				has_trait = active_meridians
+				NOT = { has_trait = cultivation_realm }
+			}
+			add_trait = qi_gathering
+		}
+		every_vassal = {
+			limit = {
+				has_trait = active_meridians
+				NOT = { has_trait = cultivation_realm }
+			}
+			add_trait = qi_gathering
+		}
+		every_realm_character = {
+			limit = {
+				has_trait = active_meridians
+				NOT = { has_trait = cultivation_realm }
+				NOT = { is_courtier_of = root }
+				NOT = { is_vassal_of = root }
+			}
+			add_trait = qi_gathering
+		}
+		add_piety = 200
+		add_prestige = 100
+	}
+}

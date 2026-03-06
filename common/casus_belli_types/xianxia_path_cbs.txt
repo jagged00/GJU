@@ -1,0 +1,194 @@
+righteous_depose_demonic_cultivator_war = {
+	allowed_against_character = {
+		scope:attacker = {
+			has_trait = righteous_path
+			has_trait = cultivation_realm
+		}
+		scope:defender = {
+			has_trait = demonic_path
+			has_trait = cultivation_realm
+			is_landed = yes
+		}
+	}
+
+	cost = {
+		piety = {
+			add = { value = 300 desc = CB_BASE_COST }
+		}
+	}
+
+	valid_to_start = { always = yes }
+	on_declaration = { on_declared_war = yes }
+
+	on_victory = {
+		scope:attacker = { add_piety = 350 add_prestige = 250 }
+		scope:defender = {
+			if = {
+				limit = { any_vassal = { has_trait = righteous_path has_trait = cultivation_realm } }
+				random_vassal = {
+					limit = { has_trait = righteous_path has_trait = cultivation_realm }
+					save_scope_as = replacement_ruler
+				}
+			}
+			else = {
+				create_character = {
+					name = random
+					religion = root.religion
+					culture = root.culture
+					female = no
+					age = 24
+					trait = active_meridians
+					trait = qi_gathering
+					trait = righteous_path
+					save_scope_as = replacement_ruler
+				}
+			}
+			if = {
+				limit = { exists = scope:replacement_ruler }
+				primary_title = { set_title_holder = scope:replacement_ruler }
+			}
+			add_trait = dethroned
+		}
+		add_truce_attacker_victory_effect = yes
+	}
+
+	on_white_peace = { add_truce_white_peace_effect = yes }
+	on_defeat = { add_truce_attacker_defeat_effect = yes }
+
+	on_primary_attacker_death = invalidate
+	on_primary_defender_death = inherit
+
+	attacker_allies_inherit = yes
+	defender_allies_inherit = yes
+	war_name = RIGHTEOUS_DEPOSE_DEMONIC_WAR_NAME
+	interface_priority = 90
+}
+
+demonic_depose_righteous_cultivator_war = {
+	allowed_against_character = {
+		scope:attacker = {
+			has_trait = demonic_path
+			has_trait = cultivation_realm
+		}
+		scope:defender = {
+			has_trait = righteous_path
+			has_trait = cultivation_realm
+			is_landed = yes
+		}
+	}
+
+	cost = {
+		prestige = {
+			add = { value = 300 desc = CB_BASE_COST }
+		}
+	}
+
+	valid_to_start = { always = yes }
+	on_declaration = { on_declared_war = yes }
+
+	on_victory = {
+		scope:attacker = { add_dread = 80 add_prestige = 350 }
+		scope:defender = {
+			if = {
+				limit = { any_vassal = { has_trait = demonic_path has_trait = cultivation_realm } }
+				random_vassal = {
+					limit = { has_trait = demonic_path has_trait = cultivation_realm }
+					save_scope_as = replacement_ruler
+				}
+			}
+			else = {
+				create_character = {
+					name = random
+					religion = root.religion
+					culture = root.culture
+					female = no
+					age = 24
+					trait = active_meridians
+					trait = qi_gathering
+					trait = demonic_path
+					save_scope_as = replacement_ruler
+				}
+			}
+			if = {
+				limit = { exists = scope:replacement_ruler }
+				primary_title = { set_title_holder = scope:replacement_ruler }
+			}
+			add_trait = dethroned
+		}
+		add_truce_attacker_victory_effect = yes
+	}
+
+	on_white_peace = { add_truce_white_peace_effect = yes }
+	on_defeat = { add_truce_attacker_defeat_effect = yes }
+
+	on_primary_attacker_death = invalidate
+	on_primary_defender_death = inherit
+
+	attacker_allies_inherit = yes
+	defender_allies_inherit = yes
+	war_name = DEMONIC_DEPOSE_RIGHTEOUS_WAR_NAME
+	interface_priority = 90
+}
+
+xianxia_rob_wealth_war = {
+	allowed_against_character = {
+		scope:attacker = { has_trait = cultivation_realm }
+		scope:defender = {
+			is_landed = yes
+			gold >= 500
+		}
+	}
+	cost = { prestige = { add = { value = 200 desc = CB_BASE_COST } } }
+	valid_to_start = { always = yes }
+	on_declaration = { on_declared_war = yes }
+	on_victory = {
+		scope:attacker = { add_gold = 350 add_prestige = 150 }
+		scope:defender = { remove_gold = 350 }
+		add_truce_attacker_victory_effect = yes
+	}
+	on_white_peace = { add_truce_white_peace_effect = yes }
+	on_defeat = { add_truce_attacker_defeat_effect = yes }
+	on_primary_attacker_death = invalidate
+	on_primary_defender_death = inherit
+	attacker_allies_inherit = yes
+	defender_allies_inherit = yes
+	war_name = XIANXIA_ROB_WEALTH_WAR_NAME
+	interface_priority = 70
+}
+
+xianxia_plunder_relic_war = {
+	allowed_against_character = {
+		scope:attacker = { has_trait = cultivation_realm }
+		scope:defender = {
+			is_landed = yes
+			any_artifact = {
+				rarity >= illustrious
+			}
+		}
+	}
+	cost = { prestige = { add = { value = 300 desc = CB_BASE_COST } } }
+	valid_to_start = { always = yes }
+	on_declaration = { on_declared_war = yes }
+	on_victory = {
+		scope:defender = {
+			random_artifact = {
+				limit = { rarity >= illustrious }
+				save_scope_as = stolen_relic
+			}
+			if = {
+				limit = { exists = scope:stolen_relic }
+				scope:stolen_relic = { set_artifact_owner = scope:attacker }
+			}
+		}
+		scope:attacker = { add_prestige = 250 }
+		add_truce_attacker_victory_effect = yes
+	}
+	on_white_peace = { add_truce_white_peace_effect = yes }
+	on_defeat = { add_truce_attacker_defeat_effect = yes }
+	on_primary_attacker_death = invalidate
+	on_primary_defender_death = inherit
+	attacker_allies_inherit = yes
+	defender_allies_inherit = yes
+	war_name = XIANXIA_PLUNDER_RELIC_WAR_NAME
+	interface_priority = 70
+}

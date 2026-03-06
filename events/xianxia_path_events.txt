@@ -1,0 +1,225 @@
+﻿namespace = xianxia_path
+
+# Demonic ambushes a righteous traveler
+xianxia_path.1001 = {
+	type = character_event
+	title = xianxia_path.1001.t
+	desc = xianxia_path.1001.d
+	theme = martial
+
+	left_portrait = { character = root animation = fear }
+	right_portrait = { character = scope:ambusher animation = personality_evil }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		has_trait = righteous_path
+		has_trait = cultivation_realm
+	}
+
+	immediate = {
+		random_living_character = {
+			limit = {
+				has_trait = demonic_path
+				has_trait = cultivation_realm
+				NOT = { this = root }
+				is_adult = yes
+			}
+			save_scope_as = ambusher
+		}
+	}
+
+	option = {
+		name = xianxia_path.1001.a
+		trigger = { exists = scope:ambusher }
+		duel = {
+			skill = prowess
+			target = scope:ambusher
+			45 = {
+				earn_cultivation_xp = yes
+				add_prestige = 150
+				random_list = {
+					40 = { add_gold = 120 }
+					30 = { create_breakthrough_artifact = { OWNER = root } }
+					30 = { }
+				}
+				random_list = {
+					25 = { add_nemesis = scope:ambusher }
+					35 = { add_rival = scope:ambusher }
+					40 = { }
+				}
+			}
+			55 = {
+				random_list = {
+					20 = { death = { death_reason = death_murder_unknown } }
+					45 = { remove_short_term_gold = 150 }
+					35 = { add_trait = wounded_2 }
+				}
+				add_stress = 80
+				random_list = {
+					40 = { add_nemesis = scope:ambusher }
+					40 = { add_rival = scope:ambusher }
+					20 = { }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = xianxia_path.1001.b
+		add_stress = 30
+		remove_short_term_gold = 100
+		if = {
+			limit = { exists = scope:ambusher }
+			random_list = {
+				45 = { add_rival = scope:ambusher }
+				20 = { add_nemesis = scope:ambusher }
+				35 = { }
+			}
+		}
+	}
+}
+
+# Righteous hunter attempts to purge a demonic traveler
+xianxia_path.1002 = {
+	type = character_event
+	title = xianxia_path.1002.t
+	desc = xianxia_path.1002.d
+	theme = martial
+
+	left_portrait = { character = root animation = fear }
+	right_portrait = { character = scope:hunter animation = personality_bold }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		has_trait = demonic_path
+		has_trait = cultivation_realm
+	}
+
+	immediate = {
+		random_living_character = {
+			limit = {
+				has_trait = righteous_path
+				has_trait = cultivation_realm
+				NOT = { this = root }
+				is_adult = yes
+			}
+			save_scope_as = hunter
+		}
+	}
+
+	option = {
+		name = xianxia_path.1002.a
+		trigger = { exists = scope:hunter }
+		duel = {
+			skill = prowess
+			target = scope:hunter
+			50 = {
+				earn_cultivation_xp = yes
+				add_dread = 50
+				random_list = {
+					40 = { add_gold = 120 }
+					30 = { create_breakthrough_artifact = { OWNER = root } }
+					30 = { }
+				}
+				random_list = {
+					30 = { add_rival = scope:hunter }
+					30 = { add_nemesis = scope:hunter }
+					40 = { }
+				}
+			}
+			50 = {
+				random_list = {
+					20 = { death = { death_reason = death_murder_unknown } }
+					40 = { remove_short_term_gold = 150 }
+					20 = { add_trait = wounded_2 }
+					20 = { add_character_modifier = { modifier = heart_demon_afflicted years = 3 } }
+				}
+				add_stress = 60
+				random_list = {
+					35 = { add_rival = scope:hunter }
+					35 = { add_nemesis = scope:hunter }
+					30 = { }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = xianxia_path.1002.b
+		add_stress = 40
+		remove_short_term_gold = 80
+		if = {
+			limit = { exists = scope:hunter }
+			random_list = {
+				45 = { add_rival = scope:hunter }
+				25 = { add_nemesis = scope:hunter }
+				30 = { }
+			}
+		}
+	}
+}
+
+# Demonic plot to seize dual-cultivation beauty cauldron
+xianxia_path.1101 = {
+	type = character_event
+	title = xianxia_path.1101.t
+	desc = xianxia_path.1101.d
+	theme = intrigue
+
+	trigger = {
+		has_trait = demonic_path
+		has_trait = cultivation_realm
+		OR = { has_trait = lustful has_trait = greedy has_trait = arbitrary }
+		is_ruler = yes
+	}
+
+	option = {
+		name = xianxia_path.1101.a
+		random_ruler = {
+			limit = {
+				NOT = { this = root }
+				is_adult = yes
+				is_ruler = yes
+				any_courtier = {
+					is_adult = yes
+					has_trait = cultivation_realm
+					OR = { has_trait = yin_constitution has_trait = yang_constitution }
+				}
+			}
+			save_scope_as = target_ruler
+		}
+		if = {
+			limit = { exists = scope:target_ruler }
+			duel = {
+				skill = intrigue
+				target = scope:target_ruler
+				55 = {
+					scope:target_ruler = {
+						random_courtier = {
+							limit = {
+								is_adult = yes
+								has_trait = cultivation_realm
+								OR = { has_trait = yin_constitution has_trait = yang_constitution }
+							}
+							save_scope_as = cauldron_target
+						}
+					}
+					scope:cauldron_target = {
+						if = { limit = { is_imprisoned = no } root = { imprison = { target = scope:cauldron_target type = house_arrest } } }
+						add_character_modifier = { modifier = cultivation_furnace_target years = 8 }
+					}
+					add_character_modifier = { modifier = furnace_refinement_boost years = 6 }
+					add_trait_xp = { trait = demonic_path value = 180 }
+				}
+				45 = {
+					add_stress = 80
+					add_rival = scope:target_ruler
+				}
+			}
+		}
+	}
+
+	option = {
+		name = xianxia_path.1101.b
+	}
+}

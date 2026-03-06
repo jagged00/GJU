@@ -1,0 +1,35 @@
+﻿breakthrough_herb_template = {
+	can_equip = {
+		# TODO: when we have proper 'Quest' items, make them unequipable
+		always = yes
+	}
+
+	can_benefit = {
+	}
+
+	fallback = {
+
+	}
+
+	unique = yes
+}
+jade_beauty_manual_template = {
+	can_equip = { always = yes }
+	can_benefit = { }
+	fallback = { }
+	unique = yes
+}
+
+heavenly_sword_soul_template = {
+	can_equip = { always = yes }
+	can_benefit = { }
+	fallback = { }
+	unique = yes
+}
+
+nine_revolutions_pill_scripture_template = {
+	can_equip = { always = yes }
+	can_benefit = { }
+	fallback = { }
+	unique = yes
+}

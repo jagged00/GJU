@@ -1,0 +1,646 @@
+﻿righteous_meditate_shrine = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_refine_meridians.dds"
+	}
+
+	desc = righteous_meditate_shrine_desc
+	selection_tooltip = righteous_meditate_shrine_tooltip
+	sort_order = 310
+
+	is_shown = {
+		has_trait = righteous_path
+		learning >= 12
+	}
+
+	is_valid = { always = yes }
+
+	effect = {
+		add_lifestyle_xp = { lifestyle = learning_lifestyle value = 600 }
+		add_trait_xp = { trait = righteous_path value = 120 }
+		add_piety = 250
+		add_prestige = 150
+		random_list = {
+			80 = { add_character_modifier = { modifier = focusing_cultivation_modifier months = 6 } }
+			20 = { add_stress = 40 }
+		}
+		if = {
+			limit = { has_trait_xp = { trait = righteous_path value = 200 } }
+			add_character_modifier = { modifier = righteous_harmony_minor years = 3 }
+		}
+		if = {
+			limit = { has_trait_xp = { trait = righteous_path value = 400 } }
+			add_character_modifier = { modifier = righteous_harmony_major years = 3 }
+		}
+	}
+
+	ai_will_do = {
+		base = 70
+		modifier = { add = 100 has_trait = compassionate }
+		modifier = { add = 80 has_trait = temperate }
+	}
+
+	cooldown = { years = 8 }
+}
+
+righteous_distribute_pills = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_refine_meridians.dds"
+	}
+
+	desc = righteous_distribute_pills_desc
+	selection_tooltip = righteous_distribute_pills_tooltip
+	sort_order = 320
+
+	is_shown = {
+		has_trait = righteous_path
+		gold >= 300
+	}
+
+	is_valid = { gold >= 300 }
+
+	effect = {
+		remove_gold = 300
+		add_lifestyle_xp = { lifestyle = learning_lifestyle value = 500 }
+		add_trait_xp = { trait = righteous_path value = 110 }
+		add_piety = 300
+		add_prestige = 180
+		add_stress = -20
+		if = {
+			limit = { has_trait_xp = { trait = righteous_path value = 300 } }
+			add_character_modifier = { modifier = righteous_harmony_minor years = 4 }
+		}
+		if = {
+			limit = { has_trait_xp = { trait = righteous_path value = 500 } }
+			add_character_modifier = { modifier = righteous_harmony_major years = 4 }
+		}
+	}
+
+	ai_will_do = {
+		base = 80
+		modifier = { add = 120 has_trait = generous }
+		modifier = { add = 90 has_trait = compassionate }
+	}
+
+	cooldown = { years = 6 }
+}
+
+righteous_build_temple = {
+	picture = {
+		reference = "gfx/interface/illustrations/holding_types/tgp_shinto_temple.dds"
+	}
+
+	desc = righteous_build_temple_desc
+	selection_tooltip = righteous_build_temple_tooltip
+	sort_order = 330
+
+	is_shown = {
+		has_trait = righteous_path
+		gold >= 800
+	}
+
+	is_valid = { gold >= 800 }
+
+	effect = {
+		remove_gold = 800
+		add_lifestyle_xp = { lifestyle = learning_lifestyle value = 900 }
+		add_trait_xp = { trait = righteous_path value = 220 }
+		add_piety = 550
+		add_prestige = 450
+		add_character_modifier = { modifier = focusing_cultivation_modifier months = 12 }
+		if = {
+			limit = { has_trait_xp = { trait = righteous_path value = 450 } }
+			add_character_modifier = { modifier = righteous_harmony_major years = 5 }
+		}
+	}
+
+	ai_will_do = {
+		base = 90
+		modifier = { add = 150 has_trait = zealous }
+		modifier = { add = 100 has_trait = temperate }
+	}
+
+	cooldown = { years = 10 }
+}
+
+demonic_devour_blood_essence = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_refine_meridians.dds"
+	}
+
+	desc = demonic_devour_blood_essence_desc
+	selection_tooltip = demonic_devour_blood_essence_tooltip
+	sort_order = 410
+
+	is_shown = {
+		has_trait = demonic_path
+		any_prisoner = {
+			has_trait = cultivation_realm
+			is_imprisoned_by = root
+		}
+	}
+
+	is_valid = {
+		any_prisoner = {
+			has_trait = cultivation_realm
+			is_imprisoned_by = root
+		}
+	}
+
+	effect = {
+		random_prisoner = {
+			limit = {
+				has_trait = cultivation_realm
+				is_imprisoned_by = root
+			}
+			save_scope_as = victim
+		}
+		scope:victim = {
+			death = { death_reason = death_execution killer = root }
+		}
+		add_lifestyle_xp = { lifestyle = intrigue_lifestyle value = 700 }
+		add_trait_xp = { trait = demonic_path value = 200 }
+		add_dread = 100
+		add_prestige = 220
+		random_list = {
+			70 = { add_character_modifier = { modifier = focusing_cultivation_modifier months = 6 } }
+			30 = { add_trait = wounded_1 }
+		}
+		if = {
+			limit = { has_trait_xp = { trait = demonic_path value = 250 } }
+			add_character_modifier = { modifier = demonic_conquest_minor years = 3 }
+		}
+		if = {
+			limit = { has_trait_xp = { trait = demonic_path value = 500 } }
+			add_character_modifier = { modifier = demonic_conquest_major years = 3 }
+		}
+	}
+
+	ai_will_do = {
+		base = 85
+		modifier = { add = 200 has_trait = sadistic }
+		modifier = { add = 150 has_trait = ruthless }
+	}
+
+	cooldown = { years = 7 }
+}
+
+demonic_forge_pact = {
+	picture = {
+		reference = "gfx/interface/illustrations/activity_splash_screens/tour_arrival_asia_welcome.dds"
+	}
+
+	desc = demonic_forge_pact_desc
+	selection_tooltip = demonic_forge_pact_tooltip
+	sort_order = 420
+
+	is_shown = {
+		has_trait = demonic_path
+		any_prisoner = {
+			has_trait = cultivation_realm
+			is_imprisoned_by = root
+		}
+	}
+
+	is_valid = {
+		any_prisoner = {
+			has_trait = cultivation_realm
+			is_imprisoned_by = root
+		}
+	}
+
+	effect = {
+		random_prisoner = {
+			limit = {
+				has_trait = cultivation_realm
+				is_imprisoned_by = root
+			}
+			save_scope_as = victim
+		}
+		scope:victim = {
+			add_stress = 50
+		}
+		add_lifestyle_xp = { lifestyle = intrigue_lifestyle value = 650 }
+		add_trait_xp = { trait = demonic_path value = 180 }
+		add_dread = 90
+		add_prestige = 200
+		random_list = {
+			80 = { add_character_modifier = { modifier = heart_demon_afflicted years = 2 } }
+			20 = { add_trait = wounded_2 }
+		}
+		if = {
+			limit = { has_trait_xp = { trait = demonic_path value = 300 } }
+			add_character_modifier = { modifier = demonic_conquest_minor years = 4 }
+		}
+	}
+
+	ai_will_do = {
+		base = 75
+		modifier = { add = 180 has_trait = ruthless }
+		modifier = { add = 120 has_trait = sadistic }
+	}
+
+	cooldown = { years = 8 }
+}
+
+demonic_blood_refinement = {
+	picture = {
+		reference = "gfx/interface/illustrations/activity_splash_screens/tour_arrival_asia_welcome.dds"
+	}
+
+	desc = demonic_blood_refinement_desc
+	selection_tooltip = demonic_blood_refinement_tooltip
+	sort_order = 430
+
+	is_shown = {
+		has_trait = demonic_path
+		gold >= 400
+	}
+
+	is_valid = { gold >= 400 }
+
+	effect = {
+		remove_gold = 400
+		add_lifestyle_xp = { lifestyle = intrigue_lifestyle value = 1000 }
+		add_trait_xp = { trait = demonic_path value = 260 }
+		add_dread = 160
+		add_prestige = 350
+		random_list = {
+			65 = { add_character_modifier = { modifier = heart_demon_afflicted years = 1 } }
+			25 = { add_trait = wounded_2 }
+			10 = { add_trait = wounded_3 }
+		}
+		if = {
+			limit = { has_trait_xp = { trait = demonic_path value = 450 } }
+			add_character_modifier = { modifier = demonic_conquest_major years = 5 }
+		}
+	}
+
+	ai_will_do = {
+		base = 90
+		modifier = { add = 200 has_trait = sadistic }
+		modifier = { add = 150 has_trait = ruthless }
+	}
+
+	cooldown = { years = 10 }
+}
+
+
+demonic_create_cultivation_furnace = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_refine_meridians.dds"
+	}
+
+	desc = demonic_create_cultivation_furnace_desc
+	selection_tooltip = demonic_create_cultivation_furnace_tooltip
+	sort_order = 435
+
+	is_shown = {
+		has_trait = demonic_path
+		any_prisoner = {
+			is_female = yes
+			is_adult = yes
+			is_imprisoned_by = root
+		}
+	}
+
+	is_valid = {
+		any_prisoner = {
+			is_female = yes
+			is_adult = yes
+			is_imprisoned_by = root
+		}
+	}
+
+	effect = {
+		random_prisoner = {
+			limit = {
+				is_female = yes
+				is_adult = yes
+				is_imprisoned_by = root
+			}
+			save_scope_as = furnace_target
+		}
+		scope:furnace_target = {
+			add_character_modifier = { modifier = cultivation_furnace_target years = 8 }
+		}
+		add_character_modifier = { modifier = furnace_refinement_boost years = 8 }
+		add_trait_xp = { trait = demonic_path value = 220 }
+		earn_cultivation_xp = yes
+		earn_cultivation_xp = yes
+		add_dread = 120
+		if = {
+			limit = { has_trait_xp = { trait = demonic_path value = 500 } }
+			add_character_modifier = { modifier = demonic_conquest_major years = 6 }
+		}
+	}
+
+	ai_will_do = {
+		base = 80
+		modifier = { add = 220 has_trait = sadistic }
+		modifier = { add = 100 has_trait = arbitrary }
+		modifier = { add = -150 has_trait = compassionate }
+	}
+
+	cooldown = { years = 10 }
+}
+
+
+dual_cultivation_yin_yang_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_start_cultivation.dds"
+	}
+
+	desc = dual_cultivation_yin_yang_decision_desc
+	selection_tooltip = dual_cultivation_yin_yang_decision_tooltip
+	sort_order = 340
+
+	is_shown = {
+		has_trait = cultivation_realm
+		OR = {
+			has_trait = yin_constitution
+			has_trait = yang_constitution
+		}
+		any_spouse = {
+			has_trait = cultivation_realm
+			OR = {
+				AND = { has_trait = yin_constitution root = { has_trait = yang_constitution } }
+				AND = { has_trait = yang_constitution root = { has_trait = yin_constitution } }
+			}
+		}
+	}
+
+	is_valid = { always = yes }
+
+	effect = {
+		random_spouse = {
+			limit = {
+				has_trait = cultivation_realm
+				OR = {
+					AND = { has_trait = yin_constitution root = { has_trait = yang_constitution } }
+					AND = { has_trait = yang_constitution root = { has_trait = yin_constitution } }
+				}
+			}
+			save_scope_as = dual_partner
+		}
+		add_character_modifier = { modifier = yin_yang_dual_cultivation years = 5 }
+		earn_cultivation_xp = yes
+		earn_cultivation_xp = yes
+		scope:dual_partner = {
+			add_character_modifier = { modifier = yin_yang_dual_cultivation years = 5 }
+			earn_cultivation_xp = yes
+			earn_cultivation_xp = yes
+		}
+
+		# Heaven-defying resonance: male Yin + female Yang pairing
+		if = {
+			limit = {
+				is_female = no
+				has_trait = yin_constitution
+				scope:dual_partner = {
+					is_female = yes
+					has_trait = yang_constitution
+				}
+			}
+			earn_cultivation_xp = yes
+			earn_cultivation_xp = yes
+			earn_cultivation_xp = yes
+			earn_cultivation_xp = yes
+			scope:dual_partner = {
+				earn_cultivation_xp = yes
+				earn_cultivation_xp = yes
+				earn_cultivation_xp = yes
+				earn_cultivation_xp = yes
+			}
+		}
+
+		add_trait_xp = { trait = righteous_path value = 80 }
+	}
+
+	ai_will_do = {
+		base = 55
+		modifier = { add = 50 has_trait = compassionate }
+		modifier = { add = 40 has_trait = lustful }
+	}
+
+	cooldown = { years = 4 }
+}
+
+soulmate_dual_cultivation_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_start_cultivation.dds"
+	}
+
+	desc = soulmate_dual_cultivation_decision_desc
+	selection_tooltip = soulmate_dual_cultivation_decision_tooltip
+	sort_order = 341
+
+	is_shown = {
+		has_trait = cultivation_realm
+		any_relation = {
+			type = soulmate
+			has_trait = cultivation_realm
+		}
+	}
+
+	is_valid = { always = yes }
+
+	effect = {
+		random_relation = {
+			type = soulmate
+			limit = { has_trait = cultivation_realm }
+			save_scope_as = soulmate_partner
+		}
+		add_character_modifier = { modifier = soulmate_cultivation_resonance years = 6 }
+		earn_cultivation_xp = yes
+		earn_cultivation_xp = yes
+		scope:soulmate_partner = {
+			add_character_modifier = { modifier = soulmate_cultivation_resonance years = 6 }
+			earn_cultivation_xp = yes
+			earn_cultivation_xp = yes
+		}
+		if = {
+			limit = { has_trait = righteous_path }
+			add_trait_xp = { trait = righteous_path value = 100 }
+		}
+	}
+
+	ai_will_do = {
+		base = 65
+		modifier = { add = 90 has_trait = compassionate }
+		modifier = { add = 60 has_trait = compassionate }
+	}
+
+	cooldown = { years = 5 }
+}
+
+# Lore-flavored Jianghu/Xianxia decisions
+enter_secret_realm_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_find_roots.dds" }
+	desc = enter_secret_realm_decision_desc
+	selection_tooltip = enter_secret_realm_decision_tooltip
+	sort_order = 520
+
+	is_shown = {
+		has_trait = cultivation_realm
+		OR = {
+			has_trait = foundation_establishment
+			has_trait = core_formation
+			has_trait = nascent_soul
+			has_trait = dao_seeking
+		}
+	}
+	is_valid = { prowess >= 12 }
+	ai_will_do = { base = 40 modifier = { add = 40 has_trait = brave } }
+	cooldown = { years = 4 }
+
+	effect = {
+		random_list = {
+			55 = { earn_cultivation_xp = yes add_prestige = 100 }
+			25 = { earn_cultivation_xp = yes earn_cultivation_xp = yes add_prestige = 250 }
+			15 = { add_trait = wounded_1 add_stress = 40 }
+			5 = { add_trait = wounded_2 add_stress = 80 }
+		}
+	}
+}
+
+attend_heavenly_auction_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+	desc = attend_heavenly_auction_decision_desc
+	selection_tooltip = attend_heavenly_auction_decision_tooltip
+	sort_order = 521
+
+	is_shown = { has_trait = cultivation_realm gold >= 250 }
+	is_valid = { gold >= 250 }
+	cost = { gold = 250 }
+	ai_will_do = { base = 35 modifier = { add = 40 has_trait = greedy } }
+	cooldown = { years = 3 }
+
+	effect = {
+		random_list = {
+			50 = { create_breakthrough_artifact = { OWNER = root } }
+			30 = { add_character_modifier = { modifier = righteous_harmony_minor years = 2 } }
+			20 = { add_stress = 35 }
+		}
+	}
+}
+
+challenge_young_master_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_breakthrough.dds" }
+	desc = challenge_young_master_decision_desc
+	selection_tooltip = challenge_young_master_decision_tooltip
+	sort_order = 522
+
+	is_shown = { has_trait = cultivation_realm }
+	is_valid = { prowess >= 10 }
+	ai_will_do = { base = 30 modifier = { add = 70 has_trait = wrathful } }
+	cooldown = { years = 2 }
+
+	effect = {
+		random_list = {
+			60 = { add_prestige = 180 earn_cultivation_xp = yes }
+			25 = { add_prestige = 60 add_trait = wounded_1 }
+			15 = { add_stress = 30 }
+		}
+	}
+}
+
+embrace_righteous_path_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+	desc = embrace_righteous_path_decision_desc
+	selection_tooltip = embrace_righteous_path_decision_tooltip
+	sort_order = 300
+
+	is_shown = {
+		has_trait = cultivation_realm
+		NOT = { has_trait = righteous_path }
+		NOT = { has_trait = demonic_path }
+	}
+	is_valid = { piety >= 200 }
+	cost = { piety = 200 }
+
+	ai_will_do = {
+		base = 30
+		modifier = { add = 80 has_trait = compassionate }
+		modifier = { add = 60 has_trait = honest }
+		modifier = { add = 50 has_trait = temperate }
+		modifier = { add = -90 has_trait = cruel }
+		modifier = { add = -80 has_trait = sadistic }
+		modifier = { add = -70 has_trait = greedy }
+		modifier = {
+			add = 90
+			any_dynasty_member = { has_trait = righteous_path }
+		}
+		modifier = {
+			add = -50
+			any_dynasty_member = { has_trait = demonic_path }
+		}
+	}
+
+	effect = {
+		add_trait = righteous_path
+		add_piety = 100
+	}
+	cooldown = { years = 20 }
+}
+
+embrace_demonic_path_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_refine_meridians.dds" }
+	desc = embrace_demonic_path_decision_desc
+	selection_tooltip = embrace_demonic_path_decision_tooltip
+	sort_order = 301
+
+	is_shown = {
+		has_trait = cultivation_realm
+		NOT = { has_trait = righteous_path }
+		NOT = { has_trait = demonic_path }
+	}
+	is_valid = { prestige >= 200 }
+	cost = { prestige = 200 }
+
+	ai_will_do = {
+		base = 30
+		modifier = { add = 90 has_trait = cruel }
+		modifier = { add = 80 has_trait = sadistic }
+		modifier = { add = 70 has_trait = greedy }
+		modifier = { add = 70 has_trait = arbitrary }
+		modifier = { add = -90 has_trait = compassionate }
+		modifier = { add = -60 has_trait = honest }
+		modifier = {
+			add = 90
+			any_dynasty_member = { has_trait = demonic_path }
+		}
+		modifier = {
+			add = -50
+			any_dynasty_member = { has_trait = righteous_path }
+		}
+	}
+
+	effect = {
+		add_trait = demonic_path
+		add_dread = 30
+	}
+	cooldown = { years = 20 }
+}
+
+seize_beauty_dual_cauldron_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_refine_meridians.dds" }
+	desc = seize_beauty_dual_cauldron_decision_desc
+	selection_tooltip = seize_beauty_dual_cauldron_decision_tooltip
+	sort_order = 440
+
+	is_shown = {
+		has_trait = demonic_path
+		has_trait = cultivation_realm
+		is_ruler = yes
+		OR = { has_trait = lustful has_trait = greedy has_trait = arbitrary }
+	}
+	is_valid = { always = yes }
+	ai_will_do = {
+		base = 50
+		modifier = { add = 80 has_trait = lustful }
+		modifier = { add = 70 has_trait = greedy }
+		modifier = { add = 60 has_trait = arbitrary }
+	}
+	cooldown = { years = 6 }
+	effect = { trigger_event = { id = xianxia_path.1101 } }
+}
