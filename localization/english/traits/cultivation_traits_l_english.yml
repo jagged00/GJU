@@ -55,6 +55,12 @@
   demonic_path_name:0 "Demonic Path"
   demonic_path_desc:0 "Since I started walking on the demonic path, I have never feared offending others. As long as I continue to get stronger, what is revenge? If ten people want revenge, I will kill ten; if a hundred people want revenge, I will kill a hundred. If the whole world wants revenge, I will exterminate the whole world!"
 
+  trait_track_righteous_path:0 "Righteous Cultivation"
+  trait_track_righteous_path_desc:0 "Your progress in the righteous path of cultivation."
+
+  trait_track_demonic_path:0 "Demonic Cultivation"
+  trait_track_demonic_path_desc:0 "Your progress in the demonic path of cultivation."
+
   righteous_path_level_1:0 "Heavenly Disciple of Virtuous Beginnings"
   righteous_path_level_2:0 "Celestial Guardian of Harmonious Order"
   righteous_path_level_3:0 "Immortal Sage of the Sacred Dao"
@@ -81,3 +87,6 @@
 
   trait_demonic_path_level_1:0 "Infernal Acolyte of Blood and Carnage"
   trait_demonic_path_level_2:0 "Demonic Overlord of the Abyssal Sky"
+  trait_demonic_path_level_3:0 "Dread Sovereign of the Abyssal Void"
+  trait_demonic_path_level_4:0 "Exalted Demon Sovereign of Eternal Night"
+  trait_demonic_path_level_5:0 "Heavenly Demon Asura of Total Oblivion"

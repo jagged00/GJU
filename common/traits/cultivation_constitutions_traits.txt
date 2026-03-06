@@ -1,6 +1,6 @@
 ﻿yang_constitution = {
 	index = 15250
-	ruler_designer_cost = 500						# heaven-defying body, not cheap
+	shown_in_ruler_designer = no
 	birth = 0.001									# 1 in 100,000 mortals
 	random_creation = 0.001
 	inherit_chance = 40
@@ -19,7 +19,7 @@
 
 yin_constitution = {
 	index = 15251
-	ruler_designer_cost = 500
+	shown_in_ruler_designer = no
 	birth = 0.001
 	random_creation = 0.001
 	inherit_chance = 40
@@ -38,9 +38,9 @@ yin_constitution = {
 
 poison_constitution = {
 	index = 15252
-	ruler_designer_cost = 600
-	birth = 0.0005									# even rarer, poison bodies are legendary
-	random_creation = 0.0005
+	shown_in_ruler_designer = no
+	birth = 0.00015									# lottery-rare
+	random_creation = 0.00015
 	inherit_chance = 30
 	both_parent_has_trait_inherit_chance = 100
 	health = 2.0									# immune to almost all poisons & diseases
@@ -54,9 +54,9 @@ poison_constitution = {
 
 lightning_constitution = {
 	index = 15253
-	ruler_designer_cost = 700
+	shown_in_ruler_designer = no
 	birth = 0.0005
-	random_creation = 0.0005
+	random_creation = 0.00015
 	inherit_chance = 35
 	both_parent_has_trait_inherit_chance = 100
 	fertility = 0.2
@@ -94,8 +94,9 @@ dragon_bloodline = {
 
 # True Dragon Body Constitution (full awakening)
 dragon_body_constitution = {
-	cost = 800
 	shown_in_ruler_designer = no
+	birth = 0.00003
+	random_creation = 0.00003
 	inherit_chance = 20								# almost never inherited directly
 	both_parent_has_trait_inherit_chance = 70
 	martial = 8
@@ -115,7 +116,6 @@ dragon_body_constitution = {
 
 # Phoenix Blood Constitution — rebirth makes it broken
 phoenix_blood_constitution = {
-	cost = 900
 	shown_in_ruler_designer = no
 	birth = 0.0001									# one in a million
 	random_creation = 0.0001

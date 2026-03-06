@@ -1,0 +1,78 @@
+﻿namespace = cultivation_constitution_lottery_events
+
+# Rare yearly lottery for constitution awakenings.
+cultivation_constitution_lottery_events.001 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_adult = yes
+		is_cultivator = yes
+		NOT = {
+			OR = {
+				has_trait = poison_constitution
+				has_trait = dragon_body_constitution
+				has_trait = lightning_constitution
+				has_trait = phoenix_blood_constitution
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			2 = { add_trait = poison_constitution }
+			1 = { add_trait = lightning_constitution }
+			1 = {
+				if = {
+					limit = { has_trait = dragon_bloodline }
+					remove_trait = dragon_bloodline
+				}
+				add_trait = dragon_body_constitution
+			}
+			1 = { add_trait = phoenix_blood_constitution }
+			995 = { }
+		}
+	}
+
+	option = { name = OK }
+}
+
+# Rare constitution lottery at birth.
+cultivation_constitution_lottery_events.002 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		age = 0
+		NOT = { has_trait = cultivation_realm }
+		NOT = {
+			OR = {
+				has_trait = yin_constitution
+				has_trait = yang_constitution
+				has_trait = poison_constitution
+				has_trait = lightning_constitution
+				has_trait = dragon_body_constitution
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			4 = {
+				if = {
+					limit = { is_female = yes }
+					add_trait = yin_constitution
+				}
+				else = {
+					add_trait = yang_constitution
+				}
+			}
+			1 = { add_trait = poison_constitution }
+			1 = { add_trait = lightning_constitution }
+			1 = { add_trait = dragon_body_constitution }
+			993 = { }
+		}
+	}
+
+	option = { name = OK }
+}

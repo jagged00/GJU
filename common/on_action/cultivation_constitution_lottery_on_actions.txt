@@ -1,0 +1,23 @@
+﻿on_yearly_playable_pulse = {
+	on_actions = {
+		cultivation_constitution_yearly_lottery_on_action
+	}
+}
+
+on_birth_child = {
+	on_actions = {
+		cultivation_constitution_birth_lottery_on_action
+	}
+}
+
+cultivation_constitution_yearly_lottery_on_action = {
+	effect = {
+		trigger_event = { id = cultivation_constitution_lottery_events.001 }
+	}
+}
+
+cultivation_constitution_birth_lottery_on_action = {
+	effect = {
+		trigger_event = { id = cultivation_constitution_lottery_events.002 }
+	}
+}
