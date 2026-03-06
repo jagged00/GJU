@@ -63,7 +63,6 @@ guide_unlanded_breakthrough_decision = {
 		is_landed = yes
 		OR = {
 			any_courtier = {
-				is_landed = no
 				has_trait = cultivation_realm
 				OR = {
 					has_trait_xp = { trait = qi_gathering value = 100 }
@@ -75,7 +74,6 @@ guide_unlanded_breakthrough_decision = {
 				}
 			}
 			any_guest = {
-				is_landed = no
 				has_trait = cultivation_realm
 				OR = {
 					has_trait_xp = { trait = qi_gathering value = 100 }
@@ -112,7 +110,6 @@ guide_unlanded_breakthrough_decision = {
 		if = {
 			limit = {
 				any_courtier = {
-					is_landed = no
 					has_trait = cultivation_realm
 					OR = {
 						has_trait_xp = { trait = qi_gathering value = 100 }
@@ -126,7 +123,6 @@ guide_unlanded_breakthrough_decision = {
 			}
 			random_courtier = {
 				limit = {
-					is_landed = no
 					has_trait = cultivation_realm
 					OR = {
 						has_trait_xp = { trait = qi_gathering value = 100 }
@@ -143,7 +139,6 @@ guide_unlanded_breakthrough_decision = {
 		else = {
 			random_guest = {
 				limit = {
-					is_landed = no
 					has_trait = cultivation_realm
 					OR = {
 						has_trait_xp = { trait = qi_gathering value = 100 }
