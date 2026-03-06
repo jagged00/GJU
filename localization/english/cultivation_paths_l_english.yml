@@ -1,0 +1,58 @@
+﻿l_english:
+ righteous_meditate_shrine:0 "Meditate at Sacred Mountain Shrine"
+ righteous_meditate_shrine_desc:0 "Spend months in seclusion at a holy peak, aligning your qi with the natural harmony of heaven and earth."
+ righteous_meditate_shrine_tooltip:0 "Gain righteous path insight, piety, and prestige through secluded meditation."
+
+ righteous_distribute_pills:0 "Distribute Healing Pills to Mortals"
+ righteous_distribute_pills_desc:0 "Use your alchemical skill to craft and freely give life-saving pills to suffering commoners."
+ righteous_distribute_pills_tooltip:0 "Spend gold to gain righteous path progress and earn virtue."
+
+ righteous_build_temple:0 "Build a Temple to Honor the Dao"
+ righteous_build_temple_desc:0 "Commission a grand temple to spread righteous doctrine and cultivate public merit."
+ righteous_build_temple_tooltip:0 "A costly act that grants major righteous path and piety gains."
+
+ demonic_devour_blood_essence:0 "Devour a Rival’s Blood Essence"
+ demonic_devour_blood_essence_desc:0 "Extract and consume the blood essence of a captured rival, absorbing fragments of their cultivation foundation."
+ demonic_devour_blood_essence_tooltip:0 "Execute a captured cultivator to gain demonic path progress and dread."
+
+ demonic_forge_pact:0 "Forge a Demonic Pact with a Captive"
+ demonic_forge_pact_desc:0 "Force a prisoner into a soul pact and siphon unstable dark qi from their spirit."
+ demonic_forge_pact_tooltip:0 "Exploit an imprisoned cultivator for demonic gains, at spiritual cost."
+
+ demonic_blood_refinement:0 "Conduct a Blood Refinement Ritual"
+ demonic_blood_refinement_desc:0 "Use blood sacrifices and taboo arrays to violently refine your demonic qi."
+ demonic_blood_refinement_tooltip:0 "Spend gold to push demonic path growth with backlash risk."
+ demonic_create_cultivation_furnace:0 "Refine a Captive into a Cultivation Furnace"
+ demonic_create_cultivation_furnace_desc:0 "Through a forbidden yin-harvesting rite, you can turn a female captive into a living cultivation furnace to accelerate your breakthroughs."
+ demonic_create_cultivation_furnace_tooltip:0 "Inflict a long-term furnace debuff on a female prisoner and gain strong demonic cultivation acceleration."
+
+ dual_cultivation_yin_yang_decision:0 "Perform Yin-Yang Dual Cultivation"
+ dual_cultivation_yin_yang_decision_desc:0 "When yin and yang constitutions harmonize, circulation stabilizes and both cultivators can advance faster with fewer bottlenecks."
+ dual_cultivation_yin_yang_decision_tooltip:0 "Requires a cultivator spouse with the opposite Yin/Yang constitution. Grants both partners cultivation acceleration."
+
+ soulmate_dual_cultivation_decision:0 "Soulmate Resonance Cultivation"
+ soulmate_dual_cultivation_decision_desc:0 "Two soulmate cultivators can resonate dao-hearts and synchronize qi flow, reinforcing each other's path and reducing instability."
+ soulmate_dual_cultivation_decision_tooltip:0 "If your soulmate is also a cultivator, both of you gain resonance bonuses and extra cultivation progress."
+ enter_secret_realm_decision:0 "Enter a Secret Realm"
+ enter_secret_realm_decision_desc:0 "Like countless protagonists of xianxia novels, you step into a hidden realm seeking inheritances and fate-defying opportunities."
+ enter_secret_realm_decision_tooltip:0 "Gain cultivation opportunities, but risk severe injury in the hidden realm."
+
+ attend_heavenly_auction_decision:0 "Attend the Heavenly Auction"
+ attend_heavenly_auction_decision_desc:0 "At the grand inter-sect auction, heaven-grade treasures and breakthrough herbs exchange hands for absurd prices."
+ attend_heavenly_auction_decision_tooltip:0 "Spend gold for a chance at rare cultivation treasures."
+
+ challenge_young_master_decision:0 "Challenge an Arrogant Young Master"
+ challenge_young_master_decision_desc:0 "In every jianghu city, there is always one loud young master begging to be humbled."
+ challenge_young_master_decision_tooltip:0 "Win prestige and cultivation insight, or suffer backlash."
+
+ embrace_righteous_path_decision:0 "Embrace the Righteous Path"
+ embrace_righteous_path_decision_desc:0 "Swear an oath to uphold justice, defend mortals, and cultivate with righteous intent."
+ embrace_righteous_path_decision_tooltip:0 "Costs piety. AI preference favors compassionate/virtuous characters and righteous dynasties."
+
+ embrace_demonic_path_decision:0 "Embrace the Demonic Path"
+ embrace_demonic_path_decision_desc:0 "Cast aside restraint and cultivate through ruthless methods where strength alone defines truth."
+ embrace_demonic_path_decision_tooltip:0 "Costs prestige. AI preference favors cruel/greedy traits and demonic dynasties."
+
+ seize_beauty_dual_cauldron_decision:0 "Seize a Beauty Dual Cauldron"
+ seize_beauty_dual_cauldron_decision_desc:0 "Pursue forbidden methods by abducting a yin-yang beauty from rival courts and refining them as your cultivation cauldron."
+ seize_beauty_dual_cauldron_decision_tooltip:0 "Triggers an intrigue confrontation to seize a yin/yang cultivator from another ruler."

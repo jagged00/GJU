@@ -1,0 +1,28 @@
+﻿l_english:
+ xianxia_reincarnation.0002.t:0 "Samsara Turns"
+ xianxia_reincarnation.0002.d:0 "[ROOT.Char.GetTitledFirstNamePossessive] soul has returned in the body of [THIS.Char.GetTitledFirstNameNoTooltip] of House [THIS.Char.GetHouseName]!"
+ xianxia_reincarnation.0002.a:0 "The wheel of rebirth continues."
+ samsara_memories:0 "Samsara Memories"
+ samsara_memories_desc:0 "Echoes of past lives grant insight and serenity."
+ cultivator_spar_interaction:0 "Cultivator Sparring"
+ cultivator_spar_interaction_desc:0 "Engage in a friendly exchange of techniques. Most spars are safe, but there is always risk when qi collides."
+ xianxia_extinguish_cultivator_family_interaction_desc:0 "Erase this cultivator's entire bloodline from your realm and shatter their sect influence."
+ RIGHTEOUS_DEPOSE_DEMONIC_WAR_NAME:0 "Righteous Purge War"
+ DEMONIC_DEPOSE_RIGHTEOUS_WAR_NAME:0 "Demonic Usurpation War"
+ XIANXIA_ROB_WEALTH_WAR_NAME:0 "Tribulation Plunder War"
+ XIANXIA_PLUNDER_RELIC_WAR_NAME:0 "Heavenly Relic Plunder War"
+
+ xianxia_path.1001.t:0 "Demonic Ambush on the Mountain Road"
+ xianxia_path.1001.d:0 "A demonic cultivator blocks your path, demanding your wealth and treasures. Honor and face are on the line."
+ xianxia_path.1001.a:0 "Draw your blade and duel them."
+ xianxia_path.1001.b:0 "Yield some wealth and preserve your life."
+
+ xianxia_path.1002.t:0 "Righteous Purger Bars Your Way"
+ xianxia_path.1002.d:0 "A righteous cultivator has identified you as a demonic menace and challenges you to a life-and-death duel."
+ xianxia_path.1002.a:0 "Crush this self-righteous fool."
+ xianxia_path.1002.b:0 "Retreat and pay to avoid the clash."
+
+ xianxia_path.1101.t:0 "Beauty Cauldron Opportunity"
+ xianxia_path.1101.d:0 "Rumors spread of a rare yin-yang beauty in a rival ruler's court. Seizing them could greatly accelerate your demonic cultivation."
+ xianxia_path.1101.a:0 "Launch the abduction plot."
+ xianxia_path.1101.b:0 "Not now."

@@ -1,0 +1,83 @@
+﻿l_english:
+#Realms
+#Qi Gathering
+
+  trait_qi_gathering:0 "Qi Gathering"
+  trait_qi_gathering_desc:0 "This character is in the Qi Gathering Realm"
+  trait_track_stage:0 "Stages"
+  trait_track_stage_desc:0 "The stages of the Qi Gathering Realm"
+
+#Foundation Establishment
+
+  trait_foundation_establishment:0 "Foundation Establishment"
+  trait_foundation_establishment_desc:0 "This character is in the Foundation Establishment Realm"
+  trait_track_foundation:0 "Foundation"
+  trait_track_foundation_desc:0 "The stages of the Foundation Establishment Realm"
+
+#Core Formation
+
+  trait_core_formation:0 "Core Formation"
+  trait_core_formation_desc:0 "This character is in the Core Formation Realm"
+  trait_track_core:0 "Core"
+  trait_track_core_desc:0 "The stages of the Core Formation Realm"
+
+#Nascent Soul
+
+  trait_nascent_soul:0 "Nascent Soul"
+  trait_nascent_soul_desc:0 "This character is in the Nascent Soul Realm"
+  trait_track_soul:0 "Soul"
+  trait_track_suol_desc:0 "The stages of the Nascent Soul Realm"
+
+#Spirit Severing
+
+  trait_spirit_severing:0 "Spirit Severing"
+  trait_spirit_severing_desc:0 "This character is in the Spirit Severing Realm"
+  trait_track_spirit:0 "Severing"
+  trait_track_spirit_desc:0 "The stages of the Spirit Severing Realm"
+
+  #Dao Seeking
+
+  trait_dao_seeking:0 "Dao Seeking"
+  trait_dao_seeking_desc:0 "This character is in the Dao Seeking Realm"
+  trait_track_dao:0 "Dao"
+  trait_track_dao_desc:0 "The stages of the Dao Seeking Realm"
+
+  #Immortal Ascension
+
+  trait_immortal_ascension:0 "Immortal Ascension"
+  trait_immortal_ascension_desc:0 "This character is in the Immortal Ascension Realm"
+  trait_track_ascension:0 "Immortal"
+  trait_track_ascension_desc:0 "The stages of the Immortal Ascension Realm"
+
+  righteous_path_name:0 "Righteous Path"
+  righteous_path_desc:0 "To walk the path of righteousness is to wield power not for selfish gain or unrestrained vengeance, but to protect the innocent and uphold justice. Though the world may be filled with turmoil and suffering, the true strength lies in compassion and honor. A righteous cultivator does not fear standing alone against a hundred foes if it means defending the weak or averting disaster. Revenge is a fleeting desire, but righteousness endures across generations. I will strike down evil not for glory or hatred, but for the greater good of all. If a thousand villains seek to destroy the peace, I will stand in their way, unyielding and resolute. The world may rise against me, but I will never abandon the path of light."
+
+  demonic_path_name:0 "Demonic Path"
+  demonic_path_desc:0 "Since I started walking on the demonic path, I have never feared offending others. As long as I continue to get stronger, what is revenge? If ten people want revenge, I will kill ten; if a hundred people want revenge, I will kill a hundred. If the whole world wants revenge, I will exterminate the whole world!"
+
+  righteous_path_level_1:0 "Heavenly Disciple of Virtuous Beginnings"
+  righteous_path_level_2:0 "Celestial Guardian of Harmonious Order"
+  righteous_path_level_3:0 "Immortal Sage of the Sacred Dao"
+  righteous_path_level_4:0 "Jade Emperor’s Envoy of the Celestial Dao"
+  righteous_path_level_5:0 "Heavenly Paragon of Absolute Virtue"
+
+  demonic_path_level_1:0 "Infernal Acolyte of Blood and Carnage"
+  demonic_path_level_2:0 "Demonic Overlord of the Abyssal Sky"
+  demonic_path_level_3:0 "Dread Sovereign of the Abyssal Void"
+  demonic_path_level_4:0 "Exalted Demon Sovereign of Eternal Night"
+  demonic_path_level_5:0 "Heavenly Demon Asura of Total Oblivion"
+
+  trait_righteous_path_name:0 "Righteous Path"
+  trait_righteous_path_desc:0 "To walk the path of righteousness is to wield power not for selfish gain or unrestrained vengeance, but to protect the innocent and uphold justice. Though the world may be filled with turmoil and suffering, the true strength lies in compassion and honor. A righteous cultivator does not fear standing alone against a hundred foes if it means defending the weak or averting disaster. Revenge is a fleeting desire, but righteousness endures across generations. I will strike down evil not for glory or hatred, but for the greater good of all. If a thousand villains seek to destroy the peace, I will stand in their way, unyielding and resolute. The world may rise against me, but I will never abandon the path of light."
+
+  trait_demonic_path_name:0 "Demonic Path"
+  trait_demonic_path_desc:0 "Since I started walking on the demonic path, I have never feared offending others. As long as I continue to get stronger, what is revenge? If ten people want revenge, I will kill ten; if a hundred people want revenge, I will kill a hundred. If the whole world wants revenge, I will exterminate the whole world!"
+
+  trait_righteous_path_level_1:0 "Heavenly Disciple of Virtuous Beginnings"
+  trait_righteous_path_level_2:0 "Celestial Guardian of Harmonious Order"
+  trait_righteous_path_level_3:0 "Immortal Sage of the Sacred Dao"
+  trait_righteous_path_level_4:0 "Jade Emperor’s Envoy of the Celestial Dao"
+  trait_righteous_path_level_5:0 "Heavenly Paragon of Absolute Virtue"
+
+  trait_demonic_path_level_1:0 "Infernal Acolyte of Blood and Carnage"
+  trait_demonic_path_level_2:0 "Demonic Overlord of the Abyssal Sky"
