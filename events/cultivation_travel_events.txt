@@ -347,7 +347,7 @@ cultivation_travel_events.101 = { # Poisonous mist ahead
 		}
 		
 		random_list = {
-			3 = {
+			1 = {
 				#Rare lottery: awaken poison constitution in deadly mist
 				add_trait = poison_constitution
 				modifier = {
@@ -355,10 +355,10 @@ cultivation_travel_events.101 = { # Poisonous mist ahead
 					add = -1
 				}
 			}
-			60 = {
+			40 = {
 				#Go through without issue
 			}
-			205 = {
+			220 = {
 				#Go through but get ill
 				modifier = {
 					has_trait = poison_constitution
@@ -369,7 +369,7 @@ cultivation_travel_events.101 = { # Poisonous mist ahead
 
 				add_trait = wounded_1
 			}
-			6 = {
+			8 = {
 				#Die trying
 				modifier = {
 					has_trait = poison_constitution

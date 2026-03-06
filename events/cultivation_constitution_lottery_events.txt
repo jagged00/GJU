@@ -21,13 +21,13 @@ cultivation_constitution_lottery_events.001 = {
 
 	immediate = {
 		random_list = {
-			9 = {
+			6 = {
 				trigger_event = {
 					id = cultivation_constitution_lottery_events.011
 					days = 1
 				}
 			}
-			991 = { }
+			994 = { }
 		}
 	}
 
@@ -78,15 +78,15 @@ cultivation_constitution_lottery_events.011 = {
 		}
 
 		random_list = {
-			24 = {
+			20 = {
 				add_trait = poison_constitution
 				add_prestige = 150
 			}
-			24 = {
+			20 = {
 				add_trait = lightning_constitution
 				add_piety = 100
 			}
-			12 = {
+			10 = {
 				if = {
 					limit = { has_trait = dragon_bloodline }
 					remove_trait = dragon_bloodline
@@ -94,15 +94,15 @@ cultivation_constitution_lottery_events.011 = {
 				add_trait = dragon_body_constitution
 				add_prestige = 350
 			}
-			8 = {
+			6 = {
 				add_trait = phoenix_blood_constitution
 				add_piety = 250
 			}
-			22 = {
+			31 = {
 				add_trait = wounded_1
 				add_stress = 35
 			}
-			10 = {
+			13 = {
 				add_trait = wounded_2
 				add_stress = 65
 			}
@@ -136,7 +136,7 @@ cultivation_constitution_lottery_events.011 = {
 			}
 		}
 		random_list = {
-			25 = {
+			20 = {
 				if = {
 					limit = { has_trait = dragon_bloodline }
 					remove_trait = dragon_bloodline
@@ -144,15 +144,15 @@ cultivation_constitution_lottery_events.011 = {
 				add_trait = dragon_body_constitution
 				add_prestige = 450
 			}
-			18 = {
+			15 = {
 				add_trait = phoenix_blood_constitution
 				add_piety = 350
 			}
-			37 = {
+			40 = {
 				add_trait = wounded_3
 				add_stress = 130
 			}
-			20 = {
+			25 = {
 				death = {
 					death_reason = death_evolution
 				}
