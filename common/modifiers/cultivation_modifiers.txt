@@ -95,3 +95,25 @@ samsara_memories = {
 	monthly_piety = 0.2
 	stress_gain_mult = -0.1
 }
+
+jianghu_fortuitous_encounter = {
+	icon = diplomacy_august_perk
+	learning = 1
+	monthly_prestige = 0.2
+	hostile_scheme_resistance = 0.1
+}
+
+dao_heart_clarity = {
+	icon = learning_scholarship_focus
+	learning = 2
+	stress_gain_mult = -0.15
+	monthly_piety = 0.2
+}
+
+jianghu_karmic_entanglement = {
+	icon = intrigue_torturer_focus
+	intrigue = 1
+	prowess = 1
+	stress_gain_mult = 0.1
+	monthly_prestige = 0.15
+}

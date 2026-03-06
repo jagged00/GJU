@@ -1,0 +1,12 @@
+﻿l_english:
+  xianxia_depth.010.t:0 "Whispers of the Jianghu"
+  xianxia_depth.010.desc:0 "News spreads of a wandering elder and a half-collapsed grotto where old manuals still breathe with qi. Whether this is a true inheritance or a karmic snare, heaven has placed a fleeting chance before your path."
+  xianxia_depth.010.a:0 "Enter the grotto and test my fate."
+  xianxia_depth.010.b:0 "Trade favors and cultivate worldly ties."
+  xianxia_depth.010.c:0 "Withdraw and guard my dao-heart."
+
+  xianxia_depth.100.t:0 "Dusty Scripture, Crimson Oath"
+  xianxia_depth.100.desc:0 "In a forgotten market beyond sect law, a fragmentary scripture and an ancient token are offered under moonlight. One path promises righteous insight, another promises ruthless gain, and both demand a price from your karmic ledger."
+  xianxia_depth.100.a:0 "Take the scripture and walk the orthodox path."
+  xianxia_depth.100.b:0 "Take the token and embrace jianghu expedience."
+  xianxia_depth.100.c:0 "I need neither. My dao is enough."

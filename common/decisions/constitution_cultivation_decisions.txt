@@ -167,7 +167,7 @@ awaken_poison_constitution_decision = {
 	}
 }
 
-# Mortal to Dao body awakening gate so WIP constitutions become obtainable in gameplay
+# Mortal to Dao body awakening gate for Yin-Yang foundation constitutions
 awaken_yin_yang_constitution_decision = {
 
 	picture = {

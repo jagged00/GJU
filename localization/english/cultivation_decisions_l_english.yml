@@ -173,3 +173,7 @@
   promulgate_cultivation_scriptures_decision_desc:0 "Open your scripture pavilion and spread true cultivation methods throughout your court and realm."
   promulgate_cultivation_scriptures_decision_tooltip:0 "Costs prestige and piety. Meridian bearers in your court, vassals, and realm can begin Qi Gathering."
   promulgate_cultivation_scriptures_decision_confirm:0 "Let all worthy disciples walk the path."
+  seek_jianghu_fortune_decision:0 "Seek a Fortuitous Jianghu Encounter"
+  seek_jianghu_fortune_decision_desc:0 "The martial world hides countless secret realms, broken inheritances, and wandering experts. By entering the jianghu personally, you may seize a sliver of heaven's luck—or invite dangerous karma."
+  seek_jianghu_fortune_decision_tooltip:0 "Spend prestige to pursue a lore-rich jianghu encounter event with rewards, injuries, or karmic consequences."
+  seek_jianghu_fortune_decision_confirm:0 "Let fate test my dao-heart."
