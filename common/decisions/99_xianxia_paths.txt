@@ -134,14 +134,14 @@ demonic_devour_blood_essence = {
 	is_shown = {
 		has_trait = demonic_path
 		any_prisoner = {
-			has_trait = cultivation_realm
+			is_cultivator = yes
 			is_imprisoned_by = root
 		}
 	}
 
 	is_valid = {
 		any_prisoner = {
-			has_trait = cultivation_realm
+			is_cultivator = yes
 			is_imprisoned_by = root
 		}
 	}
@@ -149,7 +149,7 @@ demonic_devour_blood_essence = {
 	effect = {
 		random_prisoner = {
 			limit = {
-				has_trait = cultivation_realm
+				is_cultivator = yes
 				is_imprisoned_by = root
 			}
 			save_scope_as = victim
@@ -196,14 +196,14 @@ demonic_forge_pact = {
 	is_shown = {
 		has_trait = demonic_path
 		any_prisoner = {
-			has_trait = cultivation_realm
+			is_cultivator = yes
 			is_imprisoned_by = root
 		}
 	}
 
 	is_valid = {
 		any_prisoner = {
-			has_trait = cultivation_realm
+			is_cultivator = yes
 			is_imprisoned_by = root
 		}
 	}
@@ -211,7 +211,7 @@ demonic_forge_pact = {
 	effect = {
 		random_prisoner = {
 			limit = {
-				has_trait = cultivation_realm
+				is_cultivator = yes
 				is_imprisoned_by = root
 			}
 			save_scope_as = victim
@@ -355,13 +355,13 @@ dual_cultivation_yin_yang_decision = {
 	sort_order = 340
 
 	is_shown = {
-		has_trait = cultivation_realm
+		is_cultivator = yes
 		OR = {
 			has_trait = yin_constitution
 			has_trait = yang_constitution
 		}
 		any_spouse = {
-			has_trait = cultivation_realm
+			is_cultivator = yes
 			OR = {
 				AND = { has_trait = yin_constitution root = { has_trait = yang_constitution } }
 				AND = { has_trait = yang_constitution root = { has_trait = yin_constitution } }
@@ -374,7 +374,7 @@ dual_cultivation_yin_yang_decision = {
 	effect = {
 		random_spouse = {
 			limit = {
-				has_trait = cultivation_realm
+				is_cultivator = yes
 				OR = {
 					AND = { has_trait = yin_constitution root = { has_trait = yang_constitution } }
 					AND = { has_trait = yang_constitution root = { has_trait = yin_constitution } }
@@ -435,10 +435,10 @@ soulmate_dual_cultivation_decision = {
 	sort_order = 341
 
 	is_shown = {
-		has_trait = cultivation_realm
+		is_cultivator = yes
 		any_relation = {
 			type = soulmate
-			has_trait = cultivation_realm
+			is_cultivator = yes
 		}
 	}
 
@@ -447,7 +447,7 @@ soulmate_dual_cultivation_decision = {
 	effect = {
 		random_relation = {
 			type = soulmate
-			limit = { has_trait = cultivation_realm }
+			limit = { is_cultivator = yes }
 			save_scope_as = soulmate_partner
 		}
 		add_character_modifier = { modifier = soulmate_cultivation_resonance years = 6 }
@@ -481,7 +481,7 @@ enter_secret_realm_decision = {
 	sort_order = 520
 
 	is_shown = {
-		has_trait = cultivation_realm
+		is_cultivator = yes
 		OR = {
 			has_trait = foundation_establishment
 			has_trait = core_formation
@@ -509,7 +509,7 @@ attend_heavenly_auction_decision = {
 	selection_tooltip = attend_heavenly_auction_decision_tooltip
 	sort_order = 521
 
-	is_shown = { has_trait = cultivation_realm gold >= 250 }
+	is_shown = { is_cultivator = yes gold >= 250 }
 	is_valid = { gold >= 250 }
 	cost = { gold = 250 }
 	ai_will_do = { base = 35 modifier = { add = 40 has_trait = greedy } }
@@ -530,7 +530,7 @@ challenge_young_master_decision = {
 	selection_tooltip = challenge_young_master_decision_tooltip
 	sort_order = 522
 
-	is_shown = { has_trait = cultivation_realm }
+	is_shown = { is_cultivator = yes }
 	is_valid = { prowess >= 10 }
 	ai_will_do = { base = 30 modifier = { add = 70 has_trait = wrathful } }
 	cooldown = { years = 2 }
@@ -551,7 +551,7 @@ embrace_righteous_path_decision = {
 	sort_order = 300
 
 	is_shown = {
-		has_trait = cultivation_realm
+		is_cultivator = yes
 		NOT = { has_trait = righteous_path }
 		NOT = { has_trait = demonic_path }
 	}
@@ -560,25 +560,23 @@ embrace_righteous_path_decision = {
 
 	ai_will_do = {
 		base = 30
-		modifier = { add = 80 has_trait = compassionate }
+		modifier = { add = 90 has_trait = compassionate }
+		modifier = { add = 70 has_trait = temperate }
 		modifier = { add = 60 has_trait = honest }
-		modifier = { add = 50 has_trait = temperate }
-		modifier = { add = -90 has_trait = cruel }
-		modifier = { add = -80 has_trait = sadistic }
-		modifier = { add = -70 has_trait = greedy }
+		modifier = { add = -100 has_trait = sadistic }
+		modifier = { add = -80 has_trait = arbitrary }
 		modifier = {
 			add = 90
 			any_dynasty_member = { has_trait = righteous_path }
 		}
 		modifier = {
-			add = -50
+			add = -60
 			any_dynasty_member = { has_trait = demonic_path }
 		}
 	}
 
 	effect = {
-		add_trait = righteous_path
-		add_piety = 100
+		trigger_event = { id = xianxia_path.1201 }
 	}
 	cooldown = { years = 20 }
 }
@@ -590,7 +588,7 @@ embrace_demonic_path_decision = {
 	sort_order = 301
 
 	is_shown = {
-		has_trait = cultivation_realm
+		is_cultivator = yes
 		NOT = { has_trait = righteous_path }
 		NOT = { has_trait = demonic_path }
 	}
@@ -599,25 +597,24 @@ embrace_demonic_path_decision = {
 
 	ai_will_do = {
 		base = 30
-		modifier = { add = 90 has_trait = cruel }
-		modifier = { add = 80 has_trait = sadistic }
-		modifier = { add = 70 has_trait = greedy }
+		modifier = { add = 100 has_trait = sadistic }
+		modifier = { add = 85 has_trait = cruel }
 		modifier = { add = 70 has_trait = arbitrary }
-		modifier = { add = -90 has_trait = compassionate }
-		modifier = { add = -60 has_trait = honest }
+		modifier = { add = 60 has_trait = greedy }
+		modifier = { add = -100 has_trait = compassionate }
+		modifier = { add = -70 has_trait = honest }
 		modifier = {
 			add = 90
 			any_dynasty_member = { has_trait = demonic_path }
 		}
 		modifier = {
-			add = -50
+			add = -60
 			any_dynasty_member = { has_trait = righteous_path }
 		}
 	}
 
 	effect = {
-		add_trait = demonic_path
-		add_dread = 30
+		trigger_event = { id = xianxia_path.1202 }
 	}
 	cooldown = { years = 20 }
 }
@@ -630,7 +627,7 @@ seize_beauty_dual_cauldron_decision = {
 
 	is_shown = {
 		has_trait = demonic_path
-		has_trait = cultivation_realm
+		is_cultivator = yes
 		is_ruler = yes
 		OR = { has_trait = lustful has_trait = greedy has_trait = arbitrary }
 	}

@@ -26,3 +26,14 @@
  xianxia_path.1101.d:0 "Rumors spread of a rare yin-yang beauty in a rival ruler's court. Seizing them could greatly accelerate your demonic cultivation."
  xianxia_path.1101.a:0 "Launch the abduction plot."
  xianxia_path.1101.b:0 "Not now."
+
+
+ xianxia_path.1201.t:0 "Vow Before Heaven"
+ xianxia_path.1201.d:0 "You steel your dao-heart and pledge yourself to discipline, restraint, and justice. From this day onward, your cultivation follows the righteous way."
+ xianxia_path.1201.a:0 "I swear the righteous oath."
+ xianxia_path.1201.b:0 "Not yet."
+
+ xianxia_path.1202.t:0 "Heart Demon Temptation"
+ xianxia_path.1202.d:0 "A ruthless voice in your heart offers swift power at any cost. If you accept, your path will be paved with fear and blood."
+ xianxia_path.1202.a:0 "Power first—embrace the demonic path."
+ xianxia_path.1202.b:0 "I refuse this descent."
