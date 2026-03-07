@@ -8,6 +8,6 @@
  request_teach_cultivation_interaction:0 "Request teaching in Cultivation"
  request_teach_cultivation_interaction_desc:0 "Request that [recipient.GetShortUINameNoTooltip] teach you Cultivation"
  
- demonic_cripple_meridians:0 "Cripple Meridians"
+ demonic_cripple_meridians:0 "Cripple Prisoner Meridians"
  demonic_cripple_meridians_desc:0 "Shatter this prisoner’s qi channels, ruining their cultivation forever. A fate worse than death for any Dao seeker."
  meridians_crippled_opinion:0 "Crippled My Meridians"
