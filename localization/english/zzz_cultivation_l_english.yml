@@ -1471,9 +1471,9 @@
  ## VISIT EVENTS
 
  visit_cultivation_sect_decision:0 "Visit Cultivation Sect"
- visit_cultivation_sect_decision_desc:0 "In China cultivaters is part of some sects. Some sects has bacground old as this world and some is just founded. Visit a sect to learn more about them. Find out their history, their way of cultivation and maybe you will want to join them or make them Tremble in your presence."
- visit_cultivation_sect_decision_tooltip:0 "Choose a sect to visit."
- visit_cultivation_sect_decision_confirm:0 "Visit Sect"
+ visit_cultivation_sect_decision_desc:0 "In China cultivaters is part of some sects. Some sects have backgrounds as old as this world and others were just founded. Visit a local branch to learn more about them. Find out their history, their way of cultivation and maybe you will want to join them or make them Tremble in your presence."
+ visit_cultivation_sect_decision_tooltip:0 "Choose a sect branch to visit."
+ visit_cultivation_sect_decision_confirm:0 "Visit Sect Branch"
 
  cultivation_sect_visit.1000.t:0 "Mount Hua Sect"
  cultivation_sect_visit.1000.desc:0 "A prestigious orthodox sect known for their elegant sword techniques and righteous cultivation path. A sect elder approaches to assess your potential."
