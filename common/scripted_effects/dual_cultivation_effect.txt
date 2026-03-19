@@ -1,0 +1,33 @@
+﻿dual_cultivation_effect = {
+	if = {
+		limit = {
+			OR = {
+				has_trait = qi_gathering
+				has_trait = foundation_establishment
+				has_trait = core_formation
+				has_trait = nascent_soul
+				has_trait = spirit_severing
+				has_trait = dao_seeking
+				has_trait = immortal_ascension
+			}
+		}
+		add_cultivation_lifestyle_xp = medium_lifestyle_xp
+	}
+
+	scope:carn_sex_partner_scope = {
+		if = {
+			limit = {
+				OR = {
+					has_trait = qi_gathering
+					has_trait = foundation_establishment
+					has_trait = core_formation
+					has_trait = nascent_soul
+					has_trait = spirit_severing
+					has_trait = dao_seeking
+					has_trait = immortal_ascension
+				}
+			}
+			add_cultivation_lifestyle_xp = medium_lifestyle_xp
+		}
+	}
+}
