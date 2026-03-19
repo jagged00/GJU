@@ -9,13 +9,13 @@
 
 						# ROOT karakterin dynasty perki
 						dynasty = {
-							has_dynasty_perk = martial_arts_legacy_3
+							has_dynasty_perk = cultivation_legacy_3
 						}
 
 						# Partner dynasty perki
 						scope:carn_sex_partner = {
 							dynasty = {
-								has_dynasty_perk = martial_arts_legacy_3
+								has_dynasty_perk = cultivation_legacy_3
 							}
 						}
 					}

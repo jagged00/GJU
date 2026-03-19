@@ -13,7 +13,6 @@
             dynasty = { has_dynasty_perk = cultivation_legacy_3 }
             # Must have at least one cultivation trait
 				OR = {
-					has_trait = cultivation_mortal
 					has_trait = qi_gathering
 					has_trait = foundation_establishment
 					has_trait = core_formation
@@ -107,18 +106,41 @@
             dual_cultivation_effect = yes
 
             # Additional benefits based on realm compatibility
-            if = {
-                limit = {
-                    # Same cultivation realm = bonus
-                    scope:actor = {
-                        has_trait = cultivation_mortal
-                    }
-                    scope:recipient = {
-                        has_trait = cultivation_mortal
-                    }
-                }
-                add_character_modifier = {
-                    modifier = dual_cultivation_boost
+	            if = {
+	                limit = {
+	                    OR = {
+	                        AND = {
+	                            scope:actor = { has_trait = qi_gathering }
+	                            scope:recipient = { has_trait = qi_gathering }
+	                        }
+	                        AND = {
+	                            scope:actor = { has_trait = foundation_establishment }
+	                            scope:recipient = { has_trait = foundation_establishment }
+	                        }
+	                        AND = {
+	                            scope:actor = { has_trait = core_formation }
+	                            scope:recipient = { has_trait = core_formation }
+	                        }
+	                        AND = {
+	                            scope:actor = { has_trait = nascent_soul }
+	                            scope:recipient = { has_trait = nascent_soul }
+	                        }
+	                        AND = {
+	                            scope:actor = { has_trait = spirit_severing }
+	                            scope:recipient = { has_trait = spirit_severing }
+	                        }
+	                        AND = {
+	                            scope:actor = { has_trait = dao_seeking }
+	                            scope:recipient = { has_trait = dao_seeking }
+	                        }
+	                        AND = {
+	                            scope:actor = { has_trait = immortal_ascension }
+	                            scope:recipient = { has_trait = immortal_ascension }
+	                        }
+	                    }
+	                }
+	                add_character_modifier = {
+	                    modifier = dual_cultivation_boost
                     months = 6
                 }
                 scope:recipient = {
@@ -131,33 +153,27 @@
 
             # Higher realm helping lower realm = teaching bonus
             if = {
-                limit = {
-                    scope:actor = {
-                        OR = {
-                            has_trait = cultivation_mortal
-                            has_trait = unrestrained_realm
-                            has_trait = immortal_realm
-                        }
-                    }
-                    scope:recipient = {
-                        OR = {
-                            has_trait = cultivation_mortal
-                            has_trait = core_formation
-                        }
-                    }
-                }
-                scope:recipient = {
-                    # Double XP gain for lower realm partner
-                    if = {
-                        limit = { has_trait = cultivation_mortal }
-                        add_cultivation_lifestyle_xp = medium_lifestyle_xp
-                    }
-                    else_if = {
-                        limit = { has_trait = cultivation_mortal }
-                        add_cultivation_lifestyle_xp = medium_lifestyle_xp
-                    }
-                }
-            }
+	                limit = {
+	                    scope:actor = {
+	                        OR = {
+	                            has_trait = spirit_severing
+	                            has_trait = dao_seeking
+	                            has_trait = immortal_ascension
+	                        }
+	                    }
+	                    scope:recipient = {
+	                        OR = {
+	                            has_trait = qi_gathering
+	                            has_trait = foundation_establishment
+	                            has_trait = core_formation
+	                            has_trait = nascent_soul
+	                        }
+	                    }
+	                }
+	                scope:recipient = {
+	                    add_cultivation_lifestyle_xp = medium_lifestyle_xp
+	                }
+	            }
 
             # Stress relief
             stress_impact = {
