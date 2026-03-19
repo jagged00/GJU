@@ -5,7 +5,7 @@ open_meridians_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_find_roots.dds"
 	}
-	
+
 	#decision_group_type = cultivation
 	sort_order = 500
 
@@ -26,7 +26,7 @@ open_meridians_decision = {
 	}
     ai_check_interval = 60
 
-    
+
 	ai_will_do = {
 		base = 100
 		modifier = {
@@ -92,7 +92,7 @@ begin_cultivation_decision = {
 		}
 		custom_tooltip = begin_cultivation_decision_tooltip
 
-		
+
     }
 }
 
@@ -103,15 +103,13 @@ breakthrough_decision_1 = {
     picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_breakthrough.dds"
 	}
-    
+
 
     desc = breakthrough_decision_1_desc
     selection_tooltip = breakthrough_decision_1_selection_tooltip
 	sort_order = 1000
 
-    is_shown = {
-        has_trait = qi_gathering
-    }
+    is_shown = { always = no }
 
     is_valid = {
         custom_description = {
@@ -139,19 +137,17 @@ breakthrough_decision_1 = {
 }
 #To core formation
 breakthrough_decision_2 = {
-    
+
     picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_breakthrough.dds"
 	}
-    
+
 
     desc = breakthrough_decision_2_desc
     selection_tooltip = breakthrough_decision_2_selection_tooltip
 	sort_order = 1000
 
-    is_shown = {
-        has_trait = foundation_establishment
-    }
+    is_shown = { always = no }
 
     is_valid = {
         custom_description = {
@@ -179,19 +175,17 @@ breakthrough_decision_2 = {
 }
 #To nascent soul
 breakthrough_decision_3 = {
-    
+
     picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_breakthrough.dds"
 	}
-    
+
 
     desc = breakthrough_decision_3_desc
     selection_tooltip = breakthrough_decision_3_selection_tooltip
 	sort_order = 1000
 
-    is_shown = {
-        has_trait = core_formation
-    }
+    is_shown = { always = no }
 
     is_valid = {
         custom_description = {
@@ -216,24 +210,22 @@ breakthrough_decision_3 = {
             breakthrough_decision_effect = yes
         }
 
-		
+
     }
 }
 #To spirit severing
 breakthrough_decision_4 = {
-    
+
     picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_breakthrough.dds"
 	}
-    
+
 
     desc = breakthrough_decision_4_desc
     selection_tooltip = breakthrough_decision_4_selection_tooltip
 	sort_order = 1000
 
-    is_shown = {
-        has_trait = nascent_soul
-    }
+    is_shown = { always = no }
 
     is_valid = {
         custom_description = {
@@ -261,19 +253,17 @@ breakthrough_decision_4 = {
 }
 
 breakthrough_decision_5 = {
-    
+
     picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_breakthrough.dds"
 	}
-    
+
 
     desc = breakthrough_decision_5_desc
     selection_tooltip = breakthrough_decision_5_selection_tooltip
 	sort_order = 1000
 
-    is_shown = {
-        has_trait = spirit_severing
-    }
+    is_shown = { always = no }
 
     is_valid = {
         custom_description = {
@@ -301,19 +291,17 @@ breakthrough_decision_5 = {
 }
 
 breakthrough_decision_6 = {
-    
+
     picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_breakthrough.dds"
 	}
-    
+
 
     desc = breakthrough_decision_6_desc
     selection_tooltip = breakthrough_decision_6_selection_tooltip
 	sort_order = 1000
 
-    is_shown = {
-        has_trait = dao_seeking
-    }
+    is_shown = { always = no }
 
     is_valid = {
         custom_description = {
@@ -346,7 +334,7 @@ test_decision = {
     picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_start_cultivation.dds"
 	}
-    
+
 
     desc = test_decision
     selection_tooltip = test_decision
