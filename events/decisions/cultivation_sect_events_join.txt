@@ -13,7 +13,7 @@ cultivation_sect_join.1000 = {
     desc = cultivation_sect_join.1000.desc
     theme = martial
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -57,7 +57,7 @@ cultivation_sect_join.1003 = {
     desc = cultivation_sect_join.1003.desc
     theme = martial
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -100,7 +100,7 @@ cultivation_sect_join.1004 = {
     desc = cultivation_sect_join.1004.desc
     theme = martial
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -143,7 +143,7 @@ cultivation_sect_join.1052 = {
     desc = cultivation_sect_join.1052.desc
     theme = learning
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -186,7 +186,7 @@ cultivation_sect_join.1053 = {
     desc = cultivation_sect_join.1053.desc
     theme = learning
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -229,7 +229,7 @@ cultivation_sect_join.1100 = {
     desc = cultivation_sect_join.1100.desc
     theme = diplomacy
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -272,7 +272,7 @@ cultivation_sect_join.1101 = {
     desc = cultivation_sect_join.1101.desc
     theme = diplomacy
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -315,7 +315,7 @@ cultivation_sect_join.1102 = {
     desc = cultivation_sect_join.1102.desc
     theme = diplomacy
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -358,7 +358,7 @@ cultivation_sect_join.1150 = {
     desc = cultivation_sect_join.1150.desc
     theme = diplomacy
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -401,7 +401,7 @@ cultivation_sect_join.1154 = {
     desc = cultivation_sect_join.1154.desc
     theme = diplomacy
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -446,7 +446,7 @@ cultivation_sect_join.2000 = {
     desc = cultivation_sect_join.2000.desc
     theme = martial
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -489,7 +489,7 @@ cultivation_sect_join.2001 = {
     desc = cultivation_sect_join.2001.desc
     theme = martial
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -532,7 +532,7 @@ cultivation_sect_join.2003 = {
     desc = cultivation_sect_join.2003.desc
     theme = martial
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -575,7 +575,7 @@ cultivation_sect_join.2051 = {
     desc = cultivation_sect_join.2051.desc
     theme = learning
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -618,7 +618,7 @@ cultivation_sect_join.2052 = {
     desc = cultivation_sect_join.2052.desc
     theme = learning
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -661,7 +661,7 @@ cultivation_sect_join.2103 = {
     desc = cultivation_sect_join.2103.desc
     theme = intrigue
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -697,14 +697,14 @@ cultivation_sect_join.2103 = {
     }
 }
 
-# Eternal Pleasure Hall - Join Event 2104
+# Hall of Lasting Harmony - Join Event 2104
 cultivation_sect_join.2104 = {
     type = character_event
     title = cultivation_sect_join.2104.t
     desc = cultivation_sect_join.2104.desc
     theme = intrigue
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -749,7 +749,7 @@ cultivation_sect_join.2150 = {
     desc = cultivation_sect_join.2150.desc
     theme = intrigue
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -792,7 +792,7 @@ cultivation_sect_join.2151 = {
     desc = cultivation_sect_join.2151.desc
     theme = intrigue
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -835,7 +835,7 @@ cultivation_sect_join.2152 = {
     desc = cultivation_sect_join.2152.desc
     theme = intrigue
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -878,7 +878,7 @@ cultivation_sect_join.3001 = {
     desc = cultivation_sect_join.3001.desc
     theme = martial
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -921,7 +921,7 @@ cultivation_sect_join.3051 = {
     desc = cultivation_sect_join.3051.desc
     theme = intrigue
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -959,14 +959,14 @@ cultivation_sect_join.3051 = {
 
 # ===== DEMONIC BLOOD DAO =====
 
-# Blood Yin Cult - Join Event 3100
+# Crimson Yin Sect - Join Event 3100
 cultivation_sect_join.3100 = {
     type = character_event
     title = cultivation_sect_join.3100.t
     desc = cultivation_sect_join.3100.desc
     theme = intrigue
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -1009,7 +1009,7 @@ cultivation_sect_join.3101 = {
     desc = cultivation_sect_join.3101.desc
     theme = intrigue
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -1045,14 +1045,14 @@ cultivation_sect_join.3101 = {
     }
 }
 
-# Succubus Palace - Join Event 3150
+# Palace of Devouring Shadows - Join Event 3150
 cultivation_sect_join.3150 = {
     type = character_event
     title = cultivation_sect_join.3150.t
     desc = cultivation_sect_join.3150.desc
     theme = intrigue
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -1097,7 +1097,7 @@ cultivation_sect_join.4000 = {
     desc = cultivation_sect_join.4000.desc
     theme = martial
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -1140,7 +1140,7 @@ cultivation_sect_join.4002 = {
     desc = cultivation_sect_join.4002.desc
     theme = martial
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -1185,7 +1185,7 @@ cultivation_sect_join.4050 = {
     desc = cultivation_sect_join.4050.desc
     theme = stewardship
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -1228,7 +1228,7 @@ cultivation_sect_join.4051 = {
     desc = cultivation_sect_join.4051.desc
     theme = stewardship
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -1271,7 +1271,7 @@ cultivation_sect_join.4052 = {
     desc = cultivation_sect_join.4052.desc
     theme = stewardship
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -1314,7 +1314,7 @@ cultivation_sect_join.4101 = {
     desc = cultivation_sect_join.4101.desc
     theme = diplomacy
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -1357,7 +1357,7 @@ cultivation_sect_join.4102 = {
     desc = cultivation_sect_join.4102.desc
     theme = diplomacy
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
@@ -1400,7 +1400,7 @@ cultivation_sect_join.4152 = {
     desc = cultivation_sect_join.4152.desc
     theme = diplomacy
 
-    left_portrait = { character = ROOT animation = ecstasy }
+    left_portrait = { character = ROOT animation = personality_rational }
     right_portrait = { character = scope:sect_elder animation = personality_bold }
 
     # MASTER OPTION - High cultivation level required
