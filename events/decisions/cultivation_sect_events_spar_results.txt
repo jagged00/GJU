@@ -1,31 +1,55 @@
-﻿cultivation_sect_spar_results.1000 = {
+﻿namespace = cultivation_sect_spar_results
+
+cultivation_sect_spar_results.1000 = {
     type = character_event
-	theme = martial
-	immediate = {
+    hide_window = yes
+    theme = martial
 
-		# Winner gain
-		scope:sc_victor = {
-			change_variable = {
-				name = sect_spars_won
-				add = 1
-			}
-			change_variable = {
-				name = sect_spars_total
-				add = 1
-			}
-			#add_cultivation_lifestyle_xp = minor_lifestyle_xp
-		}
+    immediate = {
+        scope:sc_victor = {
+            if = {
+                limit = { NOT = { exists = var:sect_spars_won } }
+                set_variable = { name = sect_spars_won value = 0 }
+            }
+            if = {
+                limit = { NOT = { exists = var:sect_spars_total } }
+                set_variable = { name = sect_spars_total value = 0 }
+            }
+            change_variable = {
+                name = sect_spars_won
+                add = 1
+            }
+            change_variable = {
+                name = sect_spars_total
+                add = 1
+            }
+            add_character_modifier = {
+                modifier = sect_spar_victory
+                months = 6
+            }
+        }
 
-		# Loser gain
-		scope:sc_loser = {
-			change_variable = {
-				name = sect_spars_lost
-				add = 1
-			}
-			change_variable = {
-				name = sect_spars_total
-				add = 1
-			}
-		}
-	}
+        scope:sc_loser = {
+            if = {
+                limit = { NOT = { exists = var:sect_spars_lost } }
+                set_variable = { name = sect_spars_lost value = 0 }
+            }
+            if = {
+                limit = { NOT = { exists = var:sect_spars_total } }
+                set_variable = { name = sect_spars_total value = 0 }
+            }
+            change_variable = {
+                name = sect_spars_lost
+                add = 1
+            }
+            change_variable = {
+                name = sect_spars_total
+                add = 1
+            }
+            add_character_modifier = {
+                modifier = sect_spar_defeat
+                months = 6
+            }
+        }
+    }
 }

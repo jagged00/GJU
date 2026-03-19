@@ -146,8 +146,8 @@ window = {
 					button_round = {
 						visible = "[Not(GetPlayer.MakeScope.Var('cultivation_left_partner').IsSet)]"
 
-						onclick = "[Character.OpenPlayerInteraction( 'find_cultivation_left_partner' )]"
-						enabled = "[Character.IsPlayerInteractionValid( 'find_cultivation_left_partner' )]"
+						onclick = "[GetScriptedGui('open_left_partner_finder').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						enabled = "[GetScriptedGui('open_left_partner_finder').CanExecute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 
 						button_change = {
 							parentanchor = center
@@ -169,8 +169,8 @@ window = {
 							#size = { 25 25 }
 						}
 
-						onclick = "[Character.OpenPlayerInteraction( 'find_cultivation_left_partner' )]"
-						enabled = "[Character.IsPlayerInteractionValid( 'find_cultivation_left_partner' )]"
+						onclick = "[GetScriptedGui('open_left_partner_finder').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						enabled = "[GetScriptedGui('open_left_partner_finder').CanExecute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 					}
 
 					# Remove button (only if partner exists)
@@ -257,8 +257,8 @@ window = {
 						visible = "[Not(GetPlayer.MakeScope.Var('cultivation_right_partner').IsSet)]"
 						#size = { 35 35 }
 
-						onclick = "[Character.OpenPlayerInteraction( 'find_cultivation_right_partner' )]"
-						enabled = "[Character.IsPlayerInteractionValid( 'find_cultivation_right_partner' )]"
+						onclick = "[GetScriptedGui('open_right_partner_finder').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						enabled = "[GetScriptedGui('open_right_partner_finder').CanExecute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 						button_change = {
 							parentanchor = center
 							alwaystransparent = yes
@@ -278,8 +278,8 @@ window = {
 							#size = { 25 25 }
 						}
 
-						onclick = "[Character.OpenPlayerInteraction( 'find_cultivation_right_partner' )]"
-						enabled = "[Character.IsPlayerInteractionValid( 'find_cultivation_right_partner' )]"
+						onclick = "[GetScriptedGui('open_right_partner_finder').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						enabled = "[GetScriptedGui('open_right_partner_finder').CanExecute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 					}
 
 					# Remove button (only if partner exists)

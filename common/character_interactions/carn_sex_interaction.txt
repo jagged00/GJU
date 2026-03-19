@@ -1,6 +1,6 @@
 ﻿carn_sex_interaction = {
     category = interaction_category_friendly
-    
+
     desc = carn_sex_interaction_desc
     interface_priority = 40
     use_diplomatic_range = no
@@ -53,7 +53,7 @@
         scope:recipient = {
             carn_can_have_sex_trigger = yes
         }
-            
+
         # if this is a paid transaction, actor needs the gold
         trigger_if = {
             limit = {
@@ -87,7 +87,7 @@
 
 					if = {
 						limit = {
-							dynasty = { has_dynasty_perk = martial_arts_legacy_3 }
+							dynasty = { has_dynasty_perk = cultivation_legacy_3 }
 						}
 
 						scope:recipient = {
@@ -132,7 +132,7 @@
 
 				if = {
 					limit = {
-						dynasty = { has_dynasty_perk = martial_arts_legacy_3 }
+						dynasty = { has_dynasty_perk = cultivation_legacy_3 }
 					}
 
 					scope:recipient = {

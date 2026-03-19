@@ -2110,4 +2110,20 @@
  cultivation_select_right_partner_interaction:0 "Select Right-Side Cultivation Partner"
  cultivation_select_right_partner_interaction_desc:0 "Choose this cultivator as your right-side dual cultivation partner. They will appear in your cultivation window."
 
+ dual_cultivation_interaction:0 "Dual Cultivation"
+ dual_cultivation_interaction_desc:0 "Cultivate together with this character to harmonize your qi and accelerate mutual growth."
+
+ find_cultivation_left_partner_desc:0 "Choose a cultivator to fill your left-side dual cultivation slot."
+ find_cultivation_right_partner_desc:0 "Choose a cultivator to fill your right-side dual cultivation slot."
+ FIND_LEFT_PARTNER_TOOLTIP:0 "Select a left-side cultivation partner"
+ FIND_RIGHT_PARTNER_TOOLTIP:0 "Select a right-side cultivation partner"
+ CULTIVATION_LEFT_PARTNER_AVAILABLE:0 "A valid left-side cultivation partner is available"
+ CULTIVATION_RIGHT_PARTNER_AVAILABLE:0 "A valid right-side cultivation partner is available"
+ NOT_ALREADY_RIGHT_PARTNER:0 "This character is not already your right-side cultivation partner"
+ NOT_ALREADY_LEFT_PARTNER:0 "This character is not already your left-side cultivation partner"
+ CULTIVATION_LEFT_PARTNER_SELECTED:0 "Left-side cultivation partner selected"
+ CULTIVATION_LEFT_PARTNER_SELECTED_DESC:0 "Your left-side cultivation partner has been updated."
+ CULTIVATION_RIGHT_PARTNER_SELECTED:0 "Right-side cultivation partner selected"
+ CULTIVATION_RIGHT_PARTNER_SELECTED_DESC:0 "Your right-side cultivation partner has been updated."
+
  CULTIVATION_PARTNER_SELECTED_NOTIFICATION:0 "Cultivation partner selected"

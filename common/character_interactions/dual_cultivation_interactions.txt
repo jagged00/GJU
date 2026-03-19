@@ -56,7 +56,6 @@
         }
     }
 
-    cooldown = { months = dual_cultivation_cooldown }
 
     is_valid_showing_failures_only = {
         # For disabling interaction if they can't have sex
@@ -77,7 +76,7 @@
     }
 
     # Cooldown between dual cultivation sessions
-    cooldown = { months = 3 }
+    cooldown = { months = dual_cultivation_cooldown }
 
     on_accept = {
         scope:actor = {
