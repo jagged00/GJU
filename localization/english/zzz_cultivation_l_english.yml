@@ -61,7 +61,7 @@
  ##Dynasty
  ##############
  cultivation_legacy_track_name:0 "Immortal Blood"
- cultivation_legacy_track_desc:0 "Cultivation familys create their own way"
+ cultivation_legacy_track_desc:0 "Cultivation families forge their own legacy through bloodline, scripture, and discipline."
  cultivation_legacy_1_name:0 "Awaken Bloodline"
  cultivation_legacy_2_name:0 "Teaching"
  cultivation_legacy_3_name:0 "Army"
@@ -83,13 +83,13 @@
  IMMORTAL_CULTIVATOR_DESCRIPTION:0 "#weak [GetMaA('immortal_army_1').GetName] and [GetMaA('immortal_army_2').GetName] Requires: Immortal Realm#!"
 
  ZOMBIE_UNLOCK_DESCRIPTION:0 "Can recruit [GetMaA('zombie_army_4').GetName] and [GetMaA('zombie_army_5').GetName] as [men_at_arms|E]"
- ZOMBIE_DESCRIPTION:0 "#weak [GetMaA('zombie_army_1').GetName], Requieres: Qi Gathering and up, \n[GetMaA('zombie_army_2').GetName], Requires: Golden Core and up, \n[GetMaA('zombie_army_3').GetName], Requires: Peak Realm and up, \n[GetMaA('zombie_army_4').GetName], Requires: Unrestrained Realm and up, \n[GetMaA('zombie_army_5').GetName], Requires: Immortal Realm#!"
+ ZOMBIE_DESCRIPTION:0 "#weak [GetMaA('zombie_army_1').GetName], Requires: Qi Gathering or above.\n[GetMaA('zombie_army_2').GetName], Requires: Golden Core or above.\n[GetMaA('zombie_army_3').GetName], Requires: Peak Realm or above.\n[GetMaA('zombie_army_4').GetName], Requires: Unrestrained Realm or above.\n[GetMaA('zombie_army_5').GetName], Requires: Immortal Realm.#!"
 
  SEDUCER_UNLOCK_DESCRIPTION:0 ""
  SEDUCER_DESCRIPTION:0 ""
 
  MARTIAL_ARTIST_UNLOCK_DESCRIPTION:0 "Can recruit [GetMaA('martial_artist_army_1').GetName], [GetMaA('martial_artist_army_2').GetName] and [GetMaA('martial_artist_army_3').GetName] as [men_at_arms|E]"
- MARTIAL_ARTIST_DESCRIPTION:0 "#weak [GetMaA('martial_artist_army_1').GetName], Requieres: Qi Gathering and up, \n[GetMaA('martial_artist_army_2').GetName], Requires: Peak Realm and up, \n[GetMaA('martial_artist_army_3').GetName] Requires: Unrestrained Realm and up#!"
+ MARTIAL_ARTIST_DESCRIPTION:0 "#weak [GetMaA('martial_artist_army_1').GetName], Requires: Qi Gathering or above.\n[GetMaA('martial_artist_army_2').GetName], Requires: Peak Realm or above.\n[GetMaA('martial_artist_army_3').GetName], Requires: Unrestrained Realm or above.#!"
 
  CULTIVATOR_UNLOCK_DESCRIPTION:0 ""
  CULTIVATOR_DESCRIPTION:0 ""
@@ -147,8 +147,8 @@
  challenge_to_sect_spar:0 "Challenge to Sect Spar"
  challenge_to_sect_spar_desc:0 "Challenge [recipient.GetTitledFirstName] to a friendly cultivation spar in the sect courtyard.\n\n#bold Your Record:#! [actor.Var('sect_spars_won').GetValue]W - [actor.Var('sect_spars_lost').GetValue]L ([actor.Var('sect_spars_total').GetValue] total)\n#bold Their Record:#! [recipient.Var('sect_spars_won').GetValue]W - [recipient.Var('sect_spars_lost').GetValue]L ([recipient.Var('sect_spars_total').GetValue] total)"
 
- cultivation_spar_effect.tt:0 "Can gain #P [GetLifestyle('cultivation_lifestyle').GetName] #!Experiance"
- cultivation_spar_effect.ttt:0 "Can gain #P [GetLifestyle('cultivation_lifestyle').GetName] #!Experiance"
+ cultivation_spar_effect.tt:0 "Can gain #P [GetLifestyle('cultivation_lifestyle').GetName] #!Experience"
+ cultivation_spar_effect.ttt:0 "Can gain #P [GetLifestyle('cultivation_lifestyle').GetName] #!Experience"
 
  ##################################################
  # MODIFIERS
@@ -211,7 +211,7 @@
  spar_actor_is_inexperienced:0 "You have limited sparring experience ([actor.Var('sect_spars_total').GetValue] total spars)"
 
  sect_spar_option_tooltip:0 "Your record: #P [Character.Var('sect_spars_won').GetValue]W#! - #N [Character.Var('sect_spars_lost').GetValue]L#! ([Character.Var('sect_spars_total').GetValue] total)"
- sect_join_is_cultivator_desc:0 "You are cultivator."
+ sect_join_is_cultivator_desc:0 "You are a cultivator."
  sect_join_isnt_cultivator_desc:0 "You are not a cultivator."
 
  ##################################################
@@ -220,7 +220,7 @@
 
  cultivation_lifestyle:0 "Cultivation"
  cultivation_lifestyle_name:0 "Cultivation"
- cultivation_lifestyle_desc:0 "The path of immortality through cultivation of Qi, body refinement, and soul tempering."
+ cultivation_lifestyle_desc:0 "The path to immortality through qi cultivation, body refinement, and tempering of the soul."
  cultivation_lifestyle_highlight_desc:0 "Unlocks a new way of life"
  cultivation_path_name:0 "Cultivation Path"
 
@@ -236,7 +236,7 @@
 
  cultivation_unorthodox_focus:0 "Unorthodox Cultivation"
  cultivation_unorthodox_focus_name:0 "Unorthodox Cultivation"
- cultivation_unorthodox_focus_desc:0 "Pursue unconventional cultivation methods that lie in the grey area between orthodox and demonic paths."
+ cultivation_unorthodox_focus_desc:0 "Pursue unconventional cultivation methods that lie in the gray space between orthodox discipline and forbidden arts."
  cultivation_unorthodox_focus_effect_desc:0 ""
 
  cultivation_demonic_focus:0 "Demonic Cultivation"
@@ -366,10 +366,10 @@
  trait_phoenix_bloodline_1:0 "Phoenix Blood"
  trait_phoenix_bloodline_2:0 "Pure Phoenix Blood"
  trait_phoenix_bloodline_3:0 "Awakened Phoenix Blood"
- trait_anchestor_bloodline:0 "Anchestor Blood"
- trait_anchestor_bloodline_1:0 "Anchestor Blood"
- trait_anchestor_bloodline_2:0 "Pure Anchestor Blood"
- trait_anchestor_bloodline_3:0 "Awakened Anchestor Blood"
+ trait_anchestor_bloodline:0 "Ancestor Blood"
+ trait_anchestor_bloodline_1:0 "Ancestor Blood"
+ trait_anchestor_bloodline_2:0 "Pure Ancestor Blood"
+ trait_anchestor_bloodline_3:0 "Awakened Ancestor Blood"
  trait_poison_bloodline:0 "Poison Blood"
  trait_poison_bloodline_1:0 "Poison Blood"
  trait_poison_bloodline_2:0 "Pure Poison Blood"
@@ -407,8 +407,8 @@
  trait_dragon_bloodline_character_desc:0 "Dragon Blood"
  trait_phoenix_bloodline_desc:0 "Phoenix Blood"
  trait_phoenix_bloodline_character_desc:0 "Phoenix Blood"
- trait_anchestor_bloodline_desc:0 "Anchestor Blood"
- trait_anchestor_bloodline_character_desc:0 "Anchestor Blood"
+ trait_anchestor_bloodline_desc:0 "Ancestor Blood"
+ trait_anchestor_bloodline_character_desc:0 "Ancestor Blood"
  trait_poison_bloodline_desc:0 "Poison Blood"
  trait_poison_bloodline_character_desc:0 "Poison Blood"
  trait_cursed_bloodline_desc:0 "Cursed Blood"
@@ -924,7 +924,7 @@
  cultivation_orthodox_adj:0 "Orthodox"
  cultivation_orthodox_adherent:0 "Orthodox Cultivator"
  cultivation_orthodox_adherent_plural:0 "Orthodox Cultivators"
- cultivation_orthodox_desc:0 "The path of the orthodox cultivation."
+ cultivation_orthodox_desc:0 "A cultivation tradition rooted in order, inheritance, and righteous discipline."
 
  # ============================================================================
  # UNORTHODOX FAMILY RELIGIONS (4)
@@ -934,7 +934,7 @@
  cultivation_unorthodox_adj:0 "Unorthodox"
  cultivation_unorthodox_adherent:0 "Unorthodox Cultivator"
  cultivation_unorthodox_adherent_plural:0 "Unorthodox Cultivators"
- cultivation_unorthodox_desc:0 "The path of the unorthodox cultivation."
+ cultivation_unorthodox_desc:0 "A cultivation tradition of unconventional methods, secret arts, and uncertain orthodoxy."
 
  # ============================================================================
  # DEMONIC FAMILY RELIGIONS (4)
@@ -1199,7 +1199,7 @@
  hopping_corpse_sect_adj:0 "Hopping Corpse"
  hopping_corpse_sect_adherent:0 "Hopping Corpse Cultivator"
  hopping_corpse_sect_adherent_plural:0 "Hopping Corpse Cultivators"
- hopping_corpse_sect_desc:0 "Specialists in creating and controlling traditional Chinese jiangshi."
+ hopping_corpse_sect_desc:0 "Specialists in creating and commanding jiangshi through talisman, ritual, and corpse refinement."
 
  blood_river_sect:0 "Scarlet River Hall"
  blood_river_sect_adj:0 "Blood River"
@@ -1271,7 +1271,7 @@
  lone_wolf_wanderers_adj:0 "Lone Wolf"
  lone_wolf_wanderers_adherent:0 "Lone Wolf Cultivator"
  lone_wolf_wanderers_adherent_plural:0 "Lone Wolf Cultivators"
- lone_wolf_wanderers_desc:0 "Independent blade cultivators who walk their path alone, beholden to no sect."
+ lone_wolf_wanderers_desc:0 "Independent blade cultivators who walk alone, beholden to no sect or master."
 
  rootless_sword_alliance:0 "Rootless Sword Society"
  rootless_sword_alliance_adj:0 "Rootless Sword"
@@ -1283,7 +1283,7 @@
  vagrant_blade_brotherhood_adj:0 "Vagrant Blade"
  vagrant_blade_brotherhood_adherent:0 "Vagrant Blade Cultivator"
  vagrant_blade_brotherhood_adherent_plural:0 "Vagrant Blade Cultivators"
- vagrant_blade_brotherhood_desc:0 "Wandering warriors who form brotherly bonds on the road."
+ vagrant_blade_brotherhood_desc:0 "Wandering warriors who forge sworn bonds on the road."
 
  thousand_treasures_pavilion:0 "Thousand Treasures Pavilion"
  thousand_treasures_pavilion_adj:0 "Thousand Treasures"
@@ -1471,9 +1471,9 @@
  ## VISIT EVENTS
 
  visit_cultivation_sect_decision:0 "Visit Cultivation Sect"
- visit_cultivation_sect_decision_desc:0 "In China cultivaters is part of some sects. Some sects have backgrounds as old as this world and others were just founded. Visit a local branch to learn more about them. Find out their history, their way of cultivation and maybe you will want to join them or make them Tremble in your presence."
- visit_cultivation_sect_decision_tooltip:0 "Choose a sect branch to visit."
- visit_cultivation_sect_decision_confirm:0 "Visit Sect Branch"
+ visit_cultivation_sect_decision_desc:0 "In China cultivaters is part of some sects. Some sects has bacground old as this world and some is just founded. Visit a sect to learn more about them. Find out their history, their way of cultivation and maybe you will want to join them or make them Tremble in your presence."
+ visit_cultivation_sect_decision_tooltip:0 "Choose a sect to visit."
+ visit_cultivation_sect_decision_confirm:0 "Visit Sect"
 
  cultivation_sect_visit.1000.t:0 "Mount Hua Sect"
  cultivation_sect_visit.1000.desc:0 "A prestigious orthodox sect known for their elegant sword techniques and righteous cultivation path. A sect elder approaches to assess your potential."
@@ -1554,7 +1554,7 @@
  cultivation_sect_visit.2153.t:0 "Temple of Withered Souls"
  cultivation_sect_visit.2153.desc:0 "Practitioners who drain the essence from corpses to fuel their cultivation. A sect elder approaches to assess your potential."
  cultivation_sect_visit.2154.t:0 "Jiangshi March Sect"
- cultivation_sect_visit.2154.desc:0 "Specialists in creating and controlling traditional Chinese jiangshi. A sect elder approaches to assess your potential."
+ cultivation_sect_visit.2154.desc:0 "Specialists in creating and commanding jiangshi through talisman, ritual, and corpse refinement. A sect elder approaches to assess your potential."
  cultivation_sect_visit.3000.t:0 "Scarlet River Hall"
  cultivation_sect_visit.3000.desc:0 "Demonic cultivators who bathe in rivers of their enemies' blood to grow stronger. A sect elder approaches to assess your potential."
  cultivation_sect_visit.3001.t:0 "Valley of Ten Thousand Corpses"
@@ -1578,11 +1578,11 @@
  cultivation_sect_visit.3151.t:0 "Crimson Seal Sect"
  cultivation_sect_visit.3151.desc:0 "Shadowed ritualists who impose blood seals and coercive bindings through forbidden secret arts. A sect elder approaches to assess your potential."
  cultivation_sect_visit.4000.t:0 "Lone Wolf Lodge"
- cultivation_sect_visit.4000.desc:0 "Independent blade cultivators who walk their path alone, beholden to no sect. A sect elder approaches to assess your potential."
+ cultivation_sect_visit.4000.desc:0 "Independent blade cultivators who walk alone, beholden to no sect or master. A sect elder approaches to assess your potential."
  cultivation_sect_visit.4001.t:0 "Rootless Sword Society"
  cultivation_sect_visit.4001.desc:0 "Vagrant swordsmen who band together for mutual protection while maintaining independence. A sect elder approaches to assess your potential."
  cultivation_sect_visit.4002.t:0 "Brotherhood of Wandering Blades"
- cultivation_sect_visit.4002.desc:0 "Wandering warriors who form brotherly bonds on the road. A sect elder approaches to assess your potential."
+ cultivation_sect_visit.4002.desc:0 "Wandering warriors who forge sworn bonds on the road. A sect elder approaches to assess your potential."
  cultivation_sect_visit.4050.t:0 "Thousand Treasures Pavilion"
  cultivation_sect_visit.4050.desc:0 "Collectors and refiners of countless mystical artifacts and treasures. A sect elder approaches to assess your potential."
  cultivation_sect_visit.4051.t:0 "Hall of Mystic Forging"
@@ -1778,37 +1778,37 @@
  #######################
 
  attempt_qi_gathering_breakthrough_decision:0 "Breakthrough: Qi Gathering"
- attempt_qi_gathering_breakthrough_decision_desc:0 "Attempt to breakthrough from Mortal Realm to [GetTrait('qi_gathering').GetName(GetNullCharacter)] realm."
- attempt_qi_gathering_breakthrough_decision_tooltip:0 "You are ready to attempt the breakthrough to Qi Gathering."
+ attempt_qi_gathering_breakthrough_decision_desc:0 "Attempt to break through from the Mortal Realm to the [GetTrait('qi_gathering').GetName(GetNullCharacter)] realm."
+ attempt_qi_gathering_breakthrough_decision_tooltip:0 "You are ready to attempt a breakthrough to the Qi Gathering realm."
  attempt_qi_gathering_breakthrough_confirm:0 "Attempt Breakthrough"
  can_attempt_qi_gathering_breakthrough:0 "Breakthrough: Qi Gathering perk"
 
  attempt_qi_refining_breakthrough_decision:0 "Breakthrough: Qi Refining"
- attempt_qi_refining_breakthrough_decision_desc:0 "Attempt to breakthrough from [GetTrait('qi_gathering').GetName(GetNullCharacter)] to [GetTrait('foundation_establishment').GetName(GetNullCharacter)] realm."
+ attempt_qi_refining_breakthrough_decision_desc:0 "Attempt to break through from the [GetTrait('qi_gathering').GetName(GetNullCharacter)] realm to the [GetTrait('foundation_establishment').GetName(GetNullCharacter)] realm."
  attempt_qi_refining_breakthrough_decision_tooltip:0 "You are ready to attempt the breakthrough to [GetTrait('foundation_establishment').GetName(GetNullCharacter)] realm."
  attempt_qi_refining_breakthrough_confirm:0 "Attempt Breakthrough"
  can_attempt_qi_refining_breakthrough:0 "Breakthrough: Qi Refining perk"
 
  attempt_qi_building_breakthrough_decision:0 "Breakthrough: Qi Building"
  attempt_qi_building_breakthrough_decision_desc:0 "Deepen and stabilize your [GetTrait('foundation_establishment').GetName(GetNullCharacter)] before attempting the next major realm."
- attempt_qi_building_breakthrough_decision_tooltip:0 "You are ready to attempt the breakthrough to Qi Building."
+ attempt_qi_building_breakthrough_decision_tooltip:0 "You are ready to attempt a breakthrough to the Qi Building realm."
  attempt_qi_building_breakthrough_confirm:0 "Attempt Breakthrough"
  can_attempt_qi_building_breakthrough:0 "Breakthrough: Qi Building perk"
 
  attempt_core_formation_breakthrough_decision:0 "Breakthrough: Core Formation"
- attempt_core_formation_breakthrough_decision_desc:0 "Attempt to breakthrough from [GetTrait('foundation_establishment').GetName(GetNullCharacter)] to [GetTrait('core_formation').GetName(GetNullCharacter)] realm."
+ attempt_core_formation_breakthrough_decision_desc:0 "Attempt to break through from the [GetTrait('foundation_establishment').GetName(GetNullCharacter)] realm to the [GetTrait('core_formation').GetName(GetNullCharacter)] realm."
  attempt_core_formation_breakthrough_decision_tooltip:0 "You are ready to attempt the breakthrough to [GetTrait('core_formation').GetName(GetNullCharacter)] realm."
  attempt_core_formation_breakthrough_confirm:0 "Attempt Breakthrough"
  can_attempt_core_formation_breakthrough:0 "Breakthrough: Qi Core Formation perk"
 
  attempt_nascent_soul_breakthrough_decision:0 "Breakthrough: Nascent Soul"
- attempt_nascent_soul_breakthrough_decision_desc:0 "Attempt to breakthrough from [GetTrait('core_formation').GetName(GetNullCharacter)] to [GetTrait('nascent_soul').GetName(GetNullCharacter)] realm."
- attempt_nascent_soul_breakthrough_decision_tooltip:0 "You are ready to attempt the breakthrough to Nascent Soul."
+ attempt_nascent_soul_breakthrough_decision_desc:0 "Attempt to break through from the [GetTrait('core_formation').GetName(GetNullCharacter)] realm to the [GetTrait('nascent_soul').GetName(GetNullCharacter)] realm."
+ attempt_nascent_soul_breakthrough_decision_tooltip:0 "You are ready to attempt a breakthrough to the Nascent Soul realm."
  attempt_nascent_soul_breakthrough_confirm:0 "Attempt Breakthrough"
  can_attempt_nascent_soul_breakthrough:0 "Breakthrough: Qi Nascent Soul perk"
 
  attempt_heavenly_being_breakthrough_decision:0 "Breakthrough: Heavenly Being"
- attempt_heavenly_being_breakthrough_decision_desc:0 "Attempt to breakthrough from [GetTrait('nascent_soul').GetName(GetNullCharacter)] to [GetTrait('spirit_severing').GetName(GetNullCharacter)] realm."
+ attempt_heavenly_being_breakthrough_decision_desc:0 "Attempt to break through from the [GetTrait('nascent_soul').GetName(GetNullCharacter)] realm to the [GetTrait('spirit_severing').GetName(GetNullCharacter)] realm."
  attempt_heavenly_being_breakthrough_decision_tooltip:0 "You are ready to attempt the breakthrough to [GetTrait('spirit_severing').GetName(GetNullCharacter)] realm."
  attempt_heavenly_being_breakthrough_confirm:0 "Attempt Breakthrough"
  can_attempt_heavenly_being_breakthrough:0 "Breakthrough: Heavenly Being perk"
@@ -1820,7 +1820,7 @@
  can_attempt_four_axis_breakthrough:0 "Breakthrough: Four-Axis perk"
 
  attempt_integration_breakthrough_decision:0 "Breakthrough: Integration"
- attempt_integration_breakthrough_decision_desc:0 "Attempt to breakthrough from [GetTrait('spirit_severing').GetName(GetNullCharacter)] to [GetTrait('dao_seeking').GetName(GetNullCharacter)] realm."
+ attempt_integration_breakthrough_decision_desc:0 "Attempt to break through from the [GetTrait('spirit_severing').GetName(GetNullCharacter)] realm to the [GetTrait('dao_seeking').GetName(GetNullCharacter)] realm."
  attempt_integration_breakthrough_decision_tooltip:0 "You are ready to attempt the breakthrough to [GetTrait('dao_seeking').GetName(GetNullCharacter)] realm."
  attempt_integration_breakthrough_confirm:0 "Attempt Breakthrough"
  can_attempt_integration_breakthrough:0 "Breakthrough: Integration perk"
@@ -1832,7 +1832,7 @@
  can_attempt_star_shattering_breakthrough:0 "Breakthrough: Star Shattering perk"
 
  attempt_sacred_vessel_breakthrough_decision:0 "Breakthrough: Sacred Vessel"
- attempt_sacred_vessel_breakthrough_decision_desc:0 "Attempt to breakthrough from [GetTrait('dao_seeking').GetName(GetNullCharacter)] to [GetTrait('immortal_ascension').GetName(GetNullCharacter)] realm."
+ attempt_sacred_vessel_breakthrough_decision_desc:0 "Attempt to break through from the [GetTrait('dao_seeking').GetName(GetNullCharacter)] realm to the [GetTrait('immortal_ascension').GetName(GetNullCharacter)] realm."
  attempt_sacred_vessel_breakthrough_decision_tooltip:0 "You are ready to attempt the breakthrough to [GetTrait('immortal_ascension').GetName(GetNullCharacter)]."
  attempt_sacred_vessel_breakthrough_confirm:0 "Attempt Breakthrough"
  can_attempt_sacred_vessel_breakthrough:0 "Breakthrough: Sacred Vessel perk"
@@ -1938,7 +1938,7 @@
  cultivation_breakthrough.1500.desc:0 "Ascend beyond mortality and become a heavenly existence! Your nascent soul yearns to transform."
  cultivation_breakthrough.1500.attempt:0 "Attempt Breakthrough Now"
  cultivation_breakthrough.1500.wait:0 "Wait for Better Opportunity"
- cultivation_breakthrough.1500.s_tt:0 "#high Success:#! Ascend to [GetTrait('spirit_severingg').GetName(GetNullCharacter)] realm!"
+ cultivation_breakthrough.1500.s_tt:0 "#high Success:#! Ascend to the [GetTrait('spirit_severing').GetName(GetNullCharacter)] realm!"
  cultivation_breakthrough.1500.f_tt:0 "#low Failure:#! +40 [stress|E], gain [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip] for 3 months"
 
  cultivation_breakthrough.1501.t:0 "Heavenly Being Success!"
@@ -1951,14 +1951,14 @@
 
  # Four-Axis (1600-1602)
  cultivation_breakthrough.1600.t:0 "Four-Axis Breakthrough"
- cultivation_breakthrough.1600.desc:0 "Master the four fundamental forces and transcend the heavens themselves!"
+ cultivation_breakthrough.1600.desc:0 "Bring the four fundamental forces into harmony and step beyond the limits of the heavens."
  cultivation_breakthrough.1600.attempt:0 "Attempt Breakthrough Now"
  cultivation_breakthrough.1600.wait:0 "Wait for Better Opportunity"
  cultivation_breakthrough.1600.s_tt:0 "#high Success:#! Ascend to [GetTrait('spirit_severing').GetName(GetNullCharacter)] realm!"
  cultivation_breakthrough.1600.f_tt:0 "#low Failure:#! +45 [stress|E], gain [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip] for 3 months"
 
  cultivation_breakthrough.1601.t:0 "Four-Axis Success!"
- cultivation_breakthrough.1601.desc:0 "The four axes align! Space, time, matter, energy - all bow to your will!"
+ cultivation_breakthrough.1601.desc:0 "The four axes align. Space, time, matter, and energy now answer your will."
  cultivation_breakthrough.1601.a:0 "The forces are mine!"
 
  cultivation_breakthrough.1602.t:0 "Four-Axis Failed"
@@ -1974,7 +1974,7 @@
  cultivation_breakthrough.1700.f_tt:0 "#low Failure:#! +50 [stress|E], gain [GetModifier('failed_breakthrough_attempt').GetNameWithTooltip] for 3 months"
 
  cultivation_breakthrough.1701.t:0 "Integration Success!"
- cultivation_breakthrough.1701.desc:0 "Perfect integration achieved! All aspects of your cultivation merge into one!"
+ cultivation_breakthrough.1701.desc:0 "Your insights and cultivation merge into a single, flawless whole."
  cultivation_breakthrough.1701.a:0 "Unity achieved!"
 
  cultivation_breakthrough.1702.t:0 "Integration Failed"
@@ -2067,7 +2067,7 @@
 
  # Orthodox Cultivation
  tenet_orthodox_cultivation:0 "Orthodox Cultivation"
- tenet_orthodox_cultivation_desc:0 "This sect follows the righteous orthodox cultivation path, emphasizing moral conduct, honor, and proper techniques passed down through generations. Orthodox cultivators gain respect among their peers."
+ tenet_orthodox_cultivation_desc:0 "This sect follows the orthodox cultivation path, emphasizing moral conduct, honor, and proper techniques passed down through generations. Its cultivators are respected among their peers."
  tenet_orthodox_cultivation_name:0 "Orthodox Path"
 
  # Unorthodox Cultivation
@@ -2090,24 +2090,24 @@
  #######################
 
  CULTIVATION_WINDOW_TITLE:0 "Cultivation"
- CULTIVATION_WINDOW_TOOLTIP:0 "Open Cultivation Window"
- CULTIVATION_WINDOW_CONTENT:0 "This is your cultivation window.\n\nYou can add content here!"
+ CULTIVATION_WINDOW_TOOLTIP:0 "Open the Cultivation Window"
+ CULTIVATION_WINDOW_CONTENT:0 "Oversee your cultivation, manage partners, and contemplate your next breakthrough."
 
  # Partner Selection
- NO_LEFT_PARTNER:0 "No Left Partner"
- NO_RIGHT_PARTNER:0 "No Right Partner"
+ NO_LEFT_PARTNER:0 "No Left-Side Partner"
+ NO_RIGHT_PARTNER:0 "No Right-Side Partner"
  SELECT_LEFT_PARTNER:0 "Select Left Partner"
  SELECT_RIGHT_PARTNER:0 "Select Right Partner"
  REMOVE_PARTNER:0 "Remove Partner"
 
- SELECT_LEFT_PARTNER_TOOLTIP:0 "Choose a cultivator as your left dual cultivation partner"
- SELECT_RIGHT_PARTNER_TOOLTIP:0 "Choose a cultivator as your right dual cultivation partner"
+ SELECT_LEFT_PARTNER_TOOLTIP:0 "Choose a cultivator to serve as your left-side dual cultivation partner."
+ SELECT_RIGHT_PARTNER_TOOLTIP:0 "Choose a cultivator to serve as your right-side dual cultivation partner."
 
  # Interactions
- cultivation_select_left_partner_interaction:0 "Select Left Cultivation Partner"
- cultivation_select_left_partner_interaction_desc:0 "Choose this cultivator as your left dual cultivation partner. They will appear in your cultivation window."
+ cultivation_select_left_partner_interaction:0 "Select Left-Side Cultivation Partner"
+ cultivation_select_left_partner_interaction_desc:0 "Choose this cultivator as your left-side dual cultivation partner. They will appear in your cultivation window."
 
- cultivation_select_right_partner_interaction:0 "Select Right Cultivation Partner"
- cultivation_select_right_partner_interaction_desc:0 "Choose this cultivator as your right dual cultivation partner. They will appear in your cultivation window."
+ cultivation_select_right_partner_interaction:0 "Select Right-Side Cultivation Partner"
+ cultivation_select_right_partner_interaction_desc:0 "Choose this cultivator as your right-side dual cultivation partner. They will appear in your cultivation window."
 
  CULTIVATION_PARTNER_SELECTED_NOTIFICATION:0 "Cultivation partner selected"

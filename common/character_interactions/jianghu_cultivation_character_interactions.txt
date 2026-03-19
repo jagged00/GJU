@@ -207,12 +207,11 @@ xianxia_extinguish_cultivator_family_interaction = {
             }
         }
 
-        scope:actor = {
-            add_dread = 80
-            add_trait_xp = { trait = demonic_path value = 200 }
-            add_character_modifier = { modifier = demonic_conquest_minor years = 5 }
-        }
-    }
+		scope:actor = {
+			add_dread = 80
+			add_character_modifier = { modifier = demonic_conquest_minor years = 5 }
+		}
+	}
 }
 
 cultivator_spar_interaction = {
