@@ -16,7 +16,7 @@
 		custom_tooltip = summon_thousand_qi_needles_decision_effect2
 		add_character_flag = {
 			flag = summon_thousand_qi_needles
-			years = 5
+			years = 1
 		}
 		add_prestige = 50
 		add_stress = -100
@@ -72,7 +72,7 @@ summon_nine_heavens_sword_intent_decision = {
 	effect = {
 		custom_tooltip = summon_nine_heavens_sword_intent_decision_effect1
 		custom_tooltip = summon_nine_heavens_sword_intent_decision_effect2
-		add_character_flag = { flag = summon_nine_heavens_sword_intent years = 5 }
+		add_character_flag = { flag = summon_nine_heavens_sword_intent years = 1 }
 		add_prestige = 50
 		add_stress = -200
 		add_legitimacy = 50
@@ -126,7 +126,7 @@ summon_golden_core_flame_lotus_decision = {
 	effect = {
 		custom_tooltip = summon_golden_core_flame_lotus_decision_effect1
 		custom_tooltip = summon_golden_core_flame_lotus_decision_effect2
-		add_character_flag = { flag = summon_golden_core_flame_lotus years = 5 }
+		add_character_flag = { flag = summon_golden_core_flame_lotus years = 1 }
 		add_prestige = 50
 		add_stress = -300
 		add_legitimacy = 50
@@ -180,7 +180,7 @@ summon_nascent_soul_phantom_decision = {
 	effect = {
 		custom_tooltip = summon_nascent_soul_phantom_decision_effect1
 		custom_tooltip = summon_nascent_soul_phantom_decision_effect2
-		add_character_flag = { flag = summon_nascent_soul_phantom years = 5 }
+		add_character_flag = { flag = summon_nascent_soul_phantom years = 1 }
 		add_prestige = 50
 		add_stress = -500
 		add_legitimacy = 50
@@ -234,7 +234,7 @@ summon_heaven_severing_blade_decision = {
 	effect = {
 		custom_tooltip = summon_heaven_severing_blade_decision_effect1
 		custom_tooltip = summon_heaven_severing_blade_decision_effect2
-		add_character_flag = { flag = summon_heaven_severing_blade years = 5 }
+		add_character_flag = { flag = summon_heaven_severing_blade years = 1 }
 		add_prestige = 50
 		add_stress = -800
 		add_legitimacy = 50
@@ -288,7 +288,7 @@ summon_myriad_dao_suppression_domain_decision = {
 	effect = {
 		custom_tooltip = summon_myriad_dao_suppression_domain_decision_effect1
 		custom_tooltip = summon_myriad_dao_suppression_domain_decision_effect2
-		add_character_flag = { flag = summon_myriad_dao_suppression_domain years = 5 }
+		add_character_flag = { flag = summon_myriad_dao_suppression_domain years = 1 }
 		add_prestige = 50
 		add_stress = -1200
 		add_legitimacy = 50
@@ -342,7 +342,7 @@ summon_heavenly_tribulation_descent_decision = {
 	effect = {
 		custom_tooltip = summon_heavenly_tribulation_descent_decision_effect1
 		custom_tooltip = summon_heavenly_tribulation_descent_decision_effect2
-		add_character_flag = { flag = summon_heavenly_tribulation_descent years = 5 }
+		add_character_flag = { flag = summon_heavenly_tribulation_descent years = 1 }
 		add_prestige = 50
 		add_stress = -2000
 		add_legitimacy = 50
