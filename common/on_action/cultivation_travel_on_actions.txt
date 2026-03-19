@@ -50,17 +50,7 @@ handle_cultivation_travel_actions = {
 handle_cultivation_danger_travel_actions = {
 	effect = {
 		random_list = {
-			2000 = {}
-			25 = {
-				trigger_event = {
-					id = xianxia_path.1001
-				}
-			}
-			25 = {
-				trigger_event = {
-					id = xianxia_path.1002
-				}
-			}
+			2050 = {}
 			50 = {
 				trigger_event = {
 					id = cultivation_travel_events.101
