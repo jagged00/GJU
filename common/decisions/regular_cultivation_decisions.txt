@@ -1,52 +1,4 @@
-﻿
-#Focus on cultivation
-
-focus_on_cultivation = {
-
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_start_cultivation.dds"
-	}
-
-    desc = focus_on_cultivation_desc
-    selection_tooltip = focus_on_cultivation_selection_tooltip
-	sort_order = 500
-
-    is_shown = {
-		AND = {
-			has_trait = cultivation_realm
-			breakthrough_threshold = no
-		}
-    }
-
-    ai_check_interval = 3
-
-	ai_will_do = {
-		base = 0
-		modifier = {
-			add = chance_to_cultivate
-			is_adult = yes
-		}
-	}
-
-	cooldown = {
-		months = 12
-	}
-
-    effect = {
-		add_character_modifier = {
-			modifier = focusing_cultivation_modifier
-			months = 3
-		}
-
-        trigger_event = {
-			id = cultivation_regular_event.001
-			months =  3
-		}
-		custom_tooltip = focus_on_cultivation_tooltip
-
-		
-    }
-}
+﻿﻿
 # Help an unlanded cultivator disciple/courtier break through
 guide_unlanded_breakthrough_decision = {
 
@@ -226,65 +178,15 @@ promulgate_cultivation_scriptures_decision = {
 	selection_tooltip = promulgate_cultivation_scriptures_decision_tooltip
 	sort_order = 545
 
-	is_shown = {
-		has_trait = cultivation_realm
-		is_landed = yes
-		OR = {
-			any_courtier = {
-				has_trait = active_meridians
-				NOT = { has_trait = cultivation_realm }
-			}
-			any_vassal = {
-				has_trait = active_meridians
-				NOT = { has_trait = cultivation_realm }
-			}
-		}
-	}
-
-	is_valid = {
-		prestige >= 500
-		piety >= 500
-	}
-
-	cost = {
-		prestige = 500
-		piety = 500
-	}
+	is_shown = { always = no }
+	is_valid = { always = no }
 
 	ai_will_do = {
-		base = 25
-		modifier = { add = 60 has_trait = compassionate }
-		modifier = { add = 35 has_trait = zealous }
+		base = 0
 	}
 
-	cooldown = { years = 5 }
-
 	effect = {
-		every_courtier = {
-			limit = {
-				has_trait = active_meridians
-				NOT = { has_trait = cultivation_realm }
-			}
-			add_trait = qi_gathering
-		}
-		every_vassal = {
-			limit = {
-				has_trait = active_meridians
-				NOT = { has_trait = cultivation_realm }
-			}
-			add_trait = qi_gathering
-		}
-		every_realm_character = {
-			limit = {
-				has_trait = active_meridians
-				NOT = { has_trait = cultivation_realm }
-				NOT = { is_courtier_of = root }
-				NOT = { is_vassal_of = root }
-			}
-			add_trait = qi_gathering
-		}
-		add_piety = 200
-		add_prestige = 100
+		hidden_effect = { }
 	}
 }
 

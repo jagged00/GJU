@@ -1,26 +1,14 @@
 ﻿l_english:
 #Open meridians
   open_meridians_decision:0 "Try to open your meridians"
-  open_meridians_decision_desc:0 "You meditate to try and open your meridians."
-  open_meridians_decision_selection_tooltip:0 "You can increase your odds of good meridians"
-  open_meridians_decision_tooltip:0 "Start trying"
-  open_meridians_decision_confirm:0 "Start your meditation"
+  open_meridians_decision_desc:0 "You gather rare medicines, seek guidance, and attempt to force open your meridians so that one day you may enter a sect and walk the cultivation path."
+  open_meridians_decision_selection_tooltip:0 "Costs 500 gold and may awaken the meridians needed to enter a cultivation sect."
+  open_meridians_decision_tooltip:0 "Attempt to open your meridians"
+  open_meridians_decision_confirm:0 "Spend wealth to seek a path into cultivation"
 
 #start cultivation
-  begin_cultivation_decision:0 "Begin Cultivation"
-  begin_cultivation_decision_desc:0 "You start your Cultivation journey."
-  begin_cultivation_decision_selection_tooltip:0 "You get the first Cultivation Trait"
-  begin_cultivation_decision_tooltip:0 "Start Cultivating"
-  begin_cultivation_decision_confirm:0 "Begin your Cultivation"
-  begin_cultivation_decision_effect_tooltip:0 "You start Cultivating"
 
 #Focus on cultivation
-  focus_on_cultivation:0 "Focus on your Cultivation"
-  focus_on_cultivation_tooltip:0 "Spend the next few months focused on cultivation"
-  focus_on_cultivation_selection_tooltip:0 "Spend the next few months focused on cultivation"
-  focus_on_cultivation_desc:0 "You spend the next 3 months focusing on your cultivation, reducing your ability to do other stuff"
-  focus_on_cultivation_effect_tooltip:0 "You focus on your cultivation"
-  focus_on_cultivation_confirm:0 "Focus on your cultivation"
 
 
   breakthrough_decision_1:0 "Establish Foundation"
@@ -103,10 +91,10 @@
   claim_heavenly_mandate_confirm_generic:0 "The heavens have spoken. Let the conquest begin."
   
  
-  grant_qi_gathering_to_meridian_holders_decision:0 "Awaken the Qi of All Meridian Bearers"
-  grant_qi_gathering_to_meridian_holders_decision_desc:0 "Those born with active meridians are destined for the path of cultivation. With a decree of heavenly insight, I shall open the gates of qi gathering to every soul in my realm who bears this gift."
+  grant_qi_gathering_to_meridian_holders_decision:0 "Legacy Meridian Awakening"
+  grant_qi_gathering_to_meridian_holders_decision_desc:0 "This older shortcut has been retired so sect discipline and the cultivation lifestyle remain the true gate into Qi Gathering."
   grant_qi_gathering_to_meridian_holders_decision_confirm:0 "Let the qi flow through all who are worthy!"
-  qi_gathering_granted_tooltip:0 "All characters with active meridians in your court, vassals, and realm gain the Qi Gathering trait."
+  qi_gathering_granted_tooltip:0 "Qi Gathering is now unlocked through sect-sanctioned cultivation and the lifestyle breakthrough path."
 
   purify_mortal_shell_decision:0 "Purify the Mortal Shell"
   purify_mortal_shell_decision_desc:0 "This frail flesh is but a cage for my immortal soul. With a single circulation of true qi, I shall cast out all mortal impurities, wounds, and imperfections."
@@ -170,8 +158,8 @@
   forge_xianxia_relic_decision_confirm:0 "Let heaven and earth witness this forging."
 
   promulgate_cultivation_scriptures_decision:0 "Promulgate Cultivation Scriptures"
-  promulgate_cultivation_scriptures_decision_desc:0 "Open your scripture pavilion and spread true cultivation methods throughout your court and realm."
-  promulgate_cultivation_scriptures_decision_tooltip:0 "Costs prestige and piety. Meridian bearers in your court, vassals, and realm can begin Qi Gathering."
+  promulgate_cultivation_scriptures_decision_desc:0 "This older shortcut has been retired so sect monopolies and the cultivation lifestyle remain the proper road to Qi Gathering."
+  promulgate_cultivation_scriptures_decision_tooltip:0 "Qi Gathering is now unlocked through sect admission and the cultivation lifestyle breakthrough path."
   promulgate_cultivation_scriptures_decision_confirm:0 "Let all worthy disciples walk the path."
   seek_jianghu_fortune_decision:0 "Seek a Fortuitous Jianghu Encounter"
   seek_jianghu_fortune_decision_desc:0 "The martial world hides countless secret realms, broken inheritances, and wandering experts. By entering the jianghu personally, you may seize a sliver of heaven's luck—or invite dangerous karma."

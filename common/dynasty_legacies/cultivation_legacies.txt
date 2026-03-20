@@ -1,0 +1,7 @@
+﻿cultivation_legacy_track = {
+	perk = cultivation_legacy_1
+	perk = cultivation_legacy_2
+	perk = cultivation_legacy_3
+	perk = cultivation_legacy_4
+	perk = cultivation_legacy_5
+}

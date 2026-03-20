@@ -1,0 +1,54 @@
+﻿# Cultivation Scripted Triggers
+
+is_mortal = {
+	NOR = {
+		has_trait = qi_gathering
+		has_trait = foundation_establishment
+		has_trait = core_formation
+		has_trait = nascent_soul
+		has_trait = spirit_severing
+		has_trait = dao_seeking
+		has_trait = immortal_ascension
+	    }
+}
+
+is_cultivator = {
+	OR = {
+		has_trait = qi_gathering
+		has_trait = foundation_establishment
+		has_trait = core_formation
+		has_trait = nascent_soul
+		has_trait = spirit_severing
+		has_trait = dao_seeking
+		has_trait = immortal_ascension
+	    }
+}
+
+is_new_cultivator = {
+    OR = {
+		has_trait = qi_gathering
+		has_trait = foundation_establishment
+    }
+}
+
+is_known_cultivator = {
+    OR = {
+		has_trait = foundation_establishment
+		has_trait = core_formation
+    }
+}
+
+is_respected_cultivator = {
+    OR = {
+		has_trait = nascent_soul
+		has_trait = spirit_severing
+    }
+}
+
+is_immortal_cultivator = {
+	OR = {
+		has_trait = spirit_severing
+		has_trait = dao_seeking
+		has_trait = immortal_ascension
+	    }
+}
