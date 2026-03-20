@@ -12,27 +12,5 @@
 }
 
 mymod_initialize_cultivation_effect = {
-    if = {
-        limit = {
-            OR = {
-                has_trait = poor_meridians
-                has_trait = normal_meridians
-                has_trait = good_meridians
-                has_trait = excellent_meridians
-                has_trait = heavenly_meridians
-            }
-            NOT = {
-                OR = {
-                    has_trait = qi_gathering
-                    has_trait = foundation_establishment
-                    has_trait = core_formation
-                    has_trait = nascent_soul
-                    has_trait = spirit_severing
-                    has_trait = dao_seeking
-                    has_trait = immortal_ascension
-                }
-            }
-        }
-        add_trait = qi_gathering
-    }
+    hidden_effect = { }
 }

@@ -1,0 +1,162 @@
+﻿# Register cultivation GUI files
+
+# Cultivation trait visibility checks
+# Place in common/scripted_guis/cultivation_trait_display.txt
+
+### LEFT PARTNER FINDER ###
+
+open_left_partner_finder = {
+	scope = character
+
+	effect = {
+		# Open the character finder window
+		open_interaction_window = {
+			interaction = find_cultivation_left_partner
+			actor = root
+		}
+	}
+}
+
+remove_left_partner = {
+	scope = character
+
+	is_shown = {
+		has_variable = cultivation_left_partner
+	}
+
+	effect = {
+		remove_variable = cultivation_left_partner
+	}
+}
+
+### RIGHT PARTNER FINDER ###
+
+open_right_partner_finder = {
+	scope = character
+
+	effect = {
+		# Open the character finder window
+		open_interaction_window = {
+			interaction = find_cultivation_right_partner
+			actor = root
+		}
+	}
+}
+
+remove_right_partner = {
+	scope = character
+
+	is_shown = {
+		has_variable = cultivation_right_partner
+	}
+
+	effect = {
+		remove_variable = cultivation_right_partner
+	}
+}
+
+### TRAIT VISIBILITY (for cultivation level display) ###
+
+show_qi_gathering = {
+	scope = character
+	is_shown = {
+		has_trait = qi_gathering
+	}
+}
+
+show_qi_refining = {
+	scope = character
+	is_shown = {
+		has_trait = foundation_establishment
+	}
+}
+
+show_qi_building = {
+	scope = character
+	is_shown = {
+		has_trait = foundation_establishment
+	}
+}
+
+show_core_formation = {
+	scope = character
+	is_shown = {
+		has_trait = core_formation
+	}
+}
+
+show_nascent_soul = {
+	scope = character
+	is_shown = {
+		has_trait = nascent_soul
+	}
+}
+
+show_heavenly_being = {
+	scope = character
+	is_shown = {
+		has_trait = spirit_severing
+	}
+}
+
+show_four_axis = {
+	scope = character
+	is_shown = {
+		has_trait = spirit_severing
+	}
+}
+
+show_integration = {
+	scope = character
+	is_shown = {
+		has_trait = dao_seeking
+	}
+}
+
+show_star_shattering = {
+	scope = character
+	is_shown = {
+		has_trait = dao_seeking
+	}
+}
+
+show_sacred_vessel = {
+	scope = character
+	is_shown = {
+		has_trait = immortal_ascension
+	}
+}
+
+show_entering_nirvana = {
+	scope = character
+	is_shown = {
+		has_trait = immortal_ascension
+	}
+}
+
+show_true_immortal = {
+	scope = character
+	is_shown = {
+		has_trait = immortal_ascension
+	}
+}
+
+show_mortal = {
+	scope = character
+	is_shown = {
+		NOT = {
+			has_trait = qi_gathering
+			has_trait = foundation_establishment
+			has_trait = foundation_establishment
+			has_trait = core_formation
+			has_trait = nascent_soul
+			has_trait = spirit_severing
+			has_trait = spirit_severing
+			has_trait = dao_seeking
+			has_trait = dao_seeking
+			has_trait = immortal_ascension
+			has_trait = immortal_ascension
+			has_trait = immortal_ascension
+        }
+	}
+}
