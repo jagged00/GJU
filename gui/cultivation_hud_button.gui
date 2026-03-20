@@ -23,7 +23,7 @@ widget = {
 
 		icon = {
 			size = { 61 61 }
-			texture = "gfx/interface/icons/lifestyles_perks/qi_gathering_f.dds"
+			texture = "gfx/interface/icons/traits/qi_gathering.dds"
 		}
 
 		# Click opens the window

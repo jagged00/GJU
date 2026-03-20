@@ -137,7 +137,6 @@ window = {
 				vbox = {
 					parentanchor = bottom|hcenter
 					position = { -300 300 }
-					margin = { -200 500 }
 					spacing = 5
 
 					margin = { 15 10 }
@@ -147,7 +146,6 @@ window = {
 						visible = "[Not(GetPlayer.MakeScope.Var('cultivation_left_partner').IsSet)]"
 
 						onclick = "[GetScriptedGui('open_left_partner_finder').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-						enabled = "[GetScriptedGui('open_left_partner_finder').CanExecute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 
 						button_change = {
 							parentanchor = center
@@ -170,7 +168,6 @@ window = {
 						}
 
 						onclick = "[GetScriptedGui('open_left_partner_finder').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-						enabled = "[GetScriptedGui('open_left_partner_finder').CanExecute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 					}
 
 					# Remove button (only if partner exists)
@@ -258,7 +255,6 @@ window = {
 						#size = { 35 35 }
 
 						onclick = "[GetScriptedGui('open_right_partner_finder').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-						enabled = "[GetScriptedGui('open_right_partner_finder').CanExecute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 						button_change = {
 							parentanchor = center
 							alwaystransparent = yes
@@ -279,7 +275,6 @@ window = {
 						}
 
 						onclick = "[GetScriptedGui('open_right_partner_finder').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-						enabled = "[GetScriptedGui('open_right_partner_finder').CanExecute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 					}
 
 					# Remove button (only if partner exists)
@@ -370,7 +365,7 @@ window = {
 						spacing = 10
 
 						text_single = {
-							text = "Sect:"
+							text = "CULTIVATION_LABEL_SECT"
 							min_width = 100
 						}
 
@@ -386,7 +381,7 @@ window = {
 						spacing = 10
 
 						text_single = {
-							text = "Prowess:"
+							text = "CULTIVATION_LABEL_PROWESS"
 							min_width = 100
 						}
 
@@ -402,7 +397,7 @@ window = {
 						spacing = 10
 
 						text_single = {
-							text = "Realm:"
+							text = "CULTIVATION_LABEL_REALM"
 							min_width = 100
 						}
 
@@ -513,7 +508,7 @@ window = {
 								default_format = "#high"
 
 								visible = "[GetScriptedGui('show_mortal').IsShown(GuiScope.SetRoot(Character.MakeScope).End)]"
-								text = "Mortal"
+								text = "CULTIVATION_REALM_MORTAL"
 							}
 						}
 					}
@@ -538,7 +533,7 @@ window = {
 						spacing = 10
 
 						text_single = {
-							text = "Sect:"
+							text = "CULTIVATION_LABEL_SECT"
 							min_width = 100
 						}
 
@@ -554,7 +549,7 @@ window = {
 						spacing = 10
 
 						text_single = {
-							text = "Prowess:"
+							text = "CULTIVATION_LABEL_PROWESS"
 							min_width = 100
 						}
 
@@ -570,7 +565,7 @@ window = {
 						spacing = 10
 
 						text_single = {
-							text = "Realm:"
+							text = "CULTIVATION_LABEL_REALM"
 							min_width = 100
 						}
 
@@ -681,7 +676,7 @@ window = {
 								default_format = "#high"
 
 								visible = "[GetScriptedGui('show_mortal').IsShown(GuiScope.SetRoot(Character.MakeScope).End)]"
-								text = "Mortal"
+								text = "CULTIVATION_REALM_MORTAL"
 							}
 						}
 					}
@@ -706,7 +701,7 @@ window = {
 						spacing = 10
 
 						text_single = {
-							text = "Sect:"
+							text = "CULTIVATION_LABEL_SECT"
 							min_width = 100
 						}
 
@@ -722,7 +717,7 @@ window = {
 						spacing = 10
 
 						text_single = {
-							text = "Prowess:"
+							text = "CULTIVATION_LABEL_PROWESS"
 							min_width = 100
 						}
 
@@ -738,7 +733,7 @@ window = {
 						spacing = 10
 
 						text_single = {
-							text = "Realm:"
+							text = "CULTIVATION_LABEL_REALM"
 							min_width = 100
 						}
 
@@ -849,7 +844,7 @@ window = {
 								default_format = "#high"
 
 								visible = "[GetScriptedGui('show_mortal').IsShown(GuiScope.SetRoot(Character.MakeScope).End)]"
-								text = "Mortal"
+								text = "CULTIVATION_REALM_MORTAL"
 							}
 						}
 					}
@@ -860,7 +855,7 @@ window = {
 				### BREAKTHROUGH BUTTON ###
 				button_primary = {
 					layoutpolicy_horizontal = expanding
-					text = "BREAKTHROUGH"
+					text = "CULTIVATION_BREAKTHROUGH_LABEL"
 					onclick = "[GetVariableSystem.Set('cultivation_breakthrough', 'yes')]"
 				}
 			}

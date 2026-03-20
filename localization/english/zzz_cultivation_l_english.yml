@@ -29,33 +29,33 @@
  ##############
  ##Bloodline Men-at-Arms
  ##############
- yin_cultivator_1:0"Yin Adept"
- yin_cultivator_1_flavor:0"Disciples who cultivate gentle yin essence through restraint and refinement."
- yin_cultivator_2:0"Yin Disciple"
- yin_cultivator_2_flavor:0"Veterans of yin methods whose calm circulation veils dangerous depth."
- yin_cultivator_3:0"Yin Master"
- yin_cultivator_3_flavor:0"Esteemed masters whose yin arts can still storms of qi and spirit alike."
+ yin_cultivator_1:0 "Yin Adept"
+ yin_cultivator_1_flavor:0 "Disciples who cultivate gentle yin essence through restraint and refinement."
+ yin_cultivator_2:0 "Yin Disciple"
+ yin_cultivator_2_flavor:0 "Veterans of yin methods whose calm circulation veils dangerous depth."
+ yin_cultivator_3:0 "Yin Master"
+ yin_cultivator_3_flavor:0 "Esteemed masters whose yin arts can still storms of qi and spirit alike."
 
- yang_cultivator_1:0"Yang Adept"
- yang_cultivator_1_flavor:0"Disciples who temper blazing yang essence through rigor and exertion."
- yang_cultivator_2:0"Yang Disciple"
- yang_cultivator_2_flavor:0"Veterans of forceful yang methods whose vigor does not easily wane."
- yang_cultivator_3:0"Yang Master"
- yang_cultivator_3_flavor:0"Commanders of fierce inner fire who strike with the weight of a furnace blast."
+ yang_cultivator_1:0 "Yang Adept"
+ yang_cultivator_1_flavor:0 "Disciples who temper blazing yang essence through rigor and exertion."
+ yang_cultivator_2:0 "Yang Disciple"
+ yang_cultivator_2_flavor:0 "Veterans of forceful yang methods whose vigor does not easily wane."
+ yang_cultivator_3:0 "Yang Master"
+ yang_cultivator_3_flavor:0 "Commanders of fierce inner fire who strike with the weight of a furnace blast."
 
- primal_cultivator_1:0"Primal Cultivator"
- primal_cultivator_1_flavor:0"Primal Cultivator"
- primal_cultivator_2:0"Master Primal Cultivator"
- primal_cultivator_2_flavor:0"Primal Cultivator"
- primal_cultivator_3:0"Grandmaster Primal Cultivator"
- primal_cultivator_3_flavor:0"Primal Cultivator"
+ primal_cultivator_1:0 "Primal Cultivator"
+ primal_cultivator_1_flavor:0 "Primal Cultivator"
+ primal_cultivator_2:0 "Master Primal Cultivator"
+ primal_cultivator_2_flavor:0 "Primal Cultivator"
+ primal_cultivator_3:0 "Grandmaster Primal Cultivator"
+ primal_cultivator_3_flavor:0 "Primal Cultivator"
 
- sun_cultivator_1:0"Sand Warrior"
- sun_cultivator_1_flavor:0"Sand Warrior"
- sun_cultivator_2:0"Master Sand Warrior"
- sun_cultivator_2_flavor:0"Sand Warrior"
- sun_cultivator_3:0"Grandmaster Sand Warrior"
- sun_cultivator_3_flavor:0"Sand Warrior"
+ sun_cultivator_1:0 "Sand Warrior"
+ sun_cultivator_1_flavor:0 "Sand Warrior"
+ sun_cultivator_2:0 "Master Sand Warrior"
+ sun_cultivator_2_flavor:0 "Sand Warrior"
+ sun_cultivator_3:0 "Grandmaster Sand Warrior"
+ sun_cultivator_3_flavor:0 "Sand Warrior"
 
  ##############
  ##Dynasty
@@ -119,7 +119,6 @@
  OPPONENT_SPAR_RECORD:0 "Opponent's Record"
 
  CHALLENGE_TO_SPAR:0 "Challenge to Spar"
- CANCEL:0 "Cancel"
 
  # Interaction descriptions
  sect_spar_interaction_desc_own_court:0 "Arrange a sect spar between members of your court to test their skills and build experience."
@@ -286,65 +285,6 @@
  trait_cultivation_mortal_desc:0 "A mortal beginning their cultivation journey. Lifespan: 60-80 years."
  trait_cultivation_mortal_character_desc:0 "[ROOT.Char.GetFirstName] is a mortal cultivator taking their first steps on the path to immortality."
 
- trait_qi_gathering:0 "Qi Gathering"
- trait_qi_gathering_name:0 "Qi Gathering"
- trait_qi_gathering_desc:0 "Opening meridians and gathering Qi. Lifespan: 60-80 years."
- trait_qi_gathering_character_desc:0 "[ROOT.Char.GetFirstName] is gathering Qi and opening their meridians."
-
- trait_foundation_establishment:0 "Qi Refining"
- trait_foundation_establishment_name:0 "Qi Refining"
- trait_foundation_establishment_desc:0 "Refining Qi through multiple stars. Lifespan: 60-80 years."
- trait_foundation_establishment_character_desc:0 "[ROOT.Char.GetFirstName] is refining their Qi, progressing through the stars."
-
- trait_foundation_establishment:0 "Qi Building"
- trait_foundation_establishment_name:0 "Qi Building"
- trait_foundation_establishment_desc:0 "Building a solid Qi foundation. Lifespan: 60-80 years."
- trait_foundation_establishment_character_desc:0 "[ROOT.Char.GetFirstName] is building their Qi foundation for core formation."
-
- trait_core_formation:0 "Core Formation"
- trait_core_formation_name:0 "Core Formation"
- trait_core_formation_desc:0 "Formed a cultivation core. Lifespan: 75-95 years (+15 years)."
- trait_core_formation_character_desc:0 "[ROOT.Char.GetFirstName] has formed their core, extending their lifespan."
-
- trait_nascent_soul:0 "Nascent Soul"
- trait_nascent_soul_name:0 "Nascent Soul"
- trait_nascent_soul_desc:0 "Birthed a Nascent Soul. Lifespan: 115-135 years (+40 years)."
- trait_nascent_soul_character_desc:0 "[ROOT.Char.GetFirstName] has birthed their Nascent Soul and greatly extended their life."
-
- trait_spirit_severing:0 "Heavenly Being"
- trait_spirit_severing_name:0 "Heavenly Being"
- trait_spirit_severing_desc:0 "Ascended to Heavenly Being. Lifespan: 185-205 years (+70 years)."
- trait_spirit_severing_character_desc:0 "[ROOT.Char.GetFirstName] has become a Heavenly Being, living far beyond mortal limits."
-
- trait_spirit_severing:0 "Four-Axis"
- trait_spirit_severing_name:0 "Four-Axis"
- trait_spirit_severing_desc:0 "Mastered the Four Axes. Lifespan: 285-305 years (+100 years)."
- trait_spirit_severing_character_desc:0 "[ROOT.Char.GetFirstName] has mastered the Four Axes and lives for centuries."
-
- trait_dao_seeking:0 "Integration"
- trait_dao_seeking_name:0 "Integration"
- trait_dao_seeking_desc:0 "Achieved Integration and Resurrection. Lifespan: 435-455 years (+150 years)."
- trait_dao_seeking_character_desc:0 "[ROOT.Char.GetFirstName] has achieved Integration. They can resurrect from death!"
-
- trait_dao_seeking:0 "Star Shattering"
- trait_dao_seeking_name:0 "Star Shattering"
- trait_dao_seeking_desc:0 "Shattered the stars. Lifespan: 635-655 years (+200 years)."
- trait_dao_seeking_character_desc:0 "[ROOT.Char.GetFirstName] has shattered the stars and wields cosmic power."
-
- trait_immortal_ascension:0 "Sacred Vessel"
- trait_immortal_ascension_name:0 "Sacred Vessel"
- trait_immortal_ascension_desc:0 "Became a Sacred Vessel. Lifespan: 915-935 years (+280 years)."
- trait_immortal_ascension_character_desc:0 "[ROOT.Char.GetFirstName] has become a Sacred Vessel, containing divine essence."
-
- trait_immortal_ascension:0 "Entering Nirvana"
- trait_immortal_ascension_name:0 "Entering Nirvana"
- trait_immortal_ascension_desc:0 "Entering Nirvana realm. Lifespan: 1,265-1,285 years (+350 years)."
- trait_immortal_ascension_character_desc:0 "[ROOT.Char.GetFirstName] is entering Nirvana, transcending life and death."
-
- trait_immortal_ascension:0 "True Immortal"
- trait_immortal_ascension_name:0 "True Immortal"
- trait_immortal_ascension_desc:0 "Achieved True Immortality. Lifespan: IMMORTAL (+500 years)."
- trait_immortal_ascension_character_desc:0 "[ROOT.Char.GetFirstName] has achieved True Immortality. Ageless and eternal!"
 
  ##################################################
  # BLOODLINES
@@ -358,7 +298,6 @@
  trait_yang_bloodline_1:0 "Yang Blood"
  trait_yang_bloodline_2:0 "Pure Yang Blood"
  trait_yang_bloodline_3:0 "Awakened Yang Blood"
- trait_dragon_bloodline:0 "Dragon Blood"
  trait_dragon_bloodline_1:0 "Dragon Blood"
  trait_dragon_bloodline_2:0 "Pure Dragon Blood"
  trait_dragon_bloodline_3:0 "Awakened Dragon Blood"
@@ -403,8 +342,6 @@
  trait_yin_bloodline_character_desc:0 "Yin Blood"
  trait_yang_bloodline_desc:0 "Yang Blood"
  trait_yang_bloodline_character_desc:0 "Yang Blood"
- trait_dragon_bloodline_desc:0 "Dragon Blood"
- trait_dragon_bloodline_character_desc:0 "Dragon Blood"
  trait_phoenix_bloodline_desc:0 "Phoenix Blood"
  trait_phoenix_bloodline_character_desc:0 "Phoenix Blood"
  trait_anchestor_bloodline_desc:0 "Ancestor Blood"
@@ -439,7 +376,6 @@
  mortal_muscle_reconstruction_perk_desc:0 "Reconstruct muscles for greater strength."
 
  mortal_bone_reconstruction_perk:0 "Bone Reconstruction"
- mortal_bone_reconstruction_perk_name:0 "Bone Reconstruction"
  mortal_bone_reconstruction_perk_name:0 "Bone Reconstruction"
  mortal_bone_reconstruction_perk_desc:0 "Strengthen bones through cultivation."
 
@@ -2055,11 +1991,6 @@
  ## BREAKTHROUGH MODIFIERS
  #######################
 
- contemplating_breakthrough:0 "Contemplating Breakthrough"
- contemplating_breakthrough_desc:0 "Deep in contemplation, preparing for the breakthrough attempt."
-
- failed_breakthrough_attempt:0 "Failed Breakthrough"
- failed_breakthrough_attempt_desc:0 "Still recovering from the failed breakthrough. Foundation is unstable."
 
  #######################
  ## CULTIVATION PATH TENETS
@@ -2117,6 +2048,11 @@
  find_cultivation_right_partner_desc:0 "Choose a cultivator to fill your right-side dual cultivation slot."
  FIND_LEFT_PARTNER_TOOLTIP:0 "Select a left-side cultivation partner"
  FIND_RIGHT_PARTNER_TOOLTIP:0 "Select a right-side cultivation partner"
+ CULTIVATION_LABEL_SECT:0 "Sect:"
+ CULTIVATION_LABEL_PROWESS:0 "Prowess:"
+ CULTIVATION_LABEL_REALM:0 "Realm:"
+ CULTIVATION_REALM_MORTAL:0 "Mortal"
+ CULTIVATION_BREAKTHROUGH_LABEL:0 "Breakthrough"
  CULTIVATION_LEFT_PARTNER_AVAILABLE:0 "A valid left-side cultivation partner is available"
  CULTIVATION_RIGHT_PARTNER_AVAILABLE:0 "A valid right-side cultivation partner is available"
  NOT_ALREADY_RIGHT_PARTNER:0 "This character is not already your right-side cultivation partner"
