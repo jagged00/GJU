@@ -10,6 +10,7 @@ qi_gathering_meridian_1_perk = {
 	position = { 1 0 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = qi_gathering
 	}
 	icon = node_cultivation
@@ -27,6 +28,7 @@ qi_gathering_meridian_2_perk = {
 	position = { 1 1 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = qi_gathering
 	}
 	icon = node_cultivation
@@ -45,6 +47,7 @@ qi_gathering_meridian_3a_perk = {
 	position = { 0 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = qi_gathering
 	}
 	icon = node_cultivation
@@ -63,6 +66,7 @@ qi_gathering_meridian_3b_perk = {
 	position = { 2 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = qi_gathering
 	}
 	icon = node_cultivation
@@ -81,6 +85,7 @@ qi_gathering_meridian_4_perk = {
 	position = { 1 3 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = qi_gathering
 	}
 	icon = node_cultivation
@@ -100,6 +105,7 @@ qi_gathering_qi_refining_breakthrough_perk = {
 	position = { 1 4 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = qi_gathering
 	}
 	icon = foundation_establishment_f

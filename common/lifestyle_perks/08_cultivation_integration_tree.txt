@@ -11,6 +11,7 @@ integration_1a_perk = {
 	position = { 0 1 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = node_cultivation
@@ -28,6 +29,7 @@ integration_1b_perk = {
 	position = { 1 0.5 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = node_cultivation
@@ -45,6 +47,7 @@ integration_1c_perk = {
 	position = { 2 0 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = node_cultivation
@@ -62,6 +65,7 @@ integration_1d_perk = {
 	position = { 3 0.5 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = node_cultivation
@@ -79,6 +83,7 @@ integration_1e_perk = {
 	position = { 4 1 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = node_cultivation
@@ -97,6 +102,7 @@ integration_2a_perk = {
 	position = { 0 2.5 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = node_cultivation
@@ -115,6 +121,7 @@ integration_2b_perk = {
 	position = { 1 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = node_cultivation
@@ -133,6 +140,7 @@ integration_2c_perk = {
 	position = { 2 1.5 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = node_cultivation
@@ -151,6 +159,7 @@ integration_2d_perk = {
 	position = { 3 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = node_cultivation
@@ -169,6 +178,7 @@ integration_2e_perk = {
 	position = { 4 2.5 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = node_cultivation
@@ -188,6 +198,7 @@ integration_star_shattering_breakthrough_perk = {
 	position = { 2 4 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = dao_seeking
 	}
 	icon = dao_seeking_f

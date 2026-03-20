@@ -9,6 +9,7 @@ core_formation_qi1_perk = {
 	position = { 0 0 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = core_formation
 	}
 	icon = node_cultivation
@@ -28,6 +29,7 @@ core_formation_early_perk = {
 	position = { 2 0 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = core_formation
 	}
 	icon = node_cultivation
@@ -47,6 +49,7 @@ core_formation_qi2_perk = {
 	position = { 2 1 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = core_formation
 	}
 	icon = node_cultivation
@@ -67,6 +70,7 @@ core_formation_mid_perk = {
 	position = { 0 1 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = core_formation
 	}
 	icon = node_cultivation
@@ -86,6 +90,7 @@ core_formation_qi3_perk = {
 	position = { 0 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = core_formation
 	}
 	icon = node_cultivation
@@ -105,6 +110,7 @@ core_formation_late_perk = {
 	position = { 2 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = core_formation
 	}
 	icon = node_cultivation
@@ -124,6 +130,7 @@ core_formation_qi4_perk = {
 	position = { 2 3 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = core_formation
 	}
 	icon = node_cultivation
@@ -144,6 +151,7 @@ core_formation_peak_perk = {
 	position = { 0 3 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = core_formation
 	}
 	icon = node_cultivation
@@ -164,6 +172,7 @@ core_formation_qi5_perk = {
 	position = { 0 4 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = core_formation
 	}
 	icon = node_cultivation
@@ -184,6 +193,7 @@ core_formation_nascent_soul_breakthrough_perk = {
 	position = { 2 4 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = core_formation
 	}
 	icon = nascent_soul_f

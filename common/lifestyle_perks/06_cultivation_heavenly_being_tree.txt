@@ -9,6 +9,7 @@ heavenly_being_1_perk = {
 	position = { 0 0 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = spirit_severing
 	}
 	icon = node_cultivation
@@ -28,6 +29,7 @@ heavenly_being_early_perk = {
 	position = { 2 0 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = spirit_severing
 	}
 	icon = node_cultivation
@@ -47,6 +49,7 @@ heavenly_being_2_perk = {
 	position = { 2 1 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = spirit_severing
 	}
 	icon = node_cultivation
@@ -66,6 +69,7 @@ heavenly_being_mid_perk = {
 	position = { 0 1 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = spirit_severing
 	}
 	icon = node_cultivation
@@ -86,6 +90,7 @@ heavenly_being_3_perk = {
 	position = { 0 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = spirit_severing
 	}
 	icon = node_cultivation
@@ -105,6 +110,7 @@ heavenly_being_late_perk = {
 	position = { 2 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = spirit_severing
 	}
 	icon = node_cultivation
@@ -125,6 +131,7 @@ heavenly_being_4_perk = {
 	position = { 2 3 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = spirit_severing
 	}
 	icon = node_cultivation
@@ -144,6 +151,7 @@ heavenly_being_peak_perk = {
 	position = { 0 3 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = spirit_severing
 	}
 	icon = node_cultivation
@@ -165,6 +173,7 @@ heavenly_being_5_perk = {
 	position = { 0 4 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = spirit_severing
 	}
 	icon = node_cultivation
@@ -184,6 +193,7 @@ heavenly_being_four_axis_breakthrough_perk = {
 	position = { 2 4 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = spirit_severing
 	}
 	icon = spirit_severing_f

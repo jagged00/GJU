@@ -211,8 +211,8 @@
  spar_actor_is_inexperienced:0 "You have limited sparring experience ([actor.Var('sect_spars_total').GetValue] total spars)"
 
  sect_spar_option_tooltip:0 "Your record: #P [Character.Var('sect_spars_won').GetValue]W#! - #N [Character.Var('sect_spars_lost').GetValue]L#! ([Character.Var('sect_spars_total').GetValue] total)"
- sect_join_is_cultivator_desc:0 "You are a cultivator."
- sect_join_isnt_cultivator_desc:0 "You are not a cultivator."
+ sect_join_is_cultivator_desc:0 "You already possess a cultivation foundation, or at least the awakened meridians needed to enter the sect."
+ sect_join_isnt_cultivator_desc:0 "You need awakened meridians or an existing cultivation base before this sect will receive you as a disciple."
 
  ##################################################
  # LIFESTYLE

@@ -11,6 +11,7 @@ qi_refining_1a_star_perk = {
 	position = { 0 0 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -28,6 +29,7 @@ qi_refining_1b_star_perk = {
 	position = { 4 0 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -45,6 +47,7 @@ qi_refining_middle_perk = {
 	position = { 2 0 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -65,6 +68,7 @@ qi_refining_2a_star_perk = {
 	position = { 0 1 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -81,6 +85,7 @@ qi_refining_2b_star_perk = {
 	position = { 0 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -97,6 +102,7 @@ qi_refining_2c_star_perk = {
 	position = { 4 1 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -113,6 +119,7 @@ qi_refining_2d_star_perk = {
 	position = { 4 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -130,6 +137,7 @@ qi_refining_higher_perk = {
 	position = { 2 1 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -151,6 +159,7 @@ qi_refining_3a_star_perk = {
 	position = { 2 2 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -167,6 +176,7 @@ qi_refining_3b_star_perk = {
 	position = { 4 3 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -183,6 +193,7 @@ qi_refining_3c_star_perk = {
 	position = { 0 3 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -200,6 +211,7 @@ qi_refining_peak_perk = {
 	position = { 2 3 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = node_cultivation
@@ -222,6 +234,7 @@ qi_refining_qi_building_breakthrough_perk = {
 	position = { 2 4 }
 
 	can_be_picked = {
+		can_access_cultivation_lifestyle = yes
 		has_trait = foundation_establishment
 	}
 	icon = foundation_establishment_f

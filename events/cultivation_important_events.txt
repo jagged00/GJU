@@ -32,7 +32,7 @@ cultivation_important_event.001 = { # Get meridians
     option = { #pay for better odds
         name = cultivation_important_event.001.b
 
-        remove_short_term_gold = 5000
+        remove_short_term_gold = 10000
         ai_chance = {
 			base = 0.1
 		}
@@ -67,10 +67,7 @@ cultivation_important_event.002 = { #First cultivation
 
     #TODO: figure out how to add a effect to character to reduce diplomacy and after a few days it gets the trait instead
 
-    immediate = {
-        
-        add_trait = qi_gathering
-    }
+    immediate = { }
 }
 
 #Breakthrough Events
