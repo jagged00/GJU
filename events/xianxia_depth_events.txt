@@ -94,15 +94,8 @@ xianxia_depth.100 = {
 				add_character_modifier = { modifier = dao_heart_clarity years = 2 }
 			}
 			45 = {
-				if = {
-					limit = { has_trait = righteous_path }
-					add_trait_xp = { trait = righteous_path value = 80 }
-				}
 				add_piety = 120
-				if = {
-					limit = { has_trait = demonic_path }
-					add_stress = 20
-				}
+				add_character_modifier = { modifier = dao_heart_clarity years = 1 }
 			}
 			20 = {
 				add_trait = wounded_1
@@ -116,10 +109,6 @@ xianxia_depth.100 = {
 		ai_chance = { base = 35 }
 		random_list = {
 			40 = {
-				if = {
-					limit = { has_trait = demonic_path }
-					add_trait_xp = { trait = demonic_path value = 80 }
-				}
 				add_character_modifier = { modifier = jianghu_karmic_entanglement years = 4 }
 				add_prestige = 150
 			}
